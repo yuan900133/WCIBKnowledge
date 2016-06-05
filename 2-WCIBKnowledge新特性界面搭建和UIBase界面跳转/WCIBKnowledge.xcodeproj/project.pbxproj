@@ -33,6 +33,11 @@
 		54E0D9BF1D04217C0085E19D /* YWCItemImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9BE1D04217C0085E19D /* YWCItemImage.m */; };
 		54E0D9C21D0427D40085E19D /* UIColor+YWCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */; };
 		54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */; };
+		54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E433651D0448330023A2A9 /* YWCSaveTool.m */; };
+		54E433691D0448330023A2A9 /* YWCRootTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E433671D0448330023A2A9 /* YWCRootTool.m */; };
+		54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4336B1D0448600023A2A9 /* YWCNewFCollectionViewController.m */; };
+		54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4336E1D0448700023A2A9 /* YWCNewFeatureCell.m */; };
+		54E433721D04513C0023A2A9 /* YWCTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E433711D04513C0023A2A9 /* YWCTitleLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +88,16 @@
 		54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YWCHex.m"; sourceTree = "<group>"; };
 		54E0D9C31D042DAA0085E19D /* UIImage+YWCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YWCImage.h"; sourceTree = "<group>"; };
 		54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YWCImage.m"; sourceTree = "<group>"; };
+		54E433641D0448330023A2A9 /* YWCSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCSaveTool.h; sourceTree = "<group>"; };
+		54E433651D0448330023A2A9 /* YWCSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCSaveTool.m; sourceTree = "<group>"; };
+		54E433661D0448330023A2A9 /* YWCRootTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCRootTool.h; sourceTree = "<group>"; };
+		54E433671D0448330023A2A9 /* YWCRootTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCRootTool.m; sourceTree = "<group>"; };
+		54E4336A1D0448600023A2A9 /* YWCNewFCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCNewFCollectionViewController.h; sourceTree = "<group>"; };
+		54E4336B1D0448600023A2A9 /* YWCNewFCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCNewFCollectionViewController.m; sourceTree = "<group>"; };
+		54E4336D1D0448700023A2A9 /* YWCNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCNewFeatureCell.h; sourceTree = "<group>"; };
+		54E4336E1D0448700023A2A9 /* YWCNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCNewFeatureCell.m; sourceTree = "<group>"; };
+		54E433701D04513C0023A2A9 /* YWCTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCTitleLabel.h; sourceTree = "<group>"; };
+		54E433711D04513C0023A2A9 /* YWCTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCTitleLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +152,7 @@
 		54E0D9631D0401A40085E19D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				54E4335F1D0447B10023A2A9 /* NewFeature */,
 				54E0D97B1D0401A40085E19D /* UIBase */,
 				54E0D9681D0401A40085E19D /* Animation */,
 				54E0D9701D0401A40085E19D /* NetWork */,
@@ -355,6 +371,9 @@
 		54E0D97A1D0401A40085E19D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				54E433631D0448330023A2A9 /* SaveTool(存储) */,
+				54E433661D0448330023A2A9 /* YWCRootTool.h */,
+				54E433671D0448330023A2A9 /* YWCRootTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -393,8 +412,54 @@
 				54E0D9A61D040F7B0085E19D /* YWCUIBaseCell.xib */,
 				54E0D9BD1D04217C0085E19D /* YWCItemImage.h */,
 				54E0D9BE1D04217C0085E19D /* YWCItemImage.m */,
+				54E433701D04513C0023A2A9 /* YWCTitleLabel.h */,
+				54E433711D04513C0023A2A9 /* YWCTitleLabel.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		54E4335F1D0447B10023A2A9 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				54E433601D0447B10023A2A9 /* Controller */,
+				54E433611D0447B10023A2A9 /* Model */,
+				54E433621D0447B10023A2A9 /* View */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		54E433601D0447B10023A2A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E4336A1D0448600023A2A9 /* YWCNewFCollectionViewController.h */,
+				54E4336B1D0448600023A2A9 /* YWCNewFCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E433611D0447B10023A2A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E433621D0447B10023A2A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E4336D1D0448700023A2A9 /* YWCNewFeatureCell.h */,
+				54E4336E1D0448700023A2A9 /* YWCNewFeatureCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E433631D0448330023A2A9 /* SaveTool(存储) */ = {
+			isa = PBXGroup;
+			children = (
+				54E433641D0448330023A2A9 /* YWCSaveTool.h */,
+				54E433651D0448330023A2A9 /* YWCSaveTool.m */,
+			);
+			path = "SaveTool(存储)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,14 +549,19 @@
 				54E0D9811D0403340085E19D /* YWCActualController.m in Sources */,
 				54E0D9BB1D0410030085E19D /* YWCActualCell.m in Sources */,
 				54E0D9991D04099B0085E19D /* YWCNavigationController.m in Sources */,
+				54E433691D0448330023A2A9 /* YWCRootTool.m in Sources */,
 				54E0D98A1D0403B80085E19D /* YWCUIBaseController.m in Sources */,
+				54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */,
+				54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */,
 				54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */,
 				54E0D9B61D040FE50085E19D /* YWCPracticalCell.m in Sources */,
 				54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */,
+				54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */,
 				546F13C91D03F4DB004ABA1D /* main.m in Sources */,
 				54E0D9B11D040FBF0085E19D /* YWCNetWorkCell.m in Sources */,
 				54E0D9961D0406F30085E19D /* YWCAnimationController.m in Sources */,
 				54E0D9C21D0427D40085E19D /* UIColor+YWCHex.m in Sources */,
+				54E433721D04513C0023A2A9 /* YWCTitleLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

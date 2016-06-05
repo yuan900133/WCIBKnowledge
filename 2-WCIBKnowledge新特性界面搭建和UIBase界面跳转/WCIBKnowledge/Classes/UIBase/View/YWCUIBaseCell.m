@@ -10,8 +10,11 @@
 @interface YWCUIBaseCell()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end
 @implementation YWCUIBaseCell
+
 
 - (void)setImage:(UIImage *)image
 {
@@ -20,4 +23,17 @@
     self.imageView.image = image;
 }
 
+- (void)setTitle_Label:(NSString *)title_Label
+{
+    _title_Label = title_Label;
+    _titleLabel.text = title_Label;
+    
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    
+}
 @end

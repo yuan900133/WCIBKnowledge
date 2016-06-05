@@ -16,14 +16,26 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="50X-P2-qdz" customClass="YWCItemImage">
                         <rect key="frame" x="10" y="10" width="130" height="130"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="多图下载" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywj-JZ-Aqw" customClass="YWCTitleLabel">
+                        <rect key="frame" x="25" y="66" width="100" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="mQ2-dy-eV0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Ywj-JZ-Aqw" firstAttribute="centerY" secondItem="Yr0-i5-Bdr" secondAttribute="centerY" id="9wS-uh-pQY"/>
                 <constraint firstItem="50X-P2-qdz" firstAttribute="top" secondItem="Yr0-i5-Bdr" secondAttribute="top" constant="10" id="Ke2-Xz-GBN"/>
                 <constraint firstAttribute="trailing" secondItem="50X-P2-qdz" secondAttribute="trailing" constant="10" id="Z04-BE-iFc"/>
                 <constraint firstItem="50X-P2-qdz" firstAttribute="leading" secondItem="Yr0-i5-Bdr" secondAttribute="leading" constant="10" id="f0Z-dk-kOc"/>
+                <constraint firstItem="Ywj-JZ-Aqw" firstAttribute="centerX" secondItem="Yr0-i5-Bdr" secondAttribute="centerX" id="q3a-hN-ZWD"/>
                 <constraint firstAttribute="bottom" secondItem="50X-P2-qdz" secondAttribute="bottom" constant="10" id="u8N-QZ-7Mj"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>

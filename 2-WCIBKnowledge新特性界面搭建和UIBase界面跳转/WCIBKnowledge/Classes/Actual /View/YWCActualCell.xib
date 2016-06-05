@@ -16,15 +16,27 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="gsI-kU-vK0" customClass="YWCItemImage">
                         <rect key="frame" x="5" y="5" width="140" height="140"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网易" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KSY-Jf-IHX" customClass="YWCTitleLabel">
+                        <rect key="frame" x="25" y="66" width="100" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="cty-y6-f14"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="gsI-kU-vK0" secondAttribute="trailing" constant="5" id="GSC-oD-COr"/>
+                <constraint firstItem="KSY-Jf-IHX" firstAttribute="centerY" secondItem="cLf-J6-4Wf" secondAttribute="centerY" id="IVq-e8-639"/>
                 <constraint firstAttribute="bottom" secondItem="gsI-kU-vK0" secondAttribute="bottom" constant="5" id="OjZ-Gf-rku"/>
                 <constraint firstItem="gsI-kU-vK0" firstAttribute="top" secondItem="cLf-J6-4Wf" secondAttribute="top" constant="5" id="Txi-aa-MDm"/>
                 <constraint firstItem="gsI-kU-vK0" firstAttribute="leading" secondItem="cLf-J6-4Wf" secondAttribute="leading" constant="5" id="aEb-3r-eTd"/>
+                <constraint firstItem="KSY-Jf-IHX" firstAttribute="centerX" secondItem="cLf-J6-4Wf" secondAttribute="centerX" id="eVb-FB-4a8"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>
             <connections>

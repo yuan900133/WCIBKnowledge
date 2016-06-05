@@ -29,7 +29,7 @@ static NSString * const NetWorkCellId = @"netWork";
     //修改布局参数,来修改格子的样式.
     //修改布局参数,来修改格子的样式.
     //设置每一个格子的尺寸大小.
-    flow.itemSize = CGSizeMake(160 , 160);
+    flow.itemSize = CGSizeMake(155 , 155);
     //设置每一行的最小间距
     flow.minimumLineSpacing = 10;
     //设置每个item之间的最小间距

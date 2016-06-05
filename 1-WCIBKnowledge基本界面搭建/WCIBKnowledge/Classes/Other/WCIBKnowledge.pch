@@ -1,0 +1,47 @@
+//
+//  WCIBKnowledge.pch
+//  WCIBKnowledge
+//
+//  Created by 袁武昌 on 16/6/5.
+//  Copyright © 2016年 yuan.com. All rights reserved.
+//
+
+/*
+ 提前编译
+ */
+
+#ifdef __OBJC__ // OC文件
+
+
+//#import "UIImage+Image.h"
+#import "UIView+YWCFrame.h"
+#import "UIColor+YWCHex.h"
+//#import "UIBarButtonItem+Item.h"
+
+
+// 打印方法
+#define YWCFunc YWCLog(@"%s",__func__);
+
+// 自定义LOG
+#ifdef DEBUG // 调试阶段
+
+#define YWCLog(...) NSLog(__VA_ARGS__);
+
+#else // 发布阶段
+
+#define YWCLog(...)
+
+#endif
+
+// 屏幕尺寸
+#define YWCScreenW [UIScreen mainScreen].bounds.size.width
+#define YWCScreenH [UIScreen mainScreen].bounds.size.height
+
+// 屏幕适配
+#define iPhone4 (YWCScreenH == 480)
+#define iPhone5 (YWCScreenH == 568)
+#define iPhone6 (YWCScreenH == 667)
+#define iPhone6p (YWCScreenH == 736)
+
+#endif
+

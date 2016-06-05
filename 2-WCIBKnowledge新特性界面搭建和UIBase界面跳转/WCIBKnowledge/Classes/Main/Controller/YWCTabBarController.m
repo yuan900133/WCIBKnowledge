@@ -47,7 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = YWCRandomColor;
     //添加所有的子控制器
     [self setUpAllChildViewController];
     

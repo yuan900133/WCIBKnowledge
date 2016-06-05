@@ -16,19 +16,32 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="7uw-MB-j5Q" customClass="YWCItemImage">
                         <rect key="frame" x="5" y="5" width="140" height="140"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拳皇" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQi-vz-ONC" customClass="YWCTitleLabel">
+                        <rect key="frame" x="35" y="66" width="80" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Ft0-Jz-gwK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="QQi-vz-ONC" firstAttribute="centerX" secondItem="ue0-uP-0Is" secondAttribute="centerX" id="9sC-UA-mk9"/>
                 <constraint firstAttribute="bottom" secondItem="7uw-MB-j5Q" secondAttribute="bottom" constant="5" id="JCV-E6-iGg"/>
                 <constraint firstAttribute="trailing" secondItem="7uw-MB-j5Q" secondAttribute="trailing" constant="5" id="Kcw-OH-yge"/>
                 <constraint firstItem="7uw-MB-j5Q" firstAttribute="leading" secondItem="ue0-uP-0Is" secondAttribute="leading" constant="5" id="b65-eO-2D4"/>
                 <constraint firstItem="7uw-MB-j5Q" firstAttribute="top" secondItem="ue0-uP-0Is" secondAttribute="top" constant="5" id="hhh-l9-onb"/>
+                <constraint firstItem="QQi-vz-ONC" firstAttribute="centerY" secondItem="ue0-uP-0Is" secondAttribute="centerY" id="pNo-jN-HJr"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>
             <connections>
                 <outlet property="imageView" destination="7uw-MB-j5Q" id="am1-0R-iDd"/>
+                <outlet property="titleLabel" destination="QQi-vz-ONC" id="NJe-Hn-3zY"/>
             </connections>
             <point key="canvasLocation" x="467" y="330"/>
         </collectionViewCell>

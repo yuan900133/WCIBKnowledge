@@ -16,6 +16,16 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="m0m-I7-l8U" customClass="YWCItemImage">
                         <rect key="frame" x="10" y="10" width="130" height="130"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地图" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87t-l7-wLd" customClass="YWCTitleLabel">
+                        <rect key="frame" x="25" y="66" width="100" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Fdo-4s-LW7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -25,6 +35,8 @@
                 <constraint firstAttribute="bottom" secondItem="m0m-I7-l8U" secondAttribute="bottom" constant="10" id="WtG-Ya-fFL"/>
                 <constraint firstItem="m0m-I7-l8U" firstAttribute="leading" secondItem="cu5-F3-Qvb" secondAttribute="leading" constant="10" id="kPe-to-8up"/>
                 <constraint firstItem="m0m-I7-l8U" firstAttribute="top" secondItem="cu5-F3-Qvb" secondAttribute="top" constant="10" id="kg6-LX-cDI"/>
+                <constraint firstItem="87t-l7-wLd" firstAttribute="centerY" secondItem="cu5-F3-Qvb" secondAttribute="centerY" id="qKB-Qa-H8b"/>
+                <constraint firstItem="87t-l7-wLd" firstAttribute="centerX" secondItem="cu5-F3-Qvb" secondAttribute="centerX" id="ztw-OV-haO"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>
             <connections>

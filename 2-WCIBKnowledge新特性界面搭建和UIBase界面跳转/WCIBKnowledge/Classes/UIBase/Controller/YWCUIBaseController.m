@@ -9,10 +9,19 @@
 #import "YWCUIBaseController.h"
 #import "YWCUIBaseCell.h"
 @interface YWCUIBaseController ()
-
+@property(nonatomic,strong)NSArray *titleArr;
 @end
 
 @implementation YWCUIBaseController
+
+
+- (NSArray *)titleArr
+{
+    if (_titleArr == nil) {
+        _titleArr = @[@"拳皇",@"购物按钮",@"分页",@"车数据",@"索引条",@"点餐",@"百思段子",@"酒刷新",@"购物车",@"注册",@"通讯录",@"微博个人详情"];
+    }
+    return _titleArr;
+}
 
 static NSString * const UIBaseCellId = @"uiBase";
 
@@ -49,6 +58,8 @@ static NSString * const UIBaseCellId = @"uiBase";
     
     self.collectionView.backgroundColor = YWCRandomColor;
     
+    
+    
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.
@@ -67,7 +78,7 @@ static NSString * const UIBaseCellId = @"uiBase";
 
 //第一组当中有多少Items(格子)
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.titleArr.count;
 }
 //返回cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -77,12 +88,21 @@ static NSString * const UIBaseCellId = @"uiBase";
     
     
 //    NSString *imageName = [NSString stringWithFormat:@"%ld",indexPath.row + 1];
-    NSString *imageName = [NSString stringWithFormat:@"%d",arc4random_uniform(19) +1];
+    CGFloat arccount = self.titleArr.count;
+    NSInteger count = arc4random_uniform(arccount);
+    
+    NSString *imageName = [NSString stringWithFormat:@"%ld",count +1];
     cell.backgroundColor = [UIColor clearColor];
+    cell.title_Label = self.titleArr[indexPath.row];
+//    cell.title_Label.textColor = YWCRandomColor;
+//    cell.title_Label.backgroundColor = YWCRandomColor;
     cell.image = [UIImage imageNamed:imageName];
     
     return cell;
 }
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%@",self.titleArr[indexPath.row]);
+}
 
 @end
