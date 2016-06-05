@@ -9,10 +9,30 @@
 /* Begin PBXBuildFile section */
 		546F13C91D03F4DB004ABA1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F13C81D03F4DB004ABA1D /* main.m */; };
 		546F13CC1D03F4DB004ABA1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F13CB1D03F4DB004ABA1D /* AppDelegate.m */; };
-		546F13CF1D03F4DB004ABA1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F13CE1D03F4DB004ABA1D /* ViewController.m */; };
-		546F13D21D03F4DB004ABA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F13D01D03F4DB004ABA1D /* Main.storyboard */; };
 		546F13D41D03F4DB004ABA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546F13D31D03F4DB004ABA1D /* Assets.xcassets */; };
 		546F13D71D03F4DB004ABA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F13D51D03F4DB004ABA1D /* LaunchScreen.storyboard */; };
+		54E0D9811D0403340085E19D /* YWCActualController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9801D0403340085E19D /* YWCActualController.m */; };
+		54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9861D0403840085E19D /* YWCNetWorkController.m */; };
+		54E0D98A1D0403B80085E19D /* YWCUIBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9891D0403B80085E19D /* YWCUIBaseController.m */; };
+		54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D98C1D0403F60085E19D /* YWCPracticalController.m */; };
+		54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D98F1D0406640085E19D /* YWCTabBarController.m */; };
+		54E0D9961D0406F30085E19D /* YWCAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9951D0406F30085E19D /* YWCAnimationController.m */; };
+		54E0D9991D04099B0085E19D /* YWCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9981D04099B0085E19D /* YWCNavigationController.m */; };
+		54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D99E1D040AF30085E19D /* UIBarButtonItem+YWCItem.m */; };
+		54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9A21D040BE30085E19D /* UIView+YWCFrame.m */; };
+		54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9A51D040F7B0085E19D /* YWCUIBaseCell.m */; };
+		54E0D9A81D040F7B0085E19D /* YWCUIBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0D9A61D040F7B0085E19D /* YWCUIBaseCell.xib */; };
+		54E0D9AC1D040F9F0085E19D /* YWCAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9AA1D040F9F0085E19D /* YWCAnimationCell.m */; };
+		54E0D9AD1D040F9F0085E19D /* YWCAnimationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0D9AB1D040F9F0085E19D /* YWCAnimationCell.xib */; };
+		54E0D9B11D040FBF0085E19D /* YWCNetWorkCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9AF1D040FBF0085E19D /* YWCNetWorkCell.m */; };
+		54E0D9B21D040FBF0085E19D /* YWCNetWorkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0D9B01D040FBF0085E19D /* YWCNetWorkCell.xib */; };
+		54E0D9B61D040FE50085E19D /* YWCPracticalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9B41D040FE50085E19D /* YWCPracticalCell.m */; };
+		54E0D9B71D040FE50085E19D /* YWCPracticalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0D9B51D040FE50085E19D /* YWCPracticalCell.xib */; };
+		54E0D9BB1D0410030085E19D /* YWCActualCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9B91D0410030085E19D /* YWCActualCell.m */; };
+		54E0D9BC1D0410030085E19D /* YWCActualCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E0D9BA1D0410030085E19D /* YWCActualCell.xib */; };
+		54E0D9BF1D04217C0085E19D /* YWCItemImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9BE1D04217C0085E19D /* YWCItemImage.m */; };
+		54E0D9C21D0427D40085E19D /* UIColor+YWCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */; };
+		54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +40,49 @@
 		546F13C81D03F4DB004ABA1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		546F13CA1D03F4DB004ABA1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		546F13CB1D03F4DB004ABA1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		546F13CD1D03F4DB004ABA1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		546F13CE1D03F4DB004ABA1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		546F13D11D03F4DB004ABA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		546F13D31D03F4DB004ABA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546F13D61D03F4DB004ABA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546F13D81D03F4DB004ABA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E0D97F1D0403340085E19D /* YWCActualController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCActualController.h; sourceTree = "<group>"; };
+		54E0D9801D0403340085E19D /* YWCActualController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCActualController.m; sourceTree = "<group>"; };
+		54E0D9851D0403840085E19D /* YWCNetWorkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCNetWorkController.h; sourceTree = "<group>"; };
+		54E0D9861D0403840085E19D /* YWCNetWorkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCNetWorkController.m; sourceTree = "<group>"; };
+		54E0D9881D0403B80085E19D /* YWCUIBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCUIBaseController.h; sourceTree = "<group>"; };
+		54E0D9891D0403B80085E19D /* YWCUIBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCUIBaseController.m; sourceTree = "<group>"; };
+		54E0D98B1D0403F60085E19D /* YWCPracticalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCPracticalController.h; sourceTree = "<group>"; };
+		54E0D98C1D0403F60085E19D /* YWCPracticalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCPracticalController.m; sourceTree = "<group>"; };
+		54E0D98E1D0406640085E19D /* YWCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCTabBarController.h; sourceTree = "<group>"; };
+		54E0D98F1D0406640085E19D /* YWCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCTabBarController.m; sourceTree = "<group>"; };
+		54E0D9941D0406F30085E19D /* YWCAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCAnimationController.h; sourceTree = "<group>"; };
+		54E0D9951D0406F30085E19D /* YWCAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCAnimationController.m; sourceTree = "<group>"; };
+		54E0D9971D04099B0085E19D /* YWCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCNavigationController.h; sourceTree = "<group>"; };
+		54E0D9981D04099B0085E19D /* YWCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCNavigationController.m; sourceTree = "<group>"; };
+		54E0D99D1D040AF30085E19D /* UIBarButtonItem+YWCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YWCItem.h"; sourceTree = "<group>"; };
+		54E0D99E1D040AF30085E19D /* UIBarButtonItem+YWCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YWCItem.m"; sourceTree = "<group>"; };
+		54E0D9A01D040B830085E19D /* WCIBKnowledge.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCIBKnowledge.pch; sourceTree = "<group>"; };
+		54E0D9A11D040BE30085E19D /* UIView+YWCFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YWCFrame.h"; sourceTree = "<group>"; };
+		54E0D9A21D040BE30085E19D /* UIView+YWCFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YWCFrame.m"; sourceTree = "<group>"; };
+		54E0D9A41D040F7B0085E19D /* YWCUIBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCUIBaseCell.h; sourceTree = "<group>"; };
+		54E0D9A51D040F7B0085E19D /* YWCUIBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCUIBaseCell.m; sourceTree = "<group>"; };
+		54E0D9A61D040F7B0085E19D /* YWCUIBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCUIBaseCell.xib; sourceTree = "<group>"; };
+		54E0D9A91D040F9F0085E19D /* YWCAnimationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCAnimationCell.h; sourceTree = "<group>"; };
+		54E0D9AA1D040F9F0085E19D /* YWCAnimationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCAnimationCell.m; sourceTree = "<group>"; };
+		54E0D9AB1D040F9F0085E19D /* YWCAnimationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCAnimationCell.xib; sourceTree = "<group>"; };
+		54E0D9AE1D040FBF0085E19D /* YWCNetWorkCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCNetWorkCell.h; sourceTree = "<group>"; };
+		54E0D9AF1D040FBF0085E19D /* YWCNetWorkCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCNetWorkCell.m; sourceTree = "<group>"; };
+		54E0D9B01D040FBF0085E19D /* YWCNetWorkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCNetWorkCell.xib; sourceTree = "<group>"; };
+		54E0D9B31D040FE50085E19D /* YWCPracticalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCPracticalCell.h; sourceTree = "<group>"; };
+		54E0D9B41D040FE50085E19D /* YWCPracticalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCPracticalCell.m; sourceTree = "<group>"; };
+		54E0D9B51D040FE50085E19D /* YWCPracticalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCPracticalCell.xib; sourceTree = "<group>"; };
+		54E0D9B81D0410030085E19D /* YWCActualCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCActualCell.h; sourceTree = "<group>"; };
+		54E0D9B91D0410030085E19D /* YWCActualCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCActualCell.m; sourceTree = "<group>"; };
+		54E0D9BA1D0410030085E19D /* YWCActualCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCActualCell.xib; sourceTree = "<group>"; };
+		54E0D9BD1D04217C0085E19D /* YWCItemImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCItemImage.h; sourceTree = "<group>"; };
+		54E0D9BE1D04217C0085E19D /* YWCItemImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCItemImage.m; sourceTree = "<group>"; };
+		54E0D9C01D0427D30085E19D /* UIColor+YWCHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+YWCHex.h"; sourceTree = "<group>"; };
+		54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YWCHex.m"; sourceTree = "<group>"; };
+		54E0D9C31D042DAA0085E19D /* UIImage+YWCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YWCImage.h"; sourceTree = "<group>"; };
+		54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YWCImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +115,9 @@
 		546F13C61D03F4DB004ABA1D /* WCIBKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				54E0D9631D0401A40085E19D /* Classes */,
 				546F13CA1D03F4DB004ABA1D /* AppDelegate.h */,
 				546F13CB1D03F4DB004ABA1D /* AppDelegate.m */,
-				546F13CD1D03F4DB004ABA1D /* ViewController.h */,
-				546F13CE1D03F4DB004ABA1D /* ViewController.m */,
-				546F13D01D03F4DB004ABA1D /* Main.storyboard */,
 				546F13D31D03F4DB004ABA1D /* Assets.xcassets */,
 				546F13D51D03F4DB004ABA1D /* LaunchScreen.storyboard */,
 				546F13D81D03F4DB004ABA1D /* Info.plist */,
@@ -77,6 +132,269 @@
 				546F13C81D03F4DB004ABA1D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54E0D9631D0401A40085E19D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D97B1D0401A40085E19D /* UIBase */,
+				54E0D9681D0401A40085E19D /* Animation */,
+				54E0D9701D0401A40085E19D /* NetWork */,
+				54E0D9761D0401A40085E19D /* Practical */,
+				54E0D9641D0401A40085E19D /* Actual  */,
+				54E0D96C1D0401A40085E19D /* Main */,
+				54E0D9741D0401A40085E19D /* Other */,
+				54E0D97A1D0401A40085E19D /* Tool */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		54E0D9641D0401A40085E19D /* Actual  */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9651D0401A40085E19D /* Controller */,
+				54E0D9661D0401A40085E19D /* Model */,
+				54E0D9671D0401A40085E19D /* View */,
+			);
+			path = "Actual ";
+			sourceTree = "<group>";
+		};
+		54E0D9651D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D97F1D0403340085E19D /* YWCActualController.h */,
+				54E0D9801D0403340085E19D /* YWCActualController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D9661D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D9671D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9B81D0410030085E19D /* YWCActualCell.h */,
+				54E0D9B91D0410030085E19D /* YWCActualCell.m */,
+				54E0D9BA1D0410030085E19D /* YWCActualCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E0D9681D0401A40085E19D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9691D0401A40085E19D /* Controller */,
+				54E0D96A1D0401A40085E19D /* Model */,
+				54E0D96B1D0401A40085E19D /* View */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		54E0D9691D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9941D0406F30085E19D /* YWCAnimationController.h */,
+				54E0D9951D0406F30085E19D /* YWCAnimationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D96A1D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D96B1D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9A91D040F9F0085E19D /* YWCAnimationCell.h */,
+				54E0D9AA1D040F9F0085E19D /* YWCAnimationCell.m */,
+				54E0D9AB1D040F9F0085E19D /* YWCAnimationCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E0D96C1D0401A40085E19D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D96D1D0401A40085E19D /* Controller */,
+				54E0D96E1D0401A40085E19D /* Model */,
+				54E0D96F1D0401A40085E19D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54E0D96D1D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D98E1D0406640085E19D /* YWCTabBarController.h */,
+				54E0D98F1D0406640085E19D /* YWCTabBarController.m */,
+				54E0D9971D04099B0085E19D /* YWCNavigationController.h */,
+				54E0D9981D04099B0085E19D /* YWCNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D96E1D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D96F1D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E0D9701D0401A40085E19D /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9711D0401A40085E19D /* Controller */,
+				54E0D9721D0401A40085E19D /* Model */,
+				54E0D9731D0401A40085E19D /* View */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		54E0D9711D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9851D0403840085E19D /* YWCNetWorkController.h */,
+				54E0D9861D0403840085E19D /* YWCNetWorkController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D9721D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D9731D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9AE1D040FBF0085E19D /* YWCNetWorkCell.h */,
+				54E0D9AF1D040FBF0085E19D /* YWCNetWorkCell.m */,
+				54E0D9B01D040FBF0085E19D /* YWCNetWorkCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E0D9741D0401A40085E19D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9751D0401A40085E19D /* Category */,
+				54E0D9A01D040B830085E19D /* WCIBKnowledge.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		54E0D9751D0401A40085E19D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D99D1D040AF30085E19D /* UIBarButtonItem+YWCItem.h */,
+				54E0D99E1D040AF30085E19D /* UIBarButtonItem+YWCItem.m */,
+				54E0D9A11D040BE30085E19D /* UIView+YWCFrame.h */,
+				54E0D9A21D040BE30085E19D /* UIView+YWCFrame.m */,
+				54E0D9C01D0427D30085E19D /* UIColor+YWCHex.h */,
+				54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */,
+				54E0D9C31D042DAA0085E19D /* UIImage+YWCImage.h */,
+				54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		54E0D9761D0401A40085E19D /* Practical */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9771D0401A40085E19D /* Controller */,
+				54E0D9781D0401A40085E19D /* Model */,
+				54E0D9791D0401A40085E19D /* View */,
+			);
+			path = Practical;
+			sourceTree = "<group>";
+		};
+		54E0D9771D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D98B1D0403F60085E19D /* YWCPracticalController.h */,
+				54E0D98C1D0403F60085E19D /* YWCPracticalController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D9781D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D9791D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9B31D040FE50085E19D /* YWCPracticalCell.h */,
+				54E0D9B41D040FE50085E19D /* YWCPracticalCell.m */,
+				54E0D9B51D040FE50085E19D /* YWCPracticalCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54E0D97A1D0401A40085E19D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		54E0D97B1D0401A40085E19D /* UIBase */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D97C1D0401A40085E19D /* Controller */,
+				54E0D97D1D0401A40085E19D /* Model */,
+				54E0D97E1D0401A40085E19D /* View */,
+			);
+			path = UIBase;
+			sourceTree = "<group>";
+		};
+		54E0D97C1D0401A40085E19D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9881D0403B80085E19D /* YWCUIBaseController.h */,
+				54E0D9891D0403B80085E19D /* YWCUIBaseController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54E0D97D1D0401A40085E19D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54E0D97E1D0401A40085E19D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54E0D9A41D040F7B0085E19D /* YWCUIBaseCell.h */,
+				54E0D9A51D040F7B0085E19D /* YWCUIBaseCell.m */,
+				54E0D9A61D040F7B0085E19D /* YWCUIBaseCell.xib */,
+				54E0D9BD1D04217C0085E19D /* YWCItemImage.h */,
+				54E0D9BE1D04217C0085E19D /* YWCItemImage.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,11 +423,13 @@
 		546F13BC1D03F4DB004ABA1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YWC;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yuan.com;
 				TargetAttributes = {
 					546F13C31D03F4DB004ABA1D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 3H786B7HP9;
 					};
 				};
 			};
@@ -136,9 +456,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E0D9AD1D040F9F0085E19D /* YWCAnimationCell.xib in Resources */,
+				54E0D9B21D040FBF0085E19D /* YWCNetWorkCell.xib in Resources */,
 				546F13D71D03F4DB004ABA1D /* LaunchScreen.storyboard in Resources */,
+				54E0D9B71D040FE50085E19D /* YWCPracticalCell.xib in Resources */,
+				54E0D9BC1D0410030085E19D /* YWCActualCell.xib in Resources */,
 				546F13D41D03F4DB004ABA1D /* Assets.xcassets in Resources */,
-				546F13D21D03F4DB004ABA1D /* Main.storyboard in Resources */,
+				54E0D9A81D040F7B0085E19D /* YWCUIBaseCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +473,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546F13CF1D03F4DB004ABA1D /* ViewController.m in Sources */,
+				54E0D9AC1D040F9F0085E19D /* YWCAnimationCell.m in Sources */,
+				54E0D9BF1D04217C0085E19D /* YWCItemImage.m in Sources */,
+				54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */,
 				546F13CC1D03F4DB004ABA1D /* AppDelegate.m in Sources */,
+				54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */,
+				54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */,
+				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
+				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
+				54E0D9811D0403340085E19D /* YWCActualController.m in Sources */,
+				54E0D9BB1D0410030085E19D /* YWCActualCell.m in Sources */,
+				54E0D9991D04099B0085E19D /* YWCNavigationController.m in Sources */,
+				54E0D98A1D0403B80085E19D /* YWCUIBaseController.m in Sources */,
+				54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */,
+				54E0D9B61D040FE50085E19D /* YWCPracticalCell.m in Sources */,
+				54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */,
 				546F13C91D03F4DB004ABA1D /* main.m in Sources */,
+				54E0D9B11D040FBF0085E19D /* YWCNetWorkCell.m in Sources */,
+				54E0D9961D0406F30085E19D /* YWCAnimationController.m in Sources */,
+				54E0D9C21D0427D40085E19D /* UIColor+YWCHex.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		546F13D01D03F4DB004ABA1D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				546F13D11D03F4DB004ABA1D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		546F13D51D03F4DB004ABA1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,7 +593,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WCIBKnowledge/Classes/Other/WCIBKnowledge.pch;
 				INFOPLIST_FILE = WCIBKnowledge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuan.WCIBKnowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +609,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WCIBKnowledge/Classes/Other/WCIBKnowledge.pch;
 				INFOPLIST_FILE = WCIBKnowledge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yuan.WCIBKnowledge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +640,7 @@
 				546F13DD1D03F4DB004ABA1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

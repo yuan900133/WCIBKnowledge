@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  YWCNetWorkController.h
 //  WCIBKnowledge
 //
 //  Created by 袁武昌 on 16/6/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface YWCNetWorkController : UICollectionViewController
 
 @end
-
