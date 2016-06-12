@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCShopViewController">
+            <connections>
+                <outlet property="addProductBtn" destination="ppU-f9-pAR" id="kDl-QQ-W0P"/>
+                <outlet property="hubView" destination="xfN-vd-skx" id="32H-m6-kXZ"/>
+                <outlet property="productsView" destination="p7N-jB-yC8" id="3oT-Ol-eTp"/>
+                <outlet property="remoceProductBtn" destination="f8M-kg-X6J" id="WOw-Hc-fbA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8M-kg-X6J">
+                    <rect key="frame" x="275" y="83" width="50" height="50"/>
+                    <state key="normal" image="remove"/>
+                    <state key="disabled" image="remove_disabled"/>
+                    <state key="highlighted" image="remove_highlighted"/>
+                    <connections>
+                        <action selector="removeProduct" destination="-1" eventType="touchUpInside" id="0RM-Z4-kTs"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p7N-jB-yC8">
+                    <rect key="frame" x="50" y="169" width="275" height="250"/>
+                    <color key="backgroundColor" red="1" green="0.56954761499999995" blue="0.30021973930000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfN-vd-skx" customClass="YWCTitleLabel">
+                    <rect key="frame" x="50" y="269" width="270" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppU-f9-pAR">
+                    <rect key="frame" x="50" y="83" width="50" height="50"/>
+                    <state key="normal" image="add"/>
+                    <state key="disabled" image="add_disabled"/>
+                    <state key="highlighted" image="add_highlighted"/>
+                    <connections>
+                        <action selector="addProduct" destination="-1" eventType="touchUpInside" id="dxp-Jc-jrc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="288.5" y="316.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="128" height="128"/>
+        <image name="add_disabled" width="128" height="128"/>
+        <image name="add_highlighted" width="128" height="128"/>
+        <image name="remove" width="128" height="128"/>
+        <image name="remove_disabled" width="128" height="128"/>
+        <image name="remove_highlighted" width="128" height="128"/>
+    </resources>
+</document>

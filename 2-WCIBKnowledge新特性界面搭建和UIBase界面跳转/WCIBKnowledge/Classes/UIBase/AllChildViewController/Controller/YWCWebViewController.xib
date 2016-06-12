@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCWebViewController">
+            <connections>
+                <outlet property="heightCons" destination="37y-K0-SrC" id="whF-PJ-dWG"/>
+                <outlet property="tableView" destination="nJa-uc-pkP" id="7Mm-nW-jNX"/>
+                <outlet property="topCons" destination="kpf-gg-YsE" id="Cd8-F8-f6y"/>
+                <outlet property="view" destination="2BB-Q0-63U" id="B6A-Gs-2Ri"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2BB-Q0-63U">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nJa-uc-pkP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9C-VA-9Ch">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timo" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-59-wYA">
+                            <rect key="frame" x="260" y="51" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="4Ex-lJ-KsV"/>
+                                <constraint firstAttribute="width" constant="80" id="dk0-7m-zKY"/>
+                                <constraint firstAttribute="height" constant="80" id="k92-V2-tu8"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="viH-Op-cUd"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lol" translatesAutoresizingMaskIntoConstraints="NO" id="oAa-Sl-Ylu">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.060773469699999999" green="1" blue="0.27442576089999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="37y-K0-SrC"/>
+                        <constraint firstItem="JCm-59-wYA" firstAttribute="centerX" secondItem="oAa-Sl-Ylu" secondAttribute="centerX" id="Atw-HF-yir"/>
+                        <constraint firstAttribute="trailing" secondItem="oAa-Sl-Ylu" secondAttribute="trailing" id="V0a-2R-0ol"/>
+                        <constraint firstAttribute="bottom" secondItem="oAa-Sl-Ylu" secondAttribute="bottom" id="ekU-WX-DRf"/>
+                        <constraint firstItem="oAa-Sl-Ylu" firstAttribute="leading" secondItem="I9C-VA-9Ch" secondAttribute="leading" id="jhG-ya-viE"/>
+                        <constraint firstItem="oAa-Sl-Ylu" firstAttribute="top" secondItem="I9C-VA-9Ch" secondAttribute="top" id="lzE-AS-KQq"/>
+                        <constraint firstAttribute="bottom" secondItem="JCm-59-wYA" secondAttribute="bottom" constant="69" id="tQL-cJ-wte"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-gl-OZu">
+                    <rect key="frame" x="0.0" y="200" width="600" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.95931562179999996" blue="0.18424284860000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="23N-JO-4U2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MzA-gl-OZu" firstAttribute="top" secondItem="I9C-VA-9Ch" secondAttribute="bottom" id="8bd-XG-hvv"/>
+                <constraint firstAttribute="trailing" secondItem="nJa-uc-pkP" secondAttribute="trailing" id="F09-Mk-vWf"/>
+                <constraint firstAttribute="bottom" secondItem="nJa-uc-pkP" secondAttribute="bottom" constant="-67" id="Fd6-64-Fi6"/>
+                <constraint firstAttribute="trailing" secondItem="I9C-VA-9Ch" secondAttribute="trailing" id="Pmv-l7-wTc"/>
+                <constraint firstItem="I9C-VA-9Ch" firstAttribute="leading" secondItem="2BB-Q0-63U" secondAttribute="leading" id="Ve7-bu-uRy"/>
+                <constraint firstItem="nJa-uc-pkP" firstAttribute="leading" secondItem="2BB-Q0-63U" secondAttribute="leading" id="aad-KC-KVo"/>
+                <constraint firstItem="nJa-uc-pkP" firstAttribute="top" secondItem="2BB-Q0-63U" secondAttribute="top" id="j0Z-7Z-mg5"/>
+                <constraint firstItem="I9C-VA-9Ch" firstAttribute="top" secondItem="2BB-Q0-63U" secondAttribute="top" id="kpf-gg-YsE"/>
+                <constraint firstAttribute="trailing" secondItem="MzA-gl-OZu" secondAttribute="trailing" id="pvg-7f-rdn"/>
+                <constraint firstItem="MzA-gl-OZu" firstAttribute="leading" secondItem="2BB-Q0-63U" secondAttribute="leading" id="wLW-ds-IM2"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="lol" width="500" height="391"/>
+        <image name="timo" width="200" height="200"/>
+    </resources>
+</document>

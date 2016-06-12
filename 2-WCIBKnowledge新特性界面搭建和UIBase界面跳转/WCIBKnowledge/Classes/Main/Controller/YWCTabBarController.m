@@ -87,7 +87,7 @@
     
     YWCNavigationController  *nav = [[YWCNavigationController alloc]initWithRootViewController:vc];
     //    设置导航条文字属性
-    [nav.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:YWCRandomColor}];
+    [nav.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
     
     [self addChildViewController:nav];
     

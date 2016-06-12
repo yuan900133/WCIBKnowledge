@@ -11,6 +11,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
 @implementation YWCNetWorkCell
 
@@ -21,4 +22,10 @@
     self.imageView.image = image;
 }
 
+- (void)setTitle_Label:(NSString *)title_Label
+{
+    _title_Label = title_Label;
+    _titleLabel.text = title_Label;
+    
+}
 @end

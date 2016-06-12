@@ -23,7 +23,7 @@
     // 设置导航条标题 -> 由导航条决定
     NSMutableDictionary *attr = [NSMutableDictionary dictionary];
     attr[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
-    
+    navBar.titleTextAttributes = attr;
     // 清空导航条
     //    [navBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     //    [navBar setShadowImage:[[UIImage alloc] init]];

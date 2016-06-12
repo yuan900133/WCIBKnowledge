@@ -17,7 +17,7 @@
     self.layer.borderWidth = 1.0;
     // 设置边框颜色
     self.layer.borderColor = YWCRandomColor.CGColor;
-    self.textColor = YWCRandomColor;
+    self.textColor = [UIColor whiteColor];
     self.backgroundColor = YWCRandomColor;
     // 设置圆角半径
     self.layer.cornerRadius = self.frame.size.height * 0.5;

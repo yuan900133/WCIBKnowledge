@@ -41,6 +41,7 @@
             <size key="customSize" width="171" height="149"/>
             <connections>
                 <outlet property="imageView" destination="m0m-I7-l8U" id="BYA-cu-edZ"/>
+                <outlet property="titleLabel" destination="87t-l7-wLd" id="c8Q-cQ-ffA"/>
             </connections>
             <point key="canvasLocation" x="303" y="235"/>
         </collectionViewCell>

@@ -9,13 +9,19 @@
 #import "YWCPracticalController.h"
 #import "YWCPracticalCell.h"
 @interface YWCPracticalController ()
-
+@property(nonatomic,strong)NSArray *titleArr;
 @end
 
 @implementation YWCPracticalController
 
 static NSString * const PracticalCellId = @"practical";
-
+- (NSArray *)titleArr
+{
+    if (_titleArr == nil) {
+        _titleArr = @[@"QQ空间",@"美团",@"打开系统的应用程序",@"分享",@"第三方登录",@"通讯录",@"静态库",@"换肤",@"支付宝集成",@"APP测试发布",@"内购/广告",@"苹果支付",@"推送通知",@"传感器",@"UIDynamic",@"内存析",@"硬件信息获取",@"录音",@"音效播放",@"音乐播放",@"视频播放",@"CoreLocation定位",@"指南针",@"代理到Block转换",@"MapKit框架",@"系统导航",@"集成百度地图"];
+    }
+    return _titleArr;
+}
 /**状态栏样式*/
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -66,7 +72,7 @@ static NSString * const PracticalCellId = @"practical";
 
 //第一组当中有多少Items(格子)
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.titleArr.count;
 }
 //返回cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -78,6 +84,7 @@ static NSString * const PracticalCellId = @"practical";
     NSString *imageName = [NSString stringWithFormat:@"%d",arc4random_uniform(19) +1];
     cell.backgroundColor = [UIColor clearColor];
     cell.image = [UIImage imageNamed:imageName];
+    cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
 }

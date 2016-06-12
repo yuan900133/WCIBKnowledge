@@ -11,13 +11,20 @@
 #import "YWCActualController.h"
 #import "YWCActualCell.h"
 @interface YWCActualController ()
-
+@property(nonatomic,strong)NSArray *titleArr;
 @end
 
 @implementation YWCActualController
 
 static NSString * const ActualCellId = @"actual";
 
+- (NSArray *)titleArr
+{
+    if (_titleArr == nil) {
+        _titleArr = @[@"Runtime",@"Const",@"父子控制器",@"网易新闻",@"通知补充多线程",@"block深入研究",@"UICollectionView布局",@""];
+    }
+    return _titleArr;
+}
 /**状态栏样式*/
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -70,7 +77,7 @@ static NSString * const ActualCellId = @"actual";
 
 //第一组当中有多少Items(格子)
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.titleArr.count;
 }
 //返回cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -83,7 +90,7 @@ static NSString * const ActualCellId = @"actual";
     cell.backgroundColor = [UIColor clearColor];
     
     cell.image = [UIImage imageNamed:imageName];
-    
+    cell.title_Label = self.titleArr[indexPath.row];
     return cell;
 }
 @end

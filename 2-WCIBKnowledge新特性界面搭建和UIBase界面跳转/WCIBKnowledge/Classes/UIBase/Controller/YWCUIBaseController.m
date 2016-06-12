@@ -7,6 +7,16 @@
 //
 
 #import "YWCUIBaseController.h"
+#import "YWCGameController.h"
+#import "YWCShopViewController.h"
+#import "YWCWineViewController.h"
+#import "YWCCarViewController.h"
+#import "YWCRefreshViewController.h"
+#import "YWCShopWineController.h"
+#import "YWCRegisterController.h"
+#import "LoginViewController.h"
+#import "YWCWebViewController.h"
+
 #import "YWCUIBaseCell.h"
 @interface YWCUIBaseController ()
 @property(nonatomic,strong)NSArray *titleArr;
@@ -15,16 +25,16 @@
 @implementation YWCUIBaseController
 
 
+
+
+static NSString * const UIBaseCellId = @"uiBase";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"拳皇",@"购物按钮",@"分页",@"车数据",@"索引条",@"点餐",@"百思段子",@"酒刷新",@"购物车",@"注册",@"通讯录",@"微博个人详情"];
+        _titleArr = @[@"拳皇",@"购物按钮",@"酒数据",@"索引条",@"酒刷新",@"购物车",@"注册",@"通讯录",@"微博个人详情"];
     }
     return _titleArr;
 }
-
-static NSString * const UIBaseCellId = @"uiBase";
-
 /**状态栏样式*/
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
@@ -56,17 +66,33 @@ static NSString * const UIBaseCellId = @"uiBase";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     [self setupAllChildVc];
+    
+    //    初始化collectionView
+    [self setUp];
+    
+   
+    
+}
+- (void)setupAllChildVc
+{
+    [self addChildViewController:[[YWCGameController alloc] init]];
+    [self addChildViewController:[[YWCShopViewController alloc] init]];
+    [self addChildViewController:[[YWCWineViewController alloc] init]];
+    [self addChildViewController:[[YWCCarViewController alloc] init]];
+    [self addChildViewController:[[YWCRefreshViewController alloc] init]];
+    [self addChildViewController:[[YWCShopWineController alloc] init]];
+    
+    
+}
+
+- (void)setUp
+{
     self.collectionView.backgroundColor = YWCRandomColor;
-    
-    
-    
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.
-     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YWCUIBaseCell class]) bundle:nil] forCellWithReuseIdentifier:UIBaseCellId];
-    
-    //添加内部的子控件
-    //    [self setUp];
+    [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YWCUIBaseCell class]) bundle:nil] forCellWithReuseIdentifier:UIBaseCellId];
 }
 
 //有多少组.
@@ -94,15 +120,39 @@ static NSString * const UIBaseCellId = @"uiBase";
     NSString *imageName = [NSString stringWithFormat:@"%ld",count +1];
     cell.backgroundColor = [UIColor clearColor];
     cell.title_Label = self.titleArr[indexPath.row];
-//    cell.title_Label.textColor = YWCRandomColor;
-//    cell.title_Label.backgroundColor = YWCRandomColor;
+
+    
     cell.image = [UIImage imageNamed:imageName];
     
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%@",self.titleArr[indexPath.row]);
+   
+
+    if (indexPath.row == 6) {
+        YWCRegisterController *Register = [[YWCRegisterController alloc] init];
+        [self.navigationController pushViewController:Register animated:YES];
+        
+    }else if (indexPath.row == 7) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass([LoginViewController class]) bundle:nil];
+        LoginViewController *login = [storyboard instantiateInitialViewController];
+        
+        
+        [self.navigationController pushViewController:login animated:YES];
+        
+    }else if (indexPath.row == 8) {
+        YWCWebViewController *web = [[YWCWebViewController alloc] init];
+        [self.navigationController pushViewController:web animated:YES];
+        
+    }else{
+    
+        [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
+    }
+    
+    
+    
+    
 }
 
 @end

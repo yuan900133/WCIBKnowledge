@@ -10,4 +10,6 @@
 
 @interface YWCNetWorkCell : UICollectionViewCell
 @property (nonatomic, strong) UIImage *image;
+@property (weak, nonatomic)  NSString *title_Label;
+
 @end

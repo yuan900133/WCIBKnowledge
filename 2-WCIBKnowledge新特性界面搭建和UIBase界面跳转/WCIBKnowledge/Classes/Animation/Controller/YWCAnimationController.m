@@ -8,15 +8,22 @@
 
 #import "YWCAnimationController.h"
 #import "YWCAnimationCell.h"
-#define YWCScreenW [UIScreen mainScreen].bounds.size.width
-#define YWCScreenH [UIScreen mainScreen].bounds.size.height
-@interface YWCAnimationController ()
 
+@interface YWCAnimationController ()
+@property(nonatomic,strong)NSArray *titleArr;
 @end
 
 @implementation YWCAnimationController
 
 static NSString * const AnimationCellId = @"animation";
+
+- (NSArray *)titleArr
+{
+    if (_titleArr == nil) {
+        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印",@"裁减",@"截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳",@"图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
+    }
+    return _titleArr;
+}
 
 /**状态栏样式*/
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -67,7 +74,7 @@ static NSString * const AnimationCellId = @"animation";
 
 //第一组当中有多少Items(格子)
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
+    return self.titleArr.count;
 }
 //返回cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -79,6 +86,7 @@ static NSString * const AnimationCellId = @"animation";
     NSString *imageName = [NSString stringWithFormat:@"%d",arc4random_uniform(19) +1];
     cell.backgroundColor = [UIColor clearColor];
     cell.image = [UIImage imageNamed:imageName];
+    cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
 }
