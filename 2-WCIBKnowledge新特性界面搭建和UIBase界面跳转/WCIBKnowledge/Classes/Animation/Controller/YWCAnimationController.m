@@ -7,6 +7,8 @@
 //
 
 #import "YWCAnimationController.h"
+#import "YWCDragSubController.h"
+
 #import "YWCAnimationCell.h"
 
 @interface YWCAnimationController ()
@@ -54,17 +56,25 @@ static NSString * const AnimationCellId = @"animation";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setupAllChildVc];
+    
+    //添加内部的子控件
+        [self setUp];
+}
+- (void)setUp{
     self.collectionView.backgroundColor = YWCRandomColor;
     
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YWCAnimationCell class]) bundle:nil] forCellWithReuseIdentifier:AnimationCellId];
-    
-    //添加内部的子控件
-    //    [self setUp];
 }
 
+
+- (void)setupAllChildVc
+{
+    [self addChildViewController:[[YWCDragSubController alloc]init]];
+}
 //有多少组.
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
@@ -89,5 +99,10 @@ static NSString * const AnimationCellId = @"animation";
     cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
 }
 @end

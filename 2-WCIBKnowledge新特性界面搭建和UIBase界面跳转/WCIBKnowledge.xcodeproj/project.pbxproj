@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5408022F1D0E3BF90037B160 /* YWCDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5408022E1D0E3BF90037B160 /* YWCDragViewController.m */; };
+		540802321D0E3C3D0037B160 /* YWCDragSubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540802311D0E3C3D0037B160 /* YWCDragSubController.m */; };
 		546CD1C61D0C3A6B001AB69E /* YWCRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1C41D0C3A6B001AB69E /* YWCRefreshViewController.m */; };
 		546CD1C71D0C3A6B001AB69E /* YWCRefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CD1C51D0C3A6B001AB69E /* YWCRefreshViewController.xib */; };
 		546CD1CA1D0C3AAA001AB69E /* YWCWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1C91D0C3AAA001AB69E /* YWCWineCell.m */; };
@@ -365,6 +367,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5408022D1D0E3BF90037B160 /* YWCDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCDragViewController.h; sourceTree = "<group>"; };
+		5408022E1D0E3BF90037B160 /* YWCDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCDragViewController.m; sourceTree = "<group>"; };
+		540802301D0E3C3D0037B160 /* YWCDragSubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCDragSubController.h; sourceTree = "<group>"; };
+		540802311D0E3C3D0037B160 /* YWCDragSubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCDragSubController.m; sourceTree = "<group>"; };
 		546CD1C31D0C3A6B001AB69E /* YWCRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCRefreshViewController.h; sourceTree = "<group>"; };
 		546CD1C41D0C3A6B001AB69E /* YWCRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCRefreshViewController.m; sourceTree = "<group>"; };
 		546CD1C51D0C3A6B001AB69E /* YWCRefreshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCRefreshViewController.xib; sourceTree = "<group>"; };
@@ -898,6 +904,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		54A8D8F01D0DBC210080B738 /* AllChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				54A8D8F11D0DBC210080B738 /* Controller */,
+				54A8D8F21D0DBC210080B738 /* Model */,
+				54A8D8F31D0DBC210080B738 /* resouce */,
+				54A8D8F41D0DBC210080B738 /* View */,
+			);
+			path = AllChildViewController;
+			sourceTree = "<group>";
+		};
+		54A8D8F11D0DBC210080B738 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5408022D1D0E3BF90037B160 /* YWCDragViewController.h */,
+				5408022E1D0E3BF90037B160 /* YWCDragViewController.m */,
+				540802301D0E3C3D0037B160 /* YWCDragSubController.h */,
+				540802311D0E3C3D0037B160 /* YWCDragSubController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		54A8D8F21D0DBC210080B738 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		54A8D8F31D0DBC210080B738 /* resouce */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resouce;
+			sourceTree = "<group>";
+		};
+		54A8D8F41D0DBC210080B738 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54A8D8F51D0DBC620080B738 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		54E0D9631D0401A40085E19D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -954,8 +1010,9 @@
 		54E0D9681D0401A40085E19D /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				54A8D8F01D0DBC210080B738 /* AllChildViewController */,
 				54E0D9691D0401A40085E19D /* Controller */,
-				54E0D96A1D0401A40085E19D /* Model */,
+				54A8D8F51D0DBC620080B738 /* Model */,
 				54E0D96B1D0401A40085E19D /* View */,
 			);
 			path = Animation;
@@ -968,13 +1025,6 @@
 				54E0D9951D0406F30085E19D /* YWCAnimationController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		54E0D96A1D0401A40085E19D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		54E0D96B1D0401A40085E19D /* View */ = {
@@ -2052,6 +2102,7 @@
 				546CD1CA1D0C3AAA001AB69E /* YWCWineCell.m in Sources */,
 				54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */,
 				546CD1EC1D0C3AFC001AB69E /* NSObject+MJKeyValue.m in Sources */,
+				540802321D0E3C3D0037B160 /* YWCDragSubController.m in Sources */,
 				546CD1E71D0C3AFC001AB69E /* MJProperty.m in Sources */,
 				54EE2FA91D0C5F2800E219C5 /* MBProgressHUD+XMG.m in Sources */,
 				54EBE2EA1D0A9A3A00A19887 /* YWCCarViewController.m in Sources */,
@@ -2066,6 +2117,7 @@
 				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
 				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
 				54EE2FAB1D0C5F2800E219C5 /* MBProgressHUD.m in Sources */,
+				5408022F1D0E3BF90037B160 /* YWCDragViewController.m in Sources */,
 				54E0D9811D0403340085E19D /* YWCActualController.m in Sources */,
 				54EBE2C81D0A769100A19887 /* YWCProduct.m in Sources */,
 				54E0D9BB1D0410030085E19D /* YWCActualCell.m in Sources */,
