@@ -66,6 +66,8 @@
 		5477B5DC1D10525E004BFE73 /* YWCSnowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5DA1D10525E004BFE73 /* YWCSnowViewController.m */; };
 		5477B5DD1D10525E004BFE73 /* YWCSnowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5DB1D10525E004BFE73 /* YWCSnowViewController.xib */; };
 		5477B5E01D10527E004BFE73 /* YWCSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5DF1D10527E004BFE73 /* YWCSnow.m */; };
+		5477B5E41D1054EA004BFE73 /* YWCWatermarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */; };
+		5477B5E51D1054EA004BFE73 /* YWCWatermarkController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */; };
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
@@ -476,6 +478,9 @@
 		5477B5DB1D10525E004BFE73 /* YWCSnowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCSnowViewController.xib; sourceTree = "<group>"; };
 		5477B5DE1D10527E004BFE73 /* YWCSnow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCSnow.h; sourceTree = "<group>"; };
 		5477B5DF1D10527E004BFE73 /* YWCSnow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCSnow.m; sourceTree = "<group>"; };
+		5477B5E11D1054EA004BFE73 /* YWCWatermarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWatermarkController.h; sourceTree = "<group>"; };
+		5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWatermarkController.m; sourceTree = "<group>"; };
+		5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCWatermarkController.xib; sourceTree = "<group>"; };
 		5485AF551D0F8D4E00ACBC11 /* YWCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YWCDrawViewController.h; path = Controller/YWCDrawViewController.h; sourceTree = "<group>"; };
 		5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YWCDrawViewController.m; path = Controller/YWCDrawViewController.m; sourceTree = "<group>"; };
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
@@ -967,6 +972,9 @@
 				5477B5D91D10525E004BFE73 /* YWCSnowViewController.h */,
 				5477B5DA1D10525E004BFE73 /* YWCSnowViewController.m */,
 				5477B5DB1D10525E004BFE73 /* YWCSnowViewController.xib */,
+				5477B5E11D1054EA004BFE73 /* YWCWatermarkController.h */,
+				5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */,
+				5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1917,6 +1925,7 @@
 				54EBE1851D0A60A400A19887 /* dazhao_22.png in Resources */,
 				54EBE20E1D0A60A500A19887 /* stand_2.png in Resources */,
 				54EBE1FB1D0A60A500A19887 /* install_b_3.png in Resources */,
+				5477B5E51D1054EA004BFE73 /* YWCWatermarkController.xib in Resources */,
 				546CD2341D0C51B5001AB69E /* deguo.gif in Resources */,
 				54EBE17C1D0A60A400A19887 /* dazhao_14.png in Resources */,
 				54EBE1CB1D0A60A400A19887 /* dazhao_86.png in Resources */,
@@ -2166,6 +2175,7 @@
 			files = (
 				546CD2191D0C5055001AB69E /* FlagView.m in Sources */,
 				54EC58851D0C67FD005676F2 /* YWCWebViewController.m in Sources */,
+				5477B5E41D1054EA004BFE73 /* YWCWatermarkController.m in Sources */,
 				54E0D9AC1D040F9F0085E19D /* YWCAnimationCell.m in Sources */,
 				54E0D9BF1D04217C0085E19D /* YWCItemImage.m in Sources */,
 				546CD2131D0C503C001AB69E /* FlagField.m in Sources */,
