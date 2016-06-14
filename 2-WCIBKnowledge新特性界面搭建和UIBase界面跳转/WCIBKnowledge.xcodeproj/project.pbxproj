@@ -60,6 +60,9 @@
 		5477B5CC1D104D14004BFE73 /* YWCCookieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5CA1D104D14004BFE73 /* YWCCookieController.m */; };
 		5477B5CD1D104D14004BFE73 /* YWCCookieController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */; };
 		5477B5D01D104D53004BFE73 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5CF1D104D53004BFE73 /* PieView.m */; };
+		5477B5D41D104FA2004BFE73 /* YWCPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5D21D104FA2004BFE73 /* YWCPictureController.m */; };
+		5477B5D51D104FA2004BFE73 /* YWCPictureController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5D31D104FA2004BFE73 /* YWCPictureController.xib */; };
+		5477B5D81D104FBC004BFE73 /* YWCPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5D71D104FBC004BFE73 /* YWCPictureView.m */; };
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
@@ -460,6 +463,11 @@
 		5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCCookieController.xib; sourceTree = "<group>"; };
 		5477B5CE1D104D53004BFE73 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
 		5477B5CF1D104D53004BFE73 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
+		5477B5D11D104FA2004BFE73 /* YWCPictureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCPictureController.h; sourceTree = "<group>"; };
+		5477B5D21D104FA2004BFE73 /* YWCPictureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCPictureController.m; sourceTree = "<group>"; };
+		5477B5D31D104FA2004BFE73 /* YWCPictureController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCPictureController.xib; sourceTree = "<group>"; };
+		5477B5D61D104FBC004BFE73 /* YWCPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCPictureView.h; sourceTree = "<group>"; };
+		5477B5D71D104FBC004BFE73 /* YWCPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCPictureView.m; sourceTree = "<group>"; };
 		5485AF551D0F8D4E00ACBC11 /* YWCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YWCDrawViewController.h; path = Controller/YWCDrawViewController.h; sourceTree = "<group>"; };
 		5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YWCDrawViewController.m; path = Controller/YWCDrawViewController.m; sourceTree = "<group>"; };
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
@@ -945,6 +953,9 @@
 				5477B5C91D104D14004BFE73 /* YWCCookieController.h */,
 				5477B5CA1D104D14004BFE73 /* YWCCookieController.m */,
 				5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */,
+				5477B5D11D104FA2004BFE73 /* YWCPictureController.h */,
+				5477B5D21D104FA2004BFE73 /* YWCPictureController.m */,
+				5477B5D31D104FA2004BFE73 /* YWCPictureController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -982,6 +993,8 @@
 				549604AB1D0F911600067469 /* ProgressView.m */,
 				5477B5CE1D104D53004BFE73 /* PieView.h */,
 				5477B5CF1D104D53004BFE73 /* PieView.m */,
+				5477B5D61D104FBC004BFE73 /* YWCPictureView.h */,
+				5477B5D71D104FBC004BFE73 /* YWCPictureView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1859,6 +1872,7 @@
 				54EBE1FA1D0A60A400A19887 /* install_b_29.png in Resources */,
 				54EBE1B91D0A60A400A19887 /* dazhao_7.png in Resources */,
 				54EBE1831D0A60A400A19887 /* dazhao_20.png in Resources */,
+				5477B5D51D104FA2004BFE73 /* YWCPictureController.xib in Resources */,
 				54EBE23B1D0A60A500A19887 /* xiaozhao2_24.png in Resources */,
 				54EBE25D1D0A60A500A19887 /* xiaozhao3_23.png in Resources */,
 				54EBE2C21D0A767600A19887 /* products.plist in Resources */,
@@ -2179,6 +2193,7 @@
 				54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */,
 				54EC586C1D0C648F005676F2 /* Contact.m in Sources */,
 				54E0D9B61D040FE50085E19D /* YWCPracticalCell.m in Sources */,
+				5477B5D41D104FA2004BFE73 /* YWCPictureController.m in Sources */,
 				54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */,
 				54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */,
 				54EBE2C91D0A769100A19887 /* YWCProductView.m in Sources */,
@@ -2202,6 +2217,7 @@
 				549604AC1D0F911600067469 /* ProgressView.m in Sources */,
 				546CD1EE1D0C3AFC001AB69E /* NSString+MJExtension.m in Sources */,
 				54EC587F1D0C6590005676F2 /* EditViewController.m in Sources */,
+				5477B5D81D104FBC004BFE73 /* YWCPictureView.m in Sources */,
 				5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */,
 				546CD2091D0C4FE4001AB69E /* YWCRegisterController.m in Sources */,
 				546CD1E51D0C3AFC001AB69E /* MJExtensionConst.m in Sources */,
