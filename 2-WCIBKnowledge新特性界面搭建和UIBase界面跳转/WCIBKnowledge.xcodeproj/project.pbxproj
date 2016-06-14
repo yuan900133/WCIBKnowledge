@@ -68,6 +68,10 @@
 		5477B5E01D10527E004BFE73 /* YWCSnow.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5DF1D10527E004BFE73 /* YWCSnow.m */; };
 		5477B5E41D1054EA004BFE73 /* YWCWatermarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */; };
 		5477B5E51D1054EA004BFE73 /* YWCWatermarkController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */; };
+		5477B5E91D1059C4004BFE73 /* YWCwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5E71D1059C4004BFE73 /* YWCwipeViewController.m */; };
+		5477B5EA1D1059C4004BFE73 /* YWCwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5E81D1059C4004BFE73 /* YWCwipeViewController.xib */; };
+		5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */; };
+		5477B5EF1D105C09004BFE73 /* YWCCutScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */; };
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
@@ -481,6 +485,12 @@
 		5477B5E11D1054EA004BFE73 /* YWCWatermarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWatermarkController.h; sourceTree = "<group>"; };
 		5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWatermarkController.m; sourceTree = "<group>"; };
 		5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCWatermarkController.xib; sourceTree = "<group>"; };
+		5477B5E61D1059C4004BFE73 /* YWCwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCwipeViewController.h; sourceTree = "<group>"; };
+		5477B5E71D1059C4004BFE73 /* YWCwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCwipeViewController.m; sourceTree = "<group>"; };
+		5477B5E81D1059C4004BFE73 /* YWCwipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCwipeViewController.xib; sourceTree = "<group>"; };
+		5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCutScreenController.h; sourceTree = "<group>"; };
+		5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCutScreenController.m; sourceTree = "<group>"; };
+		5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCCutScreenController.xib; sourceTree = "<group>"; };
 		5485AF551D0F8D4E00ACBC11 /* YWCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YWCDrawViewController.h; path = Controller/YWCDrawViewController.h; sourceTree = "<group>"; };
 		5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YWCDrawViewController.m; path = Controller/YWCDrawViewController.m; sourceTree = "<group>"; };
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
@@ -975,6 +985,12 @@
 				5477B5E11D1054EA004BFE73 /* YWCWatermarkController.h */,
 				5477B5E21D1054EA004BFE73 /* YWCWatermarkController.m */,
 				5477B5E31D1054EA004BFE73 /* YWCWatermarkController.xib */,
+				5477B5E61D1059C4004BFE73 /* YWCwipeViewController.h */,
+				5477B5E71D1059C4004BFE73 /* YWCwipeViewController.m */,
+				5477B5E81D1059C4004BFE73 /* YWCwipeViewController.xib */,
+				5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */,
+				5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */,
+				5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1979,6 +1995,7 @@
 				54EBE2131D0A60A500A19887 /* stand_7.png in Resources */,
 				54EBE2021D0A60A500A19887 /* run_1.png in Resources */,
 				54EBE1E01D0A60A400A19887 /* dead_5.png in Resources */,
+				5477B5EF1D105C09004BFE73 /* YWCCutScreenController.xib in Resources */,
 				546F13D71D03F4DB004ABA1D /* LaunchScreen.storyboard in Resources */,
 				54EBE2141D0A60A500A19887 /* stand_8.png in Resources */,
 				54EBE18A1D0A60A400A19887 /* dazhao_27.png in Resources */,
@@ -2129,6 +2146,7 @@
 				54EBE1F31D0A60A400A19887 /* install_b_22.png in Resources */,
 				54EBE1771D0A60A400A19887 /* dazhao_1.png in Resources */,
 				54EBE2091D0A60A500A19887 /* xiaozhao1.mp3 in Resources */,
+				5477B5EA1D1059C4004BFE73 /* YWCwipeViewController.xib in Resources */,
 				54EBE2201D0A60A500A19887 /* xiaozhao1_19.png in Resources */,
 				54EC58811D0C6590005676F2 /* LoginViewController.storyboard in Resources */,
 				54EBE1A41D0A60A400A19887 /* dazhao_50.png in Resources */,
@@ -2194,8 +2212,10 @@
 				546F13CC1D03F4DB004ABA1D /* AppDelegate.m in Sources */,
 				54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */,
 				54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */,
+				5477B5E91D1059C4004BFE73 /* YWCwipeViewController.m in Sources */,
 				546CD1F61D0C4277001AB69E /* YWCCircleButton.m in Sources */,
 				5477B5D01D104D53004BFE73 /* PieView.m in Sources */,
+				5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */,
 				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
 				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
 				5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */,

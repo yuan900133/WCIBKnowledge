@@ -14,6 +14,9 @@
 #import "YWCPictureController.h"
 #import "YWCSnowViewController.h"
 #import "YWCWatermarkController.h"
+#import "YWCwipeViewController.h"
+#import "YWCCutScreenController.h"
+
 
 #import "YWCAnimationCell.h"
 
@@ -28,7 +31,7 @@ static NSString * const AnimationCellId = @"animation";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印",@"裁减",@"截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳",@"图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
+        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印,裁减,截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳",@"图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
     }
     return _titleArr;
 }
@@ -86,6 +89,8 @@ static NSString * const AnimationCellId = @"animation";
     [self addChildViewController:[[YWCPictureController alloc]init]];
     [self addChildViewController:[[YWCSnowViewController alloc]init]];
     [self addChildViewController:[[YWCWatermarkController alloc]init]];
+    [self addChildViewController:[[YWCwipeViewController alloc]init]];
+    [self addChildViewController:[[YWCCutScreenController alloc]init]];
 }
 
 

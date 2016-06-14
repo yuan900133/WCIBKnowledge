@@ -18,6 +18,25 @@
 
 @implementation YWCWatermarkController
 
+- (void)cutScreen
+{
+    //截屏.
+    //1.开启位图上下文.
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, 0);
+    //2.把控制器View的内容绘制到上下文当中.
+    //layer是不能够直接画到上下文当中, 它要渲染到上下文当中.
+    CGContextRef ctx =  UIGraphicsGetCurrentContext();
+    [self.view.layer renderInContext:ctx];
+    //3.从上下文当中生成一张图片
+    UIImage *newImage =  UIGraphicsGetImageFromCurrentImageContext();
+    //4.关闭上下文.
+    UIGraphicsEndImageContext();
+    
+    //文件都以二进流的形式进行传输.
+    NSData *data = UIImageJPEGRepresentation(newImage, 1);
+    [data writeToFile:@"/Users/yuanwuchang/Desktop/yuan/test/newImage.jpg" atomically:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //1.加载图片.
