@@ -12,6 +12,7 @@
 #import "YWCProgressController.h"
 #import "YWCCookieController.h"
 #import "YWCPictureController.h"
+#import "YWCSnowViewController.h"
 
 
 #import "YWCAnimationCell.h"
@@ -83,6 +84,7 @@ static NSString * const AnimationCellId = @"animation";
     [self addChildViewController:[[YWCProgressController alloc]init]];
     [self addChildViewController:[[YWCCookieController alloc]init]];
     [self addChildViewController:[[YWCPictureController alloc]init]];
+    [self addChildViewController:[[YWCSnowViewController alloc]init]];
 }
 
 
