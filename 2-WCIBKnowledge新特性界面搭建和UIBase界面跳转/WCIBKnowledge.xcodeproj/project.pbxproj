@@ -72,6 +72,15 @@
 		5477B5EA1D1059C4004BFE73 /* YWCwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5E81D1059C4004BFE73 /* YWCwipeViewController.xib */; };
 		5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */; };
 		5477B5EF1D105C09004BFE73 /* YWCCutScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */; };
+		5477B5F31D105F6A004BFE73 /* YWCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */; };
+		5477B5F41D105F6A004BFE73 /* YWCClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */; };
+		5477B5F91D105FC0004BFE73 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F61D105FC0004BFE73 /* ClockView.m */; };
+		5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F81D105FC0004BFE73 /* VCView.m */; };
+		5477B5FE1D106404004BFE73 /* YWCDrawBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5FC1D106404004BFE73 /* YWCDrawBoardController.m */; };
+		5477B5FF1D106404004BFE73 /* YWCDrawBoardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5FD1D106404004BFE73 /* YWCDrawBoardController.xib */; };
+		5477B6021D10642A004BFE73 /* YWCBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B6011D10642A004BFE73 /* YWCBoard.m */; };
+		5477B6071D106442004BFE73 /* ImageHandleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B6041D106442004BFE73 /* ImageHandleView.m */; };
+		5477B6081D106442004BFE73 /* MyBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B6061D106442004BFE73 /* MyBezierPath.m */; };
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
@@ -491,6 +500,22 @@
 		5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCutScreenController.h; sourceTree = "<group>"; };
 		5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCutScreenController.m; sourceTree = "<group>"; };
 		5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCCutScreenController.xib; sourceTree = "<group>"; };
+		5477B5F01D105F6A004BFE73 /* YWCClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCClockViewController.h; sourceTree = "<group>"; };
+		5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCClockViewController.m; sourceTree = "<group>"; };
+		5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCClockViewController.xib; sourceTree = "<group>"; };
+		5477B5F51D105FC0004BFE73 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
+		5477B5F61D105FC0004BFE73 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
+		5477B5F71D105FC0004BFE73 /* VCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCView.h; sourceTree = "<group>"; };
+		5477B5F81D105FC0004BFE73 /* VCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCView.m; sourceTree = "<group>"; };
+		5477B5FB1D106404004BFE73 /* YWCDrawBoardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCDrawBoardController.h; sourceTree = "<group>"; };
+		5477B5FC1D106404004BFE73 /* YWCDrawBoardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCDrawBoardController.m; sourceTree = "<group>"; };
+		5477B5FD1D106404004BFE73 /* YWCDrawBoardController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCDrawBoardController.xib; sourceTree = "<group>"; };
+		5477B6001D10642A004BFE73 /* YWCBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCBoard.h; sourceTree = "<group>"; };
+		5477B6011D10642A004BFE73 /* YWCBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCBoard.m; sourceTree = "<group>"; };
+		5477B6031D106442004BFE73 /* ImageHandleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHandleView.h; sourceTree = "<group>"; };
+		5477B6041D106442004BFE73 /* ImageHandleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHandleView.m; sourceTree = "<group>"; };
+		5477B6051D106442004BFE73 /* MyBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBezierPath.h; sourceTree = "<group>"; };
+		5477B6061D106442004BFE73 /* MyBezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBezierPath.m; sourceTree = "<group>"; };
 		5485AF551D0F8D4E00ACBC11 /* YWCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YWCDrawViewController.h; path = Controller/YWCDrawViewController.h; sourceTree = "<group>"; };
 		5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YWCDrawViewController.m; path = Controller/YWCDrawViewController.m; sourceTree = "<group>"; };
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
@@ -991,6 +1016,12 @@
 				5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */,
 				5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */,
 				5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */,
+				5477B5F01D105F6A004BFE73 /* YWCClockViewController.h */,
+				5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */,
+				5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */,
+				5477B5FB1D106404004BFE73 /* YWCDrawBoardController.h */,
+				5477B5FC1D106404004BFE73 /* YWCDrawBoardController.m */,
+				5477B5FD1D106404004BFE73 /* YWCDrawBoardController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1032,6 +1063,16 @@
 				5477B5D71D104FBC004BFE73 /* YWCPictureView.m */,
 				5477B5DE1D10527E004BFE73 /* YWCSnow.h */,
 				5477B5DF1D10527E004BFE73 /* YWCSnow.m */,
+				5477B5F51D105FC0004BFE73 /* ClockView.h */,
+				5477B5F61D105FC0004BFE73 /* ClockView.m */,
+				5477B5F71D105FC0004BFE73 /* VCView.h */,
+				5477B5F81D105FC0004BFE73 /* VCView.m */,
+				5477B6001D10642A004BFE73 /* YWCBoard.h */,
+				5477B6011D10642A004BFE73 /* YWCBoard.m */,
+				5477B6031D106442004BFE73 /* ImageHandleView.h */,
+				5477B6041D106442004BFE73 /* ImageHandleView.m */,
+				5477B6051D106442004BFE73 /* MyBezierPath.h */,
+				5477B6061D106442004BFE73 /* MyBezierPath.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2151,6 +2192,7 @@
 				54EC58811D0C6590005676F2 /* LoginViewController.storyboard in Resources */,
 				54EBE1A41D0A60A400A19887 /* dazhao_50.png in Resources */,
 				54EBE1D11D0A60A400A19887 /* dead_12.png in Resources */,
+				5477B5F41D105F6A004BFE73 /* YWCClockViewController.xib in Resources */,
 				54EBE1B71D0A60A400A19887 /* dazhao_68.png in Resources */,
 				54EBE1791D0A60A400A19887 /* dazhao_11.png in Resources */,
 				546CD2361D0C51B5001AB69E /* hanguo.gif in Resources */,
@@ -2161,6 +2203,7 @@
 				54EBE1FC1D0A60A500A19887 /* install_b_4.png in Resources */,
 				546CD2381D0C51B5001AB69E /* putaoya.gif in Resources */,
 				54EBE1D31D0A60A400A19887 /* dead_14.png in Resources */,
+				5477B5FF1D106404004BFE73 /* YWCDrawBoardController.xib in Resources */,
 				54EBE2071D0A60A500A19887 /* run_6.png in Resources */,
 				54EBE1AF1D0A60A400A19887 /* dazhao_60.png in Resources */,
 				54EBE2001D0A60A500A19887 /* install_b_8.png in Resources */,
@@ -2192,6 +2235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546CD2191D0C5055001AB69E /* FlagView.m in Sources */,
+				5477B5F31D105F6A004BFE73 /* YWCClockViewController.m in Sources */,
 				54EC58851D0C67FD005676F2 /* YWCWebViewController.m in Sources */,
 				5477B5E41D1054EA004BFE73 /* YWCWatermarkController.m in Sources */,
 				54E0D9AC1D040F9F0085E19D /* YWCAnimationCell.m in Sources */,
@@ -2217,6 +2261,7 @@
 				5477B5D01D104D53004BFE73 /* PieView.m in Sources */,
 				5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */,
 				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
+				5477B5F91D105FC0004BFE73 /* ClockView.m in Sources */,
 				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
 				5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */,
 				54EE2FAB1D0C5F2800E219C5 /* MBProgressHUD.m in Sources */,
@@ -2235,6 +2280,8 @@
 				54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */,
 				5477B5CC1D104D14004BFE73 /* YWCCookieController.m in Sources */,
 				54EBE27D1D0A761300A19887 /* YWCShopViewController.m in Sources */,
+				5477B6071D106442004BFE73 /* ImageHandleView.m in Sources */,
+				5477B5FE1D106404004BFE73 /* YWCDrawBoardController.m in Sources */,
 				54EC58801D0C6590005676F2 /* LoginViewController.m in Sources */,
 				54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */,
 				54EC586C1D0C648F005676F2 /* Contact.m in Sources */,
@@ -2242,11 +2289,13 @@
 				5477B5D41D104FA2004BFE73 /* YWCPictureController.m in Sources */,
 				54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */,
 				54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */,
+				5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */,
 				54EBE2C91D0A769100A19887 /* YWCProductView.m in Sources */,
 				546CD1E91D0C3AFC001AB69E /* MJPropertyType.m in Sources */,
 				546CD1EB1D0C3AFC001AB69E /* NSObject+MJCoding.m in Sources */,
 				54EBE2E41D0A9A0000A19887 /* YWCCar.m in Sources */,
 				54EC587E1D0C6590005676F2 /* ContactViewController.m in Sources */,
+				5477B6081D106442004BFE73 /* MyBezierPath.m in Sources */,
 				546F13C91D03F4DB004ABA1D /* main.m in Sources */,
 				54E0D9B11D040FBF0085E19D /* YWCNetWorkCell.m in Sources */,
 				546CD2041D0C439D001AB69E /* YWCShopWineCell.m in Sources */,
@@ -2267,6 +2316,7 @@
 				5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */,
 				546CD2091D0C4FE4001AB69E /* YWCRegisterController.m in Sources */,
 				546CD1E51D0C3AFC001AB69E /* MJExtensionConst.m in Sources */,
+				5477B6021D10642A004BFE73 /* YWCBoard.m in Sources */,
 				54E433721D04513C0023A2A9 /* YWCTitleLabel.m in Sources */,
 				546CD20F1D0C5027001AB69E /* BirthdayField.m in Sources */,
 				546CD1E41D0C3AFC001AB69E /* MJDictionaryCache.m in Sources */,
