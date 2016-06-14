@@ -57,6 +57,9 @@
 		546F13CC1D03F4DB004ABA1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 546F13CB1D03F4DB004ABA1D /* AppDelegate.m */; };
 		546F13D41D03F4DB004ABA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546F13D31D03F4DB004ABA1D /* Assets.xcassets */; };
 		546F13D71D03F4DB004ABA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F13D51D03F4DB004ABA1D /* LaunchScreen.storyboard */; };
+		5477B5CC1D104D14004BFE73 /* YWCCookieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5CA1D104D14004BFE73 /* YWCCookieController.m */; };
+		5477B5CD1D104D14004BFE73 /* YWCCookieController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */; };
+		5477B5D01D104D53004BFE73 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5CF1D104D53004BFE73 /* PieView.m */; };
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
@@ -452,6 +455,11 @@
 		546F13D31D03F4DB004ABA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546F13D61D03F4DB004ABA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546F13D81D03F4DB004ABA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5477B5C91D104D14004BFE73 /* YWCCookieController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCookieController.h; sourceTree = "<group>"; };
+		5477B5CA1D104D14004BFE73 /* YWCCookieController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCookieController.m; sourceTree = "<group>"; };
+		5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCCookieController.xib; sourceTree = "<group>"; };
+		5477B5CE1D104D53004BFE73 /* PieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieView.h; sourceTree = "<group>"; };
+		5477B5CF1D104D53004BFE73 /* PieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieView.m; sourceTree = "<group>"; };
 		5485AF551D0F8D4E00ACBC11 /* YWCDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YWCDrawViewController.h; path = Controller/YWCDrawViewController.h; sourceTree = "<group>"; };
 		5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YWCDrawViewController.m; path = Controller/YWCDrawViewController.m; sourceTree = "<group>"; };
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
@@ -934,6 +942,9 @@
 				549604A51D0F90F200067469 /* YWCProgressController.h */,
 				549604A61D0F90F200067469 /* YWCProgressController.m */,
 				549604A71D0F90F200067469 /* YWCProgressController.xib */,
+				5477B5C91D104D14004BFE73 /* YWCCookieController.h */,
+				5477B5CA1D104D14004BFE73 /* YWCCookieController.m */,
+				5477B5CB1D104D14004BFE73 /* YWCCookieController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -969,6 +980,8 @@
 				5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */,
 				549604AA1D0F911600067469 /* ProgressView.h */,
 				549604AB1D0F911600067469 /* ProgressView.m */,
+				5477B5CE1D104D53004BFE73 /* PieView.h */,
+				5477B5CF1D104D53004BFE73 /* PieView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1954,6 +1967,7 @@
 				54E0D9B71D040FE50085E19D /* YWCPracticalCell.xib in Resources */,
 				54EBE22D1D0A60A500A19887 /* xiaozhao2_11.png in Resources */,
 				546CD2051D0C439D001AB69E /* YWCShopWineCell.xib in Resources */,
+				5477B5CD1D104D14004BFE73 /* YWCCookieController.xib in Resources */,
 				54EBE1D61D0A60A400A19887 /* dead_17.png in Resources */,
 				546CD2321D0C51B5001AB69E /* agt.gif in Resources */,
 				54EBE2261D0A60A500A19887 /* xiaozhao1_5.png in Resources */,
@@ -2143,6 +2157,7 @@
 				54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */,
 				54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */,
 				546CD1F61D0C4277001AB69E /* YWCCircleButton.m in Sources */,
+				5477B5D01D104D53004BFE73 /* PieView.m in Sources */,
 				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
 				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
 				5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */,
@@ -2158,6 +2173,7 @@
 				54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */,
 				546CD1E61D0C3AFC001AB69E /* MJFoundation.m in Sources */,
 				54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */,
+				5477B5CC1D104D14004BFE73 /* YWCCookieController.m in Sources */,
 				54EBE27D1D0A761300A19887 /* YWCShopViewController.m in Sources */,
 				54EC58801D0C6590005676F2 /* LoginViewController.m in Sources */,
 				54E0D98D1D0403F60085E19D /* YWCPracticalController.m in Sources */,
