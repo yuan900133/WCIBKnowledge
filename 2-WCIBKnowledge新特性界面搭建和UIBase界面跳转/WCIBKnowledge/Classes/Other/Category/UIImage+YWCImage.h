@@ -11,4 +11,7 @@
 @interface UIImage (YWCImage)
 // 根据颜色生成一张尺寸为1*1的相同颜色图片
 + (UIImage *)imageWithColor:(UIColor *)color;
+
+//带边框的图片裁减
++ (UIImage *)imageWithBorderW:(CGFloat)borderW corlor:(UIColor *)color Image:(UIImage *)image;
 @end

@@ -11,6 +11,7 @@
 
 @interface YWCWatermarkController ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
+@property (weak, nonatomic) IBOutlet UIImageView *imageV1;
 @end
 
 
@@ -41,6 +42,24 @@
     UIGraphicsEndImageContext();
     
     self.imageV.image = newImage;
+ 
     
+    
+    //1.加载图片
+    UIImage *image1 = [UIImage imageNamed:@"1"];
+    //2.开启一个位图上下文.
+    UIGraphicsBeginImageContextWithOptions(image1.size, NO, 0);
+    //3.设置一个圆形的裁剪区域
+    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, image1.size.width, image1.size.height)];
+    //把路径设置成裁剪区域
+    [path addClip];
+    //4.把图片绘制到上下文当中.
+    [image1 drawAtPoint:CGPointZero];
+    //5.从上下文当中生成一张图片
+    UIImage *newImage1 = UIGraphicsGetImageFromCurrentImageContext();
+    //6.关闭位图上下文.
+    UIGraphicsEndImageContext();
+    
+    self.imageV1.image = newImage1;
 }
 @end
