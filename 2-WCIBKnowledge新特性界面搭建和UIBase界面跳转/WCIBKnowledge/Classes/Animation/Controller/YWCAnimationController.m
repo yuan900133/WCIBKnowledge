@@ -9,7 +9,7 @@
 #import "YWCAnimationController.h"
 #import "YWCDragSubController.h"
 #import "YWCDrawViewController.h"
-
+#include "YWCProgressController.h"
 
 #import "YWCAnimationCell.h"
 
@@ -77,6 +77,7 @@ static NSString * const AnimationCellId = @"animation";
 {
     [self addChildViewController:[[YWCDragSubController alloc]init]];
     [self addChildViewController:[[YWCDrawViewController alloc]init]];
+    [self addChildViewController:[[YWCProgressController alloc]init]];
 }
 //有多少组.
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
