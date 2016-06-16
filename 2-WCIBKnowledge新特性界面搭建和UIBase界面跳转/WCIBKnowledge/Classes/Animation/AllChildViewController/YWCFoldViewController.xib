@@ -30,7 +30,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-0I-4Qt">
-                    <rect key="frame" x="38" y="287" width="300" height="300"/>
+                    <rect key="frame" x="37" y="287" width="300" height="300"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="BR9-hu-hY2"/>

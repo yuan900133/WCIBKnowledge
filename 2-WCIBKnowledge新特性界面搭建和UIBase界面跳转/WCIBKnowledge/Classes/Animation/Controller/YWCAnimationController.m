@@ -23,7 +23,7 @@
 #import "YWCWheelViewController.h"
 #import "YWCFoldViewController.h"
 #import "YWCShadowController.h"
-
+#import "YWCQQViewController.h"
 
 #import "YWCAnimationCell.h"
 
@@ -159,6 +159,9 @@ static NSString * const AnimationCellId = @"animation";
     }else if (indexPath.row == 15) {
         YWCShadowController *shadow = [[YWCShadowController alloc]init];
         [self.navigationController pushViewController:shadow animated:YES];
+    }else if (indexPath.row == 16) {
+        YWCQQViewController *qq = [[YWCQQViewController alloc]init];
+        [self.navigationController pushViewController:qq animated:YES];
     }else{
         
         [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];

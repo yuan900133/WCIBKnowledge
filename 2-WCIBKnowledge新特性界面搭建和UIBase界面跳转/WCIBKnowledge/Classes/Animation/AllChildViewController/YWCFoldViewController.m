@@ -24,6 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     //让上部图片只显示上半部分
     self.topImageV.layer.contentsRect = CGRectMake(0, 0, 1, 0.5);
     //设置上部图片的锚点

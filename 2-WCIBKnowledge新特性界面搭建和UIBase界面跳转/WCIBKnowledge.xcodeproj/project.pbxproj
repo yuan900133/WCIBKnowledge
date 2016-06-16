@@ -96,6 +96,9 @@
 		5491A4261D12F3910065236A /* YWCShadowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A4241D12F3910065236A /* YWCShadowController.m */; };
 		5491A4271D12F3910065236A /* YWCShadowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A4251D12F3910065236A /* YWCShadowController.xib */; };
 		5491A42A1D12F3AF0065236A /* YWCShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A4291D12F3AF0065236A /* YWCShadowView.m */; };
+		5491A42D1D12F6FE0065236A /* BageValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A42C1D12F6FE0065236A /* BageValue.m */; };
+		5491A4361D12FA220065236A /* YWCQQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A4341D12FA220065236A /* YWCQQViewController.m */; };
+		5491A4371D12FA220065236A /* YWCQQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A4351D12FA220065236A /* YWCQQViewController.xib */; };
 		549604A81D0F90F200067469 /* YWCProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604A61D0F90F200067469 /* YWCProgressController.m */; };
 		549604A91D0F90F200067469 /* YWCProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549604A71D0F90F200067469 /* YWCProgressController.xib */; };
 		549604AC1D0F911600067469 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604AB1D0F911600067469 /* ProgressView.m */; };
@@ -554,6 +557,11 @@
 		5491A4251D12F3910065236A /* YWCShadowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCShadowController.xib; sourceTree = "<group>"; };
 		5491A4281D12F3AF0065236A /* YWCShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCShadowView.h; sourceTree = "<group>"; };
 		5491A4291D12F3AF0065236A /* YWCShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCShadowView.m; sourceTree = "<group>"; };
+		5491A42B1D12F6FE0065236A /* BageValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BageValue.h; sourceTree = "<group>"; };
+		5491A42C1D12F6FE0065236A /* BageValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BageValue.m; sourceTree = "<group>"; };
+		5491A4331D12FA220065236A /* YWCQQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCQQViewController.h; sourceTree = "<group>"; };
+		5491A4341D12FA220065236A /* YWCQQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCQQViewController.m; sourceTree = "<group>"; };
+		5491A4351D12FA220065236A /* YWCQQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCQQViewController.xib; sourceTree = "<group>"; };
 		549604A51D0F90F200067469 /* YWCProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCProgressController.h; sourceTree = "<group>"; };
 		549604A61D0F90F200067469 /* YWCProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCProgressController.m; sourceTree = "<group>"; };
 		549604A71D0F90F200067469 /* YWCProgressController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCProgressController.xib; sourceTree = "<group>"; };
@@ -1073,6 +1081,9 @@
 				5491A4231D12F3910065236A /* YWCShadowController.h */,
 				5491A4241D12F3910065236A /* YWCShadowController.m */,
 				5491A4251D12F3910065236A /* YWCShadowController.xib */,
+				5491A4331D12FA220065236A /* YWCQQViewController.h */,
+				5491A4341D12FA220065236A /* YWCQQViewController.m */,
+				5491A4351D12FA220065236A /* YWCQQViewController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1131,6 +1142,8 @@
 				5491A4151D12EDF60065236A /* WheelView.xib */,
 				5491A4281D12F3AF0065236A /* YWCShadowView.h */,
 				5491A4291D12F3AF0065236A /* YWCShadowView.m */,
+				5491A42B1D12F6FE0065236A /* BageValue.h */,
+				5491A42C1D12F6FE0065236A /* BageValue.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2001,6 +2014,7 @@
 				54EBE1EF1D0A60A400A19887 /* install_b_19.png in Resources */,
 				54EBE2641D0A60A500A19887 /* xiaozhao3_3.png in Resources */,
 				54EBE2671D0A60A500A19887 /* xiaozhao3_32.png in Resources */,
+				5491A4371D12FA220065236A /* YWCQQViewController.xib in Resources */,
 				54EBE2721D0A60A500A19887 /* xiaozhao3_7.png in Resources */,
 				54EBE1EA1D0A60A400A19887 /* install_b_14.png in Resources */,
 				54EBE1E31D0A60A400A19887 /* dead_8.png in Resources */,
@@ -2334,6 +2348,7 @@
 				54EE2FAB1D0C5F2800E219C5 /* MBProgressHUD.m in Sources */,
 				5408022F1D0E3BF90037B160 /* YWCDragViewController.m in Sources */,
 				5477B5DC1D10525E004BFE73 /* YWCSnowViewController.m in Sources */,
+				5491A4361D12FA220065236A /* YWCQQViewController.m in Sources */,
 				54E0D9811D0403340085E19D /* YWCActualController.m in Sources */,
 				54EBE2C81D0A769100A19887 /* YWCProduct.m in Sources */,
 				54E0D9BB1D0410030085E19D /* YWCActualCell.m in Sources */,
@@ -2358,6 +2373,7 @@
 				5477B5D41D104FA2004BFE73 /* YWCPictureController.m in Sources */,
 				54E0D9A31D040BE30085E19D /* UIView+YWCFrame.m in Sources */,
 				54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */,
+				5491A42D1D12F6FE0065236A /* BageValue.m in Sources */,
 				5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */,
 				54EBE2C91D0A769100A19887 /* YWCProductView.m in Sources */,
 				5491A40F1D12EAB40065236A /* YWCHeartController.m in Sources */,

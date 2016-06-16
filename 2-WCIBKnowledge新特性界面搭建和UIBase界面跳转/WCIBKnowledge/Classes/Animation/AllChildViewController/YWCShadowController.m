@@ -27,7 +27,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"%@",self.view.layer);
+    
+    
+    
+   
     
     CAReplicatorLayer *repL = (CAReplicatorLayer *)self.view.layer;
     repL.instanceCount = 2;
