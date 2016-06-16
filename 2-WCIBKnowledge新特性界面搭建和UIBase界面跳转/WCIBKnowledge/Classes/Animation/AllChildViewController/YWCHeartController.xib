@@ -5,9 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCClockViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCHeartController">
             <connections>
-                <outlet property="colockView" destination="VQj-Dg-l6j" id="fY8-op-Zlu"/>
+                <outlet property="iconV" destination="eKr-V4-atd" id="x4h-rQ-Arh"/>
+                <outlet property="imageV" destination="rwr-sU-ruh" id="Uca-Ju-RYJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,15 +17,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="钟表" translatesAutoresizingMaskIntoConstraints="NO" id="VQj-Dg-l6j">
-                    <rect key="frame" x="83" y="195" width="150" height="150"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="心" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-sU-ruh">
+                    <rect key="frame" x="48" y="168" width="240" height="200"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="心" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-V4-atd">
+                    <rect key="frame" x="48" y="395" width="240" height="200"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="166.5" y="264.5"/>
         </view>
     </objects>
     <resources>
-        <image name="钟表" width="200" height="200"/>
+        <image name="心" width="200" height="200"/>
     </resources>
 </document>

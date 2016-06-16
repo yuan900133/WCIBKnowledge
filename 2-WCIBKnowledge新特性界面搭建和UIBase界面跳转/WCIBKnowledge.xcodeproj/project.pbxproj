@@ -72,8 +72,8 @@
 		5477B5EA1D1059C4004BFE73 /* YWCwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5E81D1059C4004BFE73 /* YWCwipeViewController.xib */; };
 		5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */; };
 		5477B5EF1D105C09004BFE73 /* YWCCutScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */; };
-		5477B5F31D105F6A004BFE73 /* YWCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */; };
-		5477B5F41D105F6A004BFE73 /* YWCClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */; };
+		5477B5F31D105F6A004BFE73 /* YWCLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F11D105F6A004BFE73 /* YWCLockViewController.m */; };
+		5477B5F41D105F6A004BFE73 /* YWCLockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5477B5F21D105F6A004BFE73 /* YWCLockViewController.xib */; };
 		5477B5F91D105FC0004BFE73 /* ClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F61D105FC0004BFE73 /* ClockView.m */; };
 		5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5F81D105FC0004BFE73 /* VCView.m */; };
 		5477B5FE1D106404004BFE73 /* YWCDrawBoardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5477B5FC1D106404004BFE73 /* YWCDrawBoardController.m */; };
@@ -84,6 +84,8 @@
 		5485AF581D0F8D4E00ACBC11 /* YWCDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF561D0F8D4E00ACBC11 /* YWCDrawViewController.m */; };
 		5485AF591D0F8D4E00ACBC11 /* YWCDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */; };
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
+		5491A40F1D12EAB40065236A /* YWCHeartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A40D1D12EAB40065236A /* YWCHeartController.m */; };
+		5491A4101D12EAB40065236A /* YWCHeartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A40E1D12EAB40065236A /* YWCHeartController.xib */; };
 		549604A81D0F90F200067469 /* YWCProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604A61D0F90F200067469 /* YWCProgressController.m */; };
 		549604A91D0F90F200067469 /* YWCProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549604A71D0F90F200067469 /* YWCProgressController.xib */; };
 		549604AC1D0F911600067469 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604AB1D0F911600067469 /* ProgressView.m */; };
@@ -383,6 +385,8 @@
 		54EBE2E51D0A9A0000A19887 /* YWCCarGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EBE2E31D0A9A0000A19887 /* YWCCarGroup.m */; };
 		54EBE2E71D0A9A0F00A19887 /* cars.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54EBE2E61D0A9A0F00A19887 /* cars.plist */; };
 		54EBE2EA1D0A9A3A00A19887 /* YWCCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EBE2E91D0A9A3A00A19887 /* YWCCarViewController.m */; };
+		54EC46A71D10E21B00972E9B /* YWCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC46A51D10E21B00972E9B /* YWCClockViewController.m */; };
+		54EC46A81D10E21B00972E9B /* YWCClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54EC46A61D10E21B00972E9B /* YWCClockViewController.xib */; };
 		54EC586C1D0C648F005676F2 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC586B1D0C648F005676F2 /* Contact.m */; };
 		54EC587D1D0C6590005676F2 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC58751D0C6590005676F2 /* AddViewController.m */; };
 		54EC587E1D0C6590005676F2 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC58771D0C6590005676F2 /* ContactViewController.m */; };
@@ -500,9 +504,9 @@
 		5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCutScreenController.h; sourceTree = "<group>"; };
 		5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCutScreenController.m; sourceTree = "<group>"; };
 		5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCCutScreenController.xib; sourceTree = "<group>"; };
-		5477B5F01D105F6A004BFE73 /* YWCClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCClockViewController.h; sourceTree = "<group>"; };
-		5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCClockViewController.m; sourceTree = "<group>"; };
-		5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCClockViewController.xib; sourceTree = "<group>"; };
+		5477B5F01D105F6A004BFE73 /* YWCLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCLockViewController.h; sourceTree = "<group>"; };
+		5477B5F11D105F6A004BFE73 /* YWCLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCLockViewController.m; sourceTree = "<group>"; };
+		5477B5F21D105F6A004BFE73 /* YWCLockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCLockViewController.xib; sourceTree = "<group>"; };
 		5477B5F51D105FC0004BFE73 /* ClockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockView.h; sourceTree = "<group>"; };
 		5477B5F61D105FC0004BFE73 /* ClockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockView.m; sourceTree = "<group>"; };
 		5477B5F71D105FC0004BFE73 /* VCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCView.h; sourceTree = "<group>"; };
@@ -521,6 +525,9 @@
 		5485AF571D0F8D4E00ACBC11 /* YWCDrawViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YWCDrawViewController.xib; path = Controller/YWCDrawViewController.xib; sourceTree = "<group>"; };
 		5485AF5A1D0F8DFA00ACBC11 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
 		5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		5491A40C1D12EAB40065236A /* YWCHeartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCHeartController.h; sourceTree = "<group>"; };
+		5491A40D1D12EAB40065236A /* YWCHeartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCHeartController.m; sourceTree = "<group>"; };
+		5491A40E1D12EAB40065236A /* YWCHeartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCHeartController.xib; sourceTree = "<group>"; };
 		549604A51D0F90F200067469 /* YWCProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCProgressController.h; sourceTree = "<group>"; };
 		549604A61D0F90F200067469 /* YWCProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCProgressController.m; sourceTree = "<group>"; };
 		549604A71D0F90F200067469 /* YWCProgressController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCProgressController.xib; sourceTree = "<group>"; };
@@ -854,6 +861,9 @@
 		54EBE2E61D0A9A0F00A19887 /* cars.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cars.plist; sourceTree = "<group>"; };
 		54EBE2E81D0A9A3A00A19887 /* YWCCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCarViewController.h; sourceTree = "<group>"; };
 		54EBE2E91D0A9A3A00A19887 /* YWCCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCarViewController.m; sourceTree = "<group>"; };
+		54EC46A41D10E21B00972E9B /* YWCClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCClockViewController.h; sourceTree = "<group>"; };
+		54EC46A51D10E21B00972E9B /* YWCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCClockViewController.m; sourceTree = "<group>"; };
+		54EC46A61D10E21B00972E9B /* YWCClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCClockViewController.xib; sourceTree = "<group>"; };
 		54EC586A1D0C648F005676F2 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		54EC586B1D0C648F005676F2 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		54EC58741D0C6590005676F2 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
@@ -1016,12 +1026,18 @@
 				5477B5EB1D105C09004BFE73 /* YWCCutScreenController.h */,
 				5477B5EC1D105C09004BFE73 /* YWCCutScreenController.m */,
 				5477B5ED1D105C09004BFE73 /* YWCCutScreenController.xib */,
-				5477B5F01D105F6A004BFE73 /* YWCClockViewController.h */,
-				5477B5F11D105F6A004BFE73 /* YWCClockViewController.m */,
-				5477B5F21D105F6A004BFE73 /* YWCClockViewController.xib */,
+				5477B5F01D105F6A004BFE73 /* YWCLockViewController.h */,
+				5477B5F11D105F6A004BFE73 /* YWCLockViewController.m */,
+				5477B5F21D105F6A004BFE73 /* YWCLockViewController.xib */,
 				5477B5FB1D106404004BFE73 /* YWCDrawBoardController.h */,
 				5477B5FC1D106404004BFE73 /* YWCDrawBoardController.m */,
 				5477B5FD1D106404004BFE73 /* YWCDrawBoardController.xib */,
+				54EC46A41D10E21B00972E9B /* YWCClockViewController.h */,
+				54EC46A51D10E21B00972E9B /* YWCClockViewController.m */,
+				54EC46A61D10E21B00972E9B /* YWCClockViewController.xib */,
+				5491A40C1D12EAB40065236A /* YWCHeartController.h */,
+				5491A40D1D12EAB40065236A /* YWCHeartController.m */,
+				5491A40E1D12EAB40065236A /* YWCHeartController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1978,6 +1994,7 @@
 				54EBE1F61D0A60A400A19887 /* install_b_25.png in Resources */,
 				54EBE21F1D0A60A500A19887 /* xiaozhao1_18.png in Resources */,
 				54EBE1C91D0A60A400A19887 /* dazhao_84.png in Resources */,
+				54EC46A81D10E21B00972E9B /* YWCClockViewController.xib in Resources */,
 				54EBE1C51D0A60A400A19887 /* dazhao_80.png in Resources */,
 				54EBE1851D0A60A400A19887 /* dazhao_22.png in Resources */,
 				54EBE20E1D0A60A500A19887 /* stand_2.png in Resources */,
@@ -2083,6 +2100,7 @@
 				54EBE1881D0A60A400A19887 /* dazhao_25.png in Resources */,
 				54EBE25A1D0A60A500A19887 /* xiaozhao3_20.png in Resources */,
 				54EBE2361D0A60A500A19887 /* xiaozhao2_2.png in Resources */,
+				5491A4101D12EAB40065236A /* YWCHeartController.xib in Resources */,
 				54EBE2221D0A60A500A19887 /* xiaozhao1_20.png in Resources */,
 				54EBE1C31D0A60A400A19887 /* dazhao_79.png in Resources */,
 				54EBE1A81D0A60A400A19887 /* dazhao_54.png in Resources */,
@@ -2192,7 +2210,7 @@
 				54EC58811D0C6590005676F2 /* LoginViewController.storyboard in Resources */,
 				54EBE1A41D0A60A400A19887 /* dazhao_50.png in Resources */,
 				54EBE1D11D0A60A400A19887 /* dead_12.png in Resources */,
-				5477B5F41D105F6A004BFE73 /* YWCClockViewController.xib in Resources */,
+				5477B5F41D105F6A004BFE73 /* YWCLockViewController.xib in Resources */,
 				54EBE1B71D0A60A400A19887 /* dazhao_68.png in Resources */,
 				54EBE1791D0A60A400A19887 /* dazhao_11.png in Resources */,
 				546CD2361D0C51B5001AB69E /* hanguo.gif in Resources */,
@@ -2235,7 +2253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				546CD2191D0C5055001AB69E /* FlagView.m in Sources */,
-				5477B5F31D105F6A004BFE73 /* YWCClockViewController.m in Sources */,
+				5477B5F31D105F6A004BFE73 /* YWCLockViewController.m in Sources */,
 				54EC58851D0C67FD005676F2 /* YWCWebViewController.m in Sources */,
 				5477B5E41D1054EA004BFE73 /* YWCWatermarkController.m in Sources */,
 				54E0D9AC1D040F9F0085E19D /* YWCAnimationCell.m in Sources */,
@@ -2245,6 +2263,7 @@
 				54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */,
 				546CD1EC1D0C3AFC001AB69E /* NSObject+MJKeyValue.m in Sources */,
 				540802321D0E3C3D0037B160 /* YWCDragSubController.m in Sources */,
+				54EC46A71D10E21B00972E9B /* YWCClockViewController.m in Sources */,
 				546CD1E71D0C3AFC001AB69E /* MJProperty.m in Sources */,
 				54EE2FA91D0C5F2800E219C5 /* MBProgressHUD+XMG.m in Sources */,
 				54EBE2EA1D0A9A3A00A19887 /* YWCCarViewController.m in Sources */,
@@ -2291,6 +2310,7 @@
 				54E4336F1D0448700023A2A9 /* YWCNewFeatureCell.m in Sources */,
 				5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */,
 				54EBE2C91D0A769100A19887 /* YWCProductView.m in Sources */,
+				5491A40F1D12EAB40065236A /* YWCHeartController.m in Sources */,
 				546CD1E91D0C3AFC001AB69E /* MJPropertyType.m in Sources */,
 				546CD1EB1D0C3AFC001AB69E /* NSObject+MJCoding.m in Sources */,
 				54EBE2E41D0A9A0000A19887 /* YWCCar.m in Sources */,

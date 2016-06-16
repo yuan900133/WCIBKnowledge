@@ -16,8 +16,13 @@
 #import "YWCWatermarkController.h"
 #import "YWCwipeViewController.h"
 #import "YWCCutScreenController.h"
-#import "YWCClockViewController.h"
+#import "YWCLockViewController.h"
 #import "YWCDrawBoardController.h"
+#import "YWCClockViewController.h"
+#import "YWCHeartController.h"
+
+
+
 
 #import "YWCAnimationCell.h"
 
@@ -32,7 +37,7 @@ static NSString * const AnimationCellId = @"animation";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印,裁减,截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳",@"图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
+        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印,裁减,截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳,图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
     }
     return _titleArr;
 }
@@ -133,11 +138,17 @@ static NSString * const AnimationCellId = @"animation";
         YWCCutScreenController *cutScreen = [[YWCCutScreenController alloc]init];
         [self.navigationController pushViewController:cutScreen animated:YES];
     }else if (indexPath.row == 9) {
-        YWCClockViewController *clock = [[YWCClockViewController alloc]init];
-        [self.navigationController pushViewController:clock animated:YES];
+        YWCLockViewController *lock = [[YWCLockViewController alloc]init];
+        [self.navigationController pushViewController:lock animated:YES];
     }else if (indexPath.row == 10) {
         YWCDrawBoardController *drawBoard = [[YWCDrawBoardController alloc]init];
         [self.navigationController pushViewController:drawBoard animated:YES];
+    }else if (indexPath.row == 11) {
+        YWCClockViewController *clock = [[YWCClockViewController alloc]init];
+        [self.navigationController pushViewController:clock animated:YES];
+    }else if (indexPath.row == 12) {
+        YWCHeartController *heart = [[YWCHeartController alloc]init];
+        [self.navigationController pushViewController:heart animated:YES];
     } else{
         
         [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
