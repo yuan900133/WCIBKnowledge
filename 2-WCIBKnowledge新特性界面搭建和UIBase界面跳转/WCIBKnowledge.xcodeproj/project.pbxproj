@@ -86,6 +86,11 @@
 		5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5485AF5B1D0F8DFA00ACBC11 /* DrawView.m */; };
 		5491A40F1D12EAB40065236A /* YWCHeartController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A40D1D12EAB40065236A /* YWCHeartController.m */; };
 		5491A4101D12EAB40065236A /* YWCHeartController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A40E1D12EAB40065236A /* YWCHeartController.xib */; };
+		5491A4161D12EDF60065236A /* WheelBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A4121D12EDF60065236A /* WheelBtn.m */; };
+		5491A4171D12EDF60065236A /* WheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A4141D12EDF60065236A /* WheelView.m */; };
+		5491A4181D12EDF60065236A /* WheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A4151D12EDF60065236A /* WheelView.xib */; };
+		5491A41C1D12EE4E0065236A /* YWCWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */; };
+		5491A41D1D12EE4E0065236A /* YWCWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */; };
 		549604A81D0F90F200067469 /* YWCProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604A61D0F90F200067469 /* YWCProgressController.m */; };
 		549604A91D0F90F200067469 /* YWCProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549604A71D0F90F200067469 /* YWCProgressController.xib */; };
 		549604AC1D0F911600067469 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604AB1D0F911600067469 /* ProgressView.m */; };
@@ -528,6 +533,14 @@
 		5491A40C1D12EAB40065236A /* YWCHeartController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCHeartController.h; sourceTree = "<group>"; };
 		5491A40D1D12EAB40065236A /* YWCHeartController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCHeartController.m; sourceTree = "<group>"; };
 		5491A40E1D12EAB40065236A /* YWCHeartController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCHeartController.xib; sourceTree = "<group>"; };
+		5491A4111D12EDF60065236A /* WheelBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelBtn.h; sourceTree = "<group>"; };
+		5491A4121D12EDF60065236A /* WheelBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelBtn.m; sourceTree = "<group>"; };
+		5491A4131D12EDF60065236A /* WheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelView.h; sourceTree = "<group>"; };
+		5491A4141D12EDF60065236A /* WheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelView.m; sourceTree = "<group>"; };
+		5491A4151D12EDF60065236A /* WheelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheelView.xib; sourceTree = "<group>"; };
+		5491A4191D12EE4E0065236A /* YWCWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWheelViewController.h; sourceTree = "<group>"; };
+		5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWheelViewController.m; sourceTree = "<group>"; };
+		5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCWheelViewController.xib; sourceTree = "<group>"; };
 		549604A51D0F90F200067469 /* YWCProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCProgressController.h; sourceTree = "<group>"; };
 		549604A61D0F90F200067469 /* YWCProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCProgressController.m; sourceTree = "<group>"; };
 		549604A71D0F90F200067469 /* YWCProgressController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCProgressController.xib; sourceTree = "<group>"; };
@@ -1038,6 +1051,9 @@
 				5491A40C1D12EAB40065236A /* YWCHeartController.h */,
 				5491A40D1D12EAB40065236A /* YWCHeartController.m */,
 				5491A40E1D12EAB40065236A /* YWCHeartController.xib */,
+				5491A4191D12EE4E0065236A /* YWCWheelViewController.h */,
+				5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */,
+				5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1089,6 +1105,11 @@
 				5477B6041D106442004BFE73 /* ImageHandleView.m */,
 				5477B6051D106442004BFE73 /* MyBezierPath.h */,
 				5477B6061D106442004BFE73 /* MyBezierPath.m */,
+				5491A4111D12EDF60065236A /* WheelBtn.h */,
+				5491A4121D12EDF60065236A /* WheelBtn.m */,
+				5491A4131D12EDF60065236A /* WheelView.h */,
+				5491A4141D12EDF60065236A /* WheelView.m */,
+				5491A4151D12EDF60065236A /* WheelView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2049,6 +2070,7 @@
 				549604A91D0F90F200067469 /* YWCProgressController.xib in Resources */,
 				54EBE23E1D0A60A500A19887 /* xiaozhao2_27.png in Resources */,
 				54EBE2701D0A60A500A19887 /* xiaozhao3_5.png in Resources */,
+				5491A4181D12EDF60065236A /* WheelView.xib in Resources */,
 				54EBE22B1D0A60A500A19887 /* xiaozhao2_1.png in Resources */,
 				54EBE2131D0A60A500A19887 /* stand_7.png in Resources */,
 				54EBE2021D0A60A500A19887 /* run_1.png in Resources */,
@@ -2197,6 +2219,7 @@
 				54EBE18F1D0A60A400A19887 /* dazhao_31.png in Resources */,
 				54EBE20B1D0A60A500A19887 /* xiaozhao3.mp3 in Resources */,
 				54EBE1991D0A60A400A19887 /* dazhao_40.png in Resources */,
+				5491A41D1D12EE4E0065236A /* YWCWheelViewController.xib in Resources */,
 				54EBE2151D0A60A500A19887 /* stand_9.png in Resources */,
 				54EBE1C71D0A60A400A19887 /* dazhao_82.png in Resources */,
 				54EBE2D91D0A90BD00A19887 /* wine.plist in Resources */,
@@ -2276,6 +2299,8 @@
 				54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */,
 				54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */,
 				5477B5E91D1059C4004BFE73 /* YWCwipeViewController.m in Sources */,
+				5491A4161D12EDF60065236A /* WheelBtn.m in Sources */,
+				5491A41C1D12EE4E0065236A /* YWCWheelViewController.m in Sources */,
 				546CD1F61D0C4277001AB69E /* YWCCircleButton.m in Sources */,
 				5477B5D01D104D53004BFE73 /* PieView.m in Sources */,
 				5477B5EE1D105C09004BFE73 /* YWCCutScreenController.m in Sources */,
@@ -2311,6 +2336,7 @@
 				5477B5FA1D105FC0004BFE73 /* VCView.m in Sources */,
 				54EBE2C91D0A769100A19887 /* YWCProductView.m in Sources */,
 				5491A40F1D12EAB40065236A /* YWCHeartController.m in Sources */,
+				5491A4171D12EDF60065236A /* WheelView.m in Sources */,
 				546CD1E91D0C3AFC001AB69E /* MJPropertyType.m in Sources */,
 				546CD1EB1D0C3AFC001AB69E /* NSObject+MJCoding.m in Sources */,
 				54EBE2E41D0A9A0000A19887 /* YWCCar.m in Sources */,

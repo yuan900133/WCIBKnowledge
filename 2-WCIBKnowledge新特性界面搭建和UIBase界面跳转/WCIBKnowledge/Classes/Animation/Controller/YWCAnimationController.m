@@ -20,7 +20,7 @@
 #import "YWCDrawBoardController.h"
 #import "YWCClockViewController.h"
 #import "YWCHeartController.h"
-
+#import "YWCWheelViewController.h"
 
 
 
@@ -149,6 +149,9 @@ static NSString * const AnimationCellId = @"animation";
     }else if (indexPath.row == 12) {
         YWCHeartController *heart = [[YWCHeartController alloc]init];
         [self.navigationController pushViewController:heart animated:YES];
+    }else if (indexPath.row == 13) {
+        YWCWheelViewController *wheel = [[YWCWheelViewController alloc]init];
+        [self.navigationController pushViewController:wheel animated:YES];
     } else{
         
         [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
