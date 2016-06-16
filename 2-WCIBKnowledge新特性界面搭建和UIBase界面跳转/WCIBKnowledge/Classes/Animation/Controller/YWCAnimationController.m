@@ -21,6 +21,7 @@
 #import "YWCClockViewController.h"
 #import "YWCHeartController.h"
 #import "YWCWheelViewController.h"
+#import "YWCFoldViewController.h"
 
 
 
@@ -37,7 +38,7 @@ static NSString * const AnimationCellId = @"animation";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印,裁减,截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳,图片抖动",@"转盘",@"图片折叠",@"音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
+        _titleArr = @[@"抽屉效果",@"划线画形状",@"下载进度",@"画饼",@"画图",@"雪花",@"图片水印,裁减,截屏",@"擦除",@"图片截屏",@"手势解锁",@"画板",@"时钟",@"心跳,图片抖动",@"转盘",@"图片折叠,音量震动条",@"倒影",@"粒子效果",@"QQ粘性布局"];
     }
     return _titleArr;
 }
@@ -152,7 +153,11 @@ static NSString * const AnimationCellId = @"animation";
     }else if (indexPath.row == 13) {
         YWCWheelViewController *wheel = [[YWCWheelViewController alloc]init];
         [self.navigationController pushViewController:wheel animated:YES];
-    } else{
+    }
+    else if (indexPath.row == 14) {
+        YWCFoldViewController *fold = [[YWCFoldViewController alloc]init];
+        [self.navigationController pushViewController:fold animated:YES];
+    }else{
         
         [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
     }

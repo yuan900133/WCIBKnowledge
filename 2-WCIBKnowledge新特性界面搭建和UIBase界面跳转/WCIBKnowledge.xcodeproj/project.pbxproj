@@ -91,6 +91,8 @@
 		5491A4181D12EDF60065236A /* WheelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A4151D12EDF60065236A /* WheelView.xib */; };
 		5491A41C1D12EE4E0065236A /* YWCWheelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */; };
 		5491A41D1D12EE4E0065236A /* YWCWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */; };
+		5491A4211D12F0560065236A /* YWCFoldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491A41F1D12F0560065236A /* YWCFoldViewController.m */; };
+		5491A4221D12F0560065236A /* YWCFoldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5491A4201D12F0560065236A /* YWCFoldViewController.xib */; };
 		549604A81D0F90F200067469 /* YWCProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604A61D0F90F200067469 /* YWCProgressController.m */; };
 		549604A91D0F90F200067469 /* YWCProgressController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 549604A71D0F90F200067469 /* YWCProgressController.xib */; };
 		549604AC1D0F911600067469 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 549604AB1D0F911600067469 /* ProgressView.m */; };
@@ -541,6 +543,9 @@
 		5491A4191D12EE4E0065236A /* YWCWheelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWheelViewController.h; sourceTree = "<group>"; };
 		5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWheelViewController.m; sourceTree = "<group>"; };
 		5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCWheelViewController.xib; sourceTree = "<group>"; };
+		5491A41E1D12F0560065236A /* YWCFoldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCFoldViewController.h; sourceTree = "<group>"; };
+		5491A41F1D12F0560065236A /* YWCFoldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCFoldViewController.m; sourceTree = "<group>"; };
+		5491A4201D12F0560065236A /* YWCFoldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCFoldViewController.xib; sourceTree = "<group>"; };
 		549604A51D0F90F200067469 /* YWCProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCProgressController.h; sourceTree = "<group>"; };
 		549604A61D0F90F200067469 /* YWCProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCProgressController.m; sourceTree = "<group>"; };
 		549604A71D0F90F200067469 /* YWCProgressController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCProgressController.xib; sourceTree = "<group>"; };
@@ -1054,6 +1059,9 @@
 				5491A4191D12EE4E0065236A /* YWCWheelViewController.h */,
 				5491A41A1D12EE4E0065236A /* YWCWheelViewController.m */,
 				5491A41B1D12EE4E0065236A /* YWCWheelViewController.xib */,
+				5491A41E1D12F0560065236A /* YWCFoldViewController.h */,
+				5491A41F1D12F0560065236A /* YWCFoldViewController.m */,
+				5491A4201D12F0560065236A /* YWCFoldViewController.xib */,
 				54A8D8F21D0DBC210080B738 /* Model */,
 				54A8D8F41D0DBC210080B738 /* View */,
 				54A8D8F31D0DBC210080B738 /* resouce */,
@@ -1965,6 +1973,7 @@
 				54EBE1EB1D0A60A400A19887 /* install_b_15.png in Resources */,
 				546CD2151D0C504B001AB69E /* flags.plist in Resources */,
 				54EBE2601D0A60A500A19887 /* xiaozhao3_26.png in Resources */,
+				5491A4221D12F0560065236A /* YWCFoldViewController.xib in Resources */,
 				54EBE1BA1D0A60A400A19887 /* dazhao_70.png in Resources */,
 				54EBE2121D0A60A500A19887 /* stand_6.png in Resources */,
 				54EE2FAA1D0C5F2800E219C5 /* MBProgressHUD.bundle in Resources */,
@@ -2320,6 +2329,7 @@
 				5477B5E01D10527E004BFE73 /* YWCSnow.m in Sources */,
 				546CD1FF1D0C4373001AB69E /* YWCShopWineController.m in Sources */,
 				54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */,
+				5491A4211D12F0560065236A /* YWCFoldViewController.m in Sources */,
 				546CD1E61D0C3AFC001AB69E /* MJFoundation.m in Sources */,
 				54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */,
 				5477B5CC1D104D14004BFE73 /* YWCCookieController.m in Sources */,
