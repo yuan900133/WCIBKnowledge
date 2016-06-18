@@ -2,12 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9531"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCClockViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCPictureController">
             <connections>
-                <outlet property="colockView" destination="VQj-Dg-l6j" id="fY8-op-Zlu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,15 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="钟表" translatesAutoresizingMaskIntoConstraints="NO" id="VQj-Dg-l6j">
-                    <rect key="frame" x="83" y="195" width="150" height="150"/>
-                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRB-0g-WNh" customClass="YWCPictureView">
+                    <rect key="frame" x="38" y="184" width="300" height="300"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="E8Q-3d-Pwl"/>
+                        <constraint firstAttribute="width" constant="300" id="HFn-UP-g6P"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iRB-0g-WNh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="EaY-1h-RkM"/>
+                <constraint firstItem="iRB-0g-WNh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xFH-ux-A9E"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
-    <resources>
-        <image name="钟表" width="200" height="200"/>
-    </resources>
 </document>

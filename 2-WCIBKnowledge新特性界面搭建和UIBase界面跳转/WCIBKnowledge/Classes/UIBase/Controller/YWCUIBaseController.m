@@ -66,7 +66,6 @@ static NSString * const UIBaseCellId = @"uiBase";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-     [self setupAllChildVc];
     
     //    初始化collectionView
     [self setUp];
@@ -74,17 +73,7 @@ static NSString * const UIBaseCellId = @"uiBase";
    
     
 }
-- (void)setupAllChildVc
-{
-    [self addChildViewController:[[YWCGameController alloc] init]];
-    [self addChildViewController:[[YWCShopViewController alloc] init]];
-    [self addChildViewController:[[YWCWineViewController alloc] init]];
-    [self addChildViewController:[[YWCCarViewController alloc] init]];
-    [self addChildViewController:[[YWCRefreshViewController alloc] init]];
-    [self addChildViewController:[[YWCShopWineController alloc] init]];
-    
-    
-}
+
 
 - (void)setUp
 {
@@ -128,9 +117,32 @@ static NSString * const UIBaseCellId = @"uiBase";
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-   
-
-    if (indexPath.row == 6) {
+    
+    if (indexPath.row == 0) {
+        YWCGameController *game = [[YWCGameController alloc] init];
+        [self.navigationController pushViewController:game animated:YES];
+        
+    }else if (indexPath.row == 1) {
+        YWCShopViewController *shop = [[YWCShopViewController alloc] init];
+        [self.navigationController pushViewController:shop animated:YES];
+        
+    }else if (indexPath.row == 2) {
+        YWCWineViewController *wine = [[YWCWineViewController alloc] init];
+        [self.navigationController pushViewController:wine animated:YES];
+        
+    }else if (indexPath.row == 3) {
+        YWCCarViewController *car = [[YWCCarViewController alloc] init];
+        [self.navigationController pushViewController:car animated:YES];
+        
+    }else if (indexPath.row == 4) {
+        YWCRefreshViewController *refresh = [[YWCRefreshViewController alloc] init];
+        [self.navigationController pushViewController:refresh animated:YES];
+        
+    }else if (indexPath.row == 5) {
+        YWCShopWineController *shopWine = [[YWCShopWineController alloc] init];
+        [self.navigationController pushViewController:shopWine animated:YES];
+        
+    }else if (indexPath.row == 6) {
         YWCRegisterController *Register = [[YWCRegisterController alloc] init];
         [self.navigationController pushViewController:Register animated:YES];
         
@@ -145,9 +157,6 @@ static NSString * const UIBaseCellId = @"uiBase";
         YWCWebViewController *web = [[YWCWebViewController alloc] init];
         [self.navigationController pushViewController:web animated:YES];
         
-    }else{
-    
-        [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
     }
     
     

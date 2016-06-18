@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCProgressController">
+            <connections>
+                <outlet property="label" destination="vpc-XS-Gww" id="EOv-eM-xy7"/>
+                <outlet property="progressV" destination="pLi-a3-UZP" id="VWW-B5-lRv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLi-a3-UZP" customClass="ProgressView">
+                    <rect key="frame" x="63" y="209" width="250" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpc-XS-Gww">
+                            <rect key="frame" x="106" y="114" width="37" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="35l-Cr-IfB"/>
+                        <constraint firstAttribute="width" constant="250" id="81u-25-CZa"/>
+                        <constraint firstItem="vpc-XS-Gww" firstAttribute="centerY" secondItem="pLi-a3-UZP" secondAttribute="centerY" id="Ygu-q9-Lao"/>
+                        <constraint firstItem="vpc-XS-Gww" firstAttribute="centerX" secondItem="pLi-a3-UZP" secondAttribute="centerX" id="cwF-C9-GWf"/>
+                    </constraints>
+                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="HSY-Nx-oaU">
+                    <rect key="frame" x="39" y="481" width="298" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="294" id="slI-ky-W8j"/>
+                    </constraints>
+                    <connections>
+                        <action selector="slider:" destination="-1" eventType="valueChanged" id="Hqi-Id-iUk"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pLi-a3-UZP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="1Ws-ZF-cvk"/>
+                <constraint firstItem="HSY-Nx-oaU" firstAttribute="centerX" secondItem="pLi-a3-UZP" secondAttribute="centerX" id="1hO-Jf-Y90"/>
+                <constraint firstItem="pLi-a3-UZP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="R6F-OA-fAF"/>
+                <constraint firstItem="HSY-Nx-oaU" firstAttribute="top" secondItem="pLi-a3-UZP" secondAttribute="bottom" constant="22" id="gHg-J9-NXu"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

@@ -7,8 +7,9 @@
 //
 
 #import "YWCAnimationController.h"
-#import "YWCDragSubController.h"
 #import "YWCDrawViewController.h"
+#import "YWCDragSubController.h"
+#import "YWCDrawBoardController.h"
 #import "YWCProgressController.h"
 #import "YWCCookieController.h"
 #import "YWCPictureController.h"
@@ -72,7 +73,7 @@ static NSString * const AnimationCellId = @"animation";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupAllChildVc];
+    
     
     //添加内部的子控件
         [self setUp];
@@ -87,16 +88,7 @@ static NSString * const AnimationCellId = @"animation";
 }
 
 
-- (void)setupAllChildVc
-{
-    [self addChildViewController:[[YWCDragSubController alloc]init]];
-    [self addChildViewController:[[YWCDrawViewController alloc]init]];
-    [self addChildViewController:[[YWCProgressController alloc]init]];
-    [self addChildViewController:[[YWCCookieController alloc]init]];
-    [self addChildViewController:[[YWCPictureController alloc]init]];
-    [self addChildViewController:[[YWCSnowViewController alloc]init]];
-    
-}
+
 
 
 
@@ -129,7 +121,27 @@ static NSString * const AnimationCellId = @"animation";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
-        if (indexPath.row == 6) {
+    
+    if (indexPath.row == 0) {
+        YWCDragSubController *dragSub = [[YWCDragSubController alloc]init];
+        [self.navigationController pushViewController:dragSub animated:YES];
+    }else  if (indexPath.row == 1) {
+        YWCDrawViewController *draw = [[YWCDrawViewController alloc]init];
+        [self.navigationController pushViewController:draw animated:YES];
+    }else  if (indexPath.row == 2) {
+        YWCProgressController *progress = [[YWCProgressController alloc]init];
+        [self.navigationController pushViewController:progress animated:YES];
+    }else  if (indexPath.row == 3) {
+        YWCCookieController *cookie = [[YWCCookieController alloc]init];
+        [self.navigationController pushViewController:cookie animated:YES];
+    }else  if (indexPath.row == 4) {
+        YWCPictureController *picture = [[YWCPictureController alloc]init];
+        [self.navigationController pushViewController:picture animated:YES];
+    }else  if (indexPath.row == 5) {
+        YWCSnowViewController *snow = [[YWCSnowViewController alloc]init];
+        [self.navigationController pushViewController:snow animated:YES];
+        
+    }else  if (indexPath.row == 6) {
         YWCWatermarkController *waterMark = [[YWCWatermarkController alloc]init];
         [self.navigationController pushViewController:waterMark animated:YES];
     }else if (indexPath.row == 7) {
@@ -162,9 +174,6 @@ static NSString * const AnimationCellId = @"animation";
     }else if (indexPath.row == 16) {
         YWCQQViewController *qq = [[YWCQQViewController alloc]init];
         [self.navigationController pushViewController:qq animated:YES];
-    }else{
-        
-        [self.navigationController pushViewController:self.childViewControllers[indexPath.row] animated:YES];
     }
 }
 @end

@@ -54,4 +54,11 @@
     return NO;
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.flagField resignFirstResponder];
+    [self.birthdayField resignFirstResponder];
+    [self.cityField resignFirstResponder];
+    
+}
 @end

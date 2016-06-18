@@ -15,15 +15,15 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-ou-1UQ">
-                    <rect key="frame" x="116" y="145" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-ou-1UQ">
+                    <rect key="frame" x="100" y="50" width="30" height="30"/>
                     <state key="normal" title="开始"/>
                     <connections>
                         <action selector="start:" destination="-1" eventType="touchUpInside" id="def-mK-aEZ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-Ag-Mbb">
-                    <rect key="frame" x="182" y="145" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hc-Ag-Mbb">
+                    <rect key="frame" x="150" y="50" width="30" height="30"/>
                     <state key="normal" title="停止"/>
                     <connections>
                         <action selector="stop:" destination="-1" eventType="touchUpInside" id="137-Cq-AiE"/>
@@ -31,6 +31,12 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0hc-Ag-Mbb" firstAttribute="leading" secondItem="gOc-ou-1UQ" secondAttribute="trailing" constant="20" id="I0O-Ab-VdO"/>
+                <constraint firstItem="gOc-ou-1UQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="QAM-vo-HNR"/>
+                <constraint firstItem="gOc-ou-1UQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="bwf-Ii-fFb"/>
+                <constraint firstItem="0hc-Ag-Mbb" firstAttribute="centerY" secondItem="gOc-ou-1UQ" secondAttribute="centerY" id="jvk-HE-Wd5"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

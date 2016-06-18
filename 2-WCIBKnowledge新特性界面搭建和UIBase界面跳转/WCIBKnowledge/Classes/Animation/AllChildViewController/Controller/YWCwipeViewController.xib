@@ -16,11 +16,11 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2B" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-sR-s2L">
-                    <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2B" translatesAutoresizingMaskIntoConstraints="NO" id="L2t-sR-s2L">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2A" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-Y9-eUc">
-                    <rect key="frame" x="0.0" y="10" width="375" height="647"/>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2A" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-Y9-eUc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <connections>
                         <outletCollection property="gestureRecognizers" destination="xma-5v-gNf" appends="YES" id="UCm-DS-TSs"/>
                     </connections>
@@ -28,6 +28,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8AR-Y9-eUc" secondAttribute="bottom" id="3S3-YN-Uo4"/>
+                <constraint firstAttribute="trailing" secondItem="L2t-sR-s2L" secondAttribute="trailing" id="4P9-KK-ikN"/>
+                <constraint firstItem="L2t-sR-s2L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7oi-2N-Oq1"/>
+                <constraint firstAttribute="trailing" secondItem="8AR-Y9-eUc" secondAttribute="trailing" id="GS4-JS-C83"/>
+                <constraint firstItem="8AR-Y9-eUc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KCQ-te-C0V"/>
+                <constraint firstAttribute="bottom" secondItem="L2t-sR-s2L" secondAttribute="bottom" id="hck-n7-V8i"/>
+                <constraint firstItem="L2t-sR-s2L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rJN-lq-QZH"/>
+                <constraint firstItem="8AR-Y9-eUc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vF8-y5-89G"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="xma-5v-gNf" appends="YES" id="LKv-hR-B86"/>

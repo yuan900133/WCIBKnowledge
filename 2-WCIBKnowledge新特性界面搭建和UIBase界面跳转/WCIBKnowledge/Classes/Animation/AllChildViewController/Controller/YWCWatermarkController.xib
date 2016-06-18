@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWCWatermarkController">
+            <connections>
+                <outlet property="imageV" destination="gdV-Gv-rEa" id="f7N-UR-gRA"/>
+                <outlet property="imageV1" destination="hd9-rE-emJ" id="CbB-Rb-mO7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdV-Gv-rEa">
+                    <rect key="frame" x="63" y="13" width="250" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="C5S-BJ-KZW"/>
+                        <constraint firstAttribute="width" constant="250" id="SGW-5F-dBs"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hd9-rE-emJ">
+                    <rect key="frame" x="96" y="302" width="184" height="184"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="184" id="ua9-iv-R6y"/>
+                        <constraint firstAttribute="height" constant="184" id="wef-7a-CAl"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gdV-Gv-rEa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="Lio-sa-Xx2"/>
+                <constraint firstItem="gdV-Gv-rEa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VIU-xq-IuX"/>
+                <constraint firstItem="hd9-rE-emJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="a8D-t6-qi0"/>
+                <constraint firstItem="hd9-rE-emJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="60" id="aUQ-ZQ-s69"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="166.5" y="231.5"/>
+        </view>
+    </objects>
+</document>

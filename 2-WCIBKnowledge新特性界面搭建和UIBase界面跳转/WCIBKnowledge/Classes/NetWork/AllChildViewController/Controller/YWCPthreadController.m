@@ -1,25 +1,23 @@
 
-
-
 //
-//  YWCQQViewController.m
+//  YWCPthreadController.m
 //  WCIBKnowledge
 //
 //  Created by 袁武昌 on 16/6/16.
 //  Copyright © 2016年 yuan.com. All rights reserved.
 //
 
-#import "YWCQQViewController.h"
+#import "YWCPthreadController.h"
 
-@interface YWCQQViewController ()
+@interface YWCPthreadController ()
 
 @end
 
-@implementation YWCQQViewController
+@implementation YWCPthreadController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//   self.view.translatesAutoresizingMaskIntoConstraints = NO;
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {

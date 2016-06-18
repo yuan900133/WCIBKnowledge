@@ -7,6 +7,13 @@
 //
 
 #import "YWCNetWorkController.h"
+
+
+
+
+
+
+
 #import "YWCNetWorkCell.h"
 @interface YWCNetWorkController ()
 @property(nonatomic,strong)NSArray *titleArr;

@@ -19,19 +19,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="知道错了" translatesAutoresizingMaskIntoConstraints="NO" id="pUv-f1-6Kd" userLabel="下部图片">
-                    <rect key="frame" x="63" y="80" width="200" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="知道错了" translatesAutoresizingMaskIntoConstraints="NO" id="pUv-f1-6Kd" userLabel="下部图片">
+                    <rect key="frame" x="88" y="80" width="200" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Q8a-S2-53T"/>
+                        <constraint firstAttribute="width" constant="200" id="buA-zC-2Iw"/>
+                    </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="知道错了" translatesAutoresizingMaskIntoConstraints="NO" id="rGL-4L-TUg" userLabel="上部图片">
-                    <rect key="frame" x="63" y="80" width="200" height="100"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="知道错了" translatesAutoresizingMaskIntoConstraints="NO" id="rGL-4L-TUg" userLabel="上部图片">
+                    <rect key="frame" x="88" y="80" width="200" height="100"/>
                 </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-Iw-mP0">
-                    <rect key="frame" x="63" y="30" width="200" height="200"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebn-Iw-mP0">
+                    <rect key="frame" x="88" y="30" width="200" height="200"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2lT-og-HBK"/>
+                        <constraint firstAttribute="height" constant="200" id="whR-vG-Ilg"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-0I-4Qt">
                     <rect key="frame" x="37" y="287" width="300" height="300"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="BR9-hu-hY2"/>
                         <constraint firstAttribute="width" constant="300" id="Wkh-fr-hLF"/>
@@ -40,8 +48,16 @@
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="ebn-Iw-mP0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="4tX-IX-rJj"/>
+                <constraint firstItem="pUv-f1-6Kd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6M7-o8-DJH"/>
+                <constraint firstItem="rGL-4L-TUg" firstAttribute="width" secondItem="pUv-f1-6Kd" secondAttribute="width" id="8u2-cx-PZI"/>
+                <constraint firstItem="rGL-4L-TUg" firstAttribute="height" secondItem="pUv-f1-6Kd" secondAttribute="height" id="Bc4-TY-JKg"/>
+                <constraint firstItem="rGL-4L-TUg" firstAttribute="top" secondItem="pUv-f1-6Kd" secondAttribute="top" id="IRj-6h-9FD"/>
                 <constraint firstItem="SsY-0I-4Qt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LCW-th-Pnd"/>
+                <constraint firstItem="ebn-Iw-mP0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TWD-se-zTl"/>
                 <constraint firstAttribute="bottom" secondItem="SsY-0I-4Qt" secondAttribute="bottom" constant="80" id="cem-3S-QAc"/>
+                <constraint firstItem="rGL-4L-TUg" firstAttribute="centerX" secondItem="pUv-f1-6Kd" secondAttribute="centerX" id="exe-pf-xf4"/>
+                <constraint firstItem="pUv-f1-6Kd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="wHc-0H-zV2"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>

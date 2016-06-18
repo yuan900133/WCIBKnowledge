@@ -53,7 +53,7 @@
                                 <action selector="add:" destination="-1" eventType="touchUpInside" id="zhm-31-dau"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-kL-XWB">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-kL-XWB">
                             <rect key="frame" x="285" y="7" width="30" height="30"/>
                             <state key="normal" title="更新"/>
                             <connections>
@@ -66,7 +66,9 @@
                         <constraint firstAttribute="height" constant="44" id="9JO-h8-h6a"/>
                         <constraint firstAttribute="trailing" secondItem="5ls-O9-3SF" secondAttribute="trailing" constant="20" id="Mus-ey-vIw"/>
                         <constraint firstItem="CFr-pK-ChR" firstAttribute="centerY" secondItem="LZi-uB-XYi" secondAttribute="centerY" id="Ok6-Ip-5f1"/>
+                        <constraint firstItem="ZaH-kL-XWB" firstAttribute="centerY" secondItem="LZi-uB-XYi" secondAttribute="centerY" id="PXQ-wu-gnL"/>
                         <constraint firstItem="CFr-pK-ChR" firstAttribute="leading" secondItem="LZi-uB-XYi" secondAttribute="leading" constant="20" id="aGK-PH-YZW"/>
+                        <constraint firstItem="ZaH-kL-XWB" firstAttribute="centerX" secondItem="LZi-uB-XYi" secondAttribute="centerX" id="bpA-6z-FQY"/>
                         <constraint firstItem="5ls-O9-3SF" firstAttribute="centerY" secondItem="LZi-uB-XYi" secondAttribute="centerY" id="eP4-yv-re2"/>
                     </constraints>
                 </view>

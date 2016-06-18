@@ -16,39 +16,55 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stand_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="G2V-RL-Jgd">
-                    <rect key="frame" x="43" y="178" width="289" height="260"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXU-eZ-raB">
-                    <rect key="frame" x="142" y="120" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXU-eZ-raB">
+                    <rect key="frame" x="111" y="120" width="30" height="30"/>
                     <state key="normal" title="小招"/>
                     <connections>
                         <action selector="smallZhaoBtnClick:" destination="-1" eventType="touchUpInside" id="2Su-iR-ODy"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2n-7m-neK">
-                    <rect key="frame" x="225" y="120" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2n-7m-neK">
+                    <rect key="frame" x="177" y="120" width="30" height="30"/>
                     <state key="normal" title="大招"/>
                     <connections>
                         <action selector="bigZhaoBtnClick:" destination="-1" eventType="touchUpInside" id="v0R-G0-2Ux"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kN-si-KnZ">
-                    <rect key="frame" x="59" y="120" width="46" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kN-si-KnZ">
+                    <rect key="frame" x="43" y="120" width="30" height="30"/>
                     <state key="normal" title="站立"/>
                     <connections>
                         <action selector="standBtnClick:" destination="-1" eventType="touchUpInside" id="WwL-ff-UD8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRc-Qo-oBZ">
-                    <rect key="frame" x="43" y="40" width="101" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRc-Qo-oBZ">
+                    <rect key="frame" x="43" y="40" width="71" height="30"/>
                     <state key="normal" title="gameOver"/>
                     <connections>
                         <action selector="gameOver:" destination="-1" eventType="touchUpInside" id="jfj-nd-KdG"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stand_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="G2V-RL-Jgd">
+                    <rect key="frame" x="38" y="184" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="2y5-9p-x6g"/>
+                        <constraint firstAttribute="height" constant="300" id="ApB-j8-7Xt"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zXU-eZ-raB" firstAttribute="centerY" secondItem="1kN-si-KnZ" secondAttribute="centerY" id="6EQ-vj-Jco"/>
+                <constraint firstItem="G2V-RL-Jgd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FP0-ne-C9j"/>
+                <constraint firstItem="1kN-si-KnZ" firstAttribute="top" secondItem="tRc-Qo-oBZ" secondAttribute="bottom" constant="50" id="Gqm-GA-7ET"/>
+                <constraint firstItem="zXU-eZ-raB" firstAttribute="leading" secondItem="1kN-si-KnZ" secondAttribute="trailing" constant="38" id="QcO-le-iT7"/>
+                <constraint firstItem="tRc-Qo-oBZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="SlB-ad-aBd"/>
+                <constraint firstItem="G2V-RL-Jgd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XVI-JV-vL5"/>
+                <constraint firstItem="1kN-si-KnZ" firstAttribute="leading" secondItem="tRc-Qo-oBZ" secondAttribute="leading" id="ZK1-2y-Lvg"/>
+                <constraint firstItem="tRc-Qo-oBZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="xRI-VU-u5a"/>
+                <constraint firstItem="n2n-7m-neK" firstAttribute="centerY" secondItem="zXU-eZ-raB" secondAttribute="centerY" id="xXk-6U-npl"/>
+                <constraint firstItem="n2n-7m-neK" firstAttribute="leading" secondItem="zXU-eZ-raB" secondAttribute="trailing" constant="36" id="z5k-7N-OKI"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="227.5" y="256.5"/>
         </view>
