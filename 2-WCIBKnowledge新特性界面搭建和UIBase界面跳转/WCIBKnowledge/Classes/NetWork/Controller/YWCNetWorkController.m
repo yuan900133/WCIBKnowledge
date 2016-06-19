@@ -7,8 +7,8 @@
 //
 
 #import "YWCNetWorkController.h"
-
-
+#import "YWCDownController.h"
+#import "YWCVideoController.h"
 
 
 
@@ -26,7 +26,7 @@ static NSString * const NetWorkCellId = @"netWork";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"Pthread",@"NSThread线程通信",@"GCD线程间通信",@"单例模式通用",@"NSOperation线程间通信",@"多图下载",@"多图下载SD",@"GCD中的定时器",@"NSURLConnection发送GET请求",@"NSURLConnection发送POST请求",@"登录页面",@"JSON的解析",@"解析XML",@"文件下载",@"断点下载",@"输出流",@"文件上传",@"获得MIMEType",@"文件压缩和解压缩",@"NSURLSession的发送请求",@"NSURLSession下载文件",@"AFN",@"网络状态监测",@"MD5",@"https请求",@"UIWebView",@"OC和JS代码的交互"];
+        _titleArr = @[@"多图下载,多图下载SD",@"文件下载"];
     }
     return _titleArr;
 }
@@ -98,5 +98,16 @@ static NSString * const NetWorkCellId = @"netWork";
     cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        YWCDownController *down = [[YWCDownController alloc]init];
+        [self.navigationController pushViewController:down animated:YES];
+    }else if(indexPath.row == 1) {
+        YWCVideoController *video = [[YWCVideoController alloc]init];
+        [self.navigationController pushViewController:video animated:YES];
+    }
 }
 @end

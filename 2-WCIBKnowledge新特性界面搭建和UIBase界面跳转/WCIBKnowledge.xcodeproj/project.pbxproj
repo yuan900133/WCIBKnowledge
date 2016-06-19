@@ -7,20 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53EFBDAD118B995508A0BEDC /* libPods-WCIBKnowledge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E47F06E772692FC785122E49 /* libPods-WCIBKnowledge.a */; };
 		546CD1C61D0C3A6B001AB69E /* YWCRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1C41D0C3A6B001AB69E /* YWCRefreshViewController.m */; };
 		546CD1C71D0C3A6B001AB69E /* YWCRefreshViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CD1C51D0C3A6B001AB69E /* YWCRefreshViewController.xib */; };
 		546CD1CA1D0C3AAA001AB69E /* YWCWineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1C91D0C3AAA001AB69E /* YWCWineCell.m */; };
-		546CD1E41D0C3AFC001AB69E /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1CE1D0C3AFC001AB69E /* MJDictionaryCache.m */; };
-		546CD1E51D0C3AFC001AB69E /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1D11D0C3AFC001AB69E /* MJExtensionConst.m */; };
-		546CD1E61D0C3AFC001AB69E /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1D31D0C3AFC001AB69E /* MJFoundation.m */; };
-		546CD1E71D0C3AFC001AB69E /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1D51D0C3AFC001AB69E /* MJProperty.m */; };
-		546CD1E81D0C3AFC001AB69E /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1D71D0C3AFC001AB69E /* MJPropertyKey.m */; };
-		546CD1E91D0C3AFC001AB69E /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1D91D0C3AFC001AB69E /* MJPropertyType.m */; };
-		546CD1EA1D0C3AFC001AB69E /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1DB1D0C3AFC001AB69E /* NSObject+MJClass.m */; };
-		546CD1EB1D0C3AFC001AB69E /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1DD1D0C3AFC001AB69E /* NSObject+MJCoding.m */; };
-		546CD1EC1D0C3AFC001AB69E /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1DF1D0C3AFC001AB69E /* NSObject+MJKeyValue.m */; };
-		546CD1ED1D0C3AFC001AB69E /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1E11D0C3AFC001AB69E /* NSObject+MJProperty.m */; };
-		546CD1EE1D0C3AFC001AB69E /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1E31D0C3AFC001AB69E /* NSString+MJExtension.m */; };
 		546CD1F61D0C4277001AB69E /* YWCCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1F51D0C4277001AB69E /* YWCCircleButton.m */; };
 		546CD1FF1D0C4373001AB69E /* YWCShopWineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546CD1FD1D0C4373001AB69E /* YWCShopWineController.m */; };
 		546CD2001D0C4373001AB69E /* YWCShopWineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 546CD1FE1D0C4373001AB69E /* YWCShopWineController.xib */; };
@@ -92,6 +82,11 @@
 		54E0D9BF1D04217C0085E19D /* YWCItemImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9BE1D04217C0085E19D /* YWCItemImage.m */; };
 		54E0D9C21D0427D40085E19D /* UIColor+YWCHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */; };
 		54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */; };
+		54E3B0A31D16D21B005E5479 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54E3B0A01D16D21B005E5479 /* apps.plist */; };
+		54E3B0A41D16D21B005E5479 /* YWCApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E3B0A21D16D21B005E5479 /* YWCApp.m */; };
+		54E3B0AA1D16D2D8005E5479 /* YWCDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E3B0A91D16D2D8005E5479 /* YWCDownController.m */; };
+		54E3B0AD1D16D7EB005E5479 /* YWCVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E3B0AC1D16D7EB005E5479 /* YWCVideoController.m */; };
+		54E3B0B01D16D804005E5479 /* YWCVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E3B0AF1D16D804005E5479 /* YWCVideo.m */; };
 		54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E433651D0448330023A2A9 /* YWCSaveTool.m */; };
 		54E433691D0448330023A2A9 /* YWCRootTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E433671D0448330023A2A9 /* YWCRootTool.m */; };
 		54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E4336B1D0448600023A2A9 /* YWCNewFCollectionViewController.m */; };
@@ -374,9 +369,6 @@
 		54EC58811D0C6590005676F2 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EC587C1D0C6590005676F2 /* LoginViewController.storyboard */; };
 		54EC58851D0C67FD005676F2 /* YWCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EC58831D0C67FD005676F2 /* YWCWebViewController.m */; };
 		54EC58861D0C67FD005676F2 /* YWCWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54EC58841D0C67FD005676F2 /* YWCWebViewController.xib */; };
-		54EE2FA91D0C5F2800E219C5 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE2FA51D0C5F2800E219C5 /* MBProgressHUD+XMG.m */; };
-		54EE2FAA1D0C5F2800E219C5 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 54EE2FA61D0C5F2800E219C5 /* MBProgressHUD.bundle */; };
-		54EE2FAB1D0C5F2800E219C5 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 54EE2FA81D0C5F2800E219C5 /* MBProgressHUD.m */; };
 		54F610141D12FD2C00CC0975 /* YWCClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F60FE11D12FD2C00CC0975 /* YWCClockViewController.m */; };
 		54F610151D12FD2C00CC0975 /* YWCClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F60FE21D12FD2C00CC0975 /* YWCClockViewController.xib */; };
 		54F610161D12FD2C00CC0975 /* YWCCookieController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F60FE41D12FD2C00CC0975 /* YWCCookieController.m */; };
@@ -411,7 +403,6 @@
 		54F610331D12FD2C00CC0975 /* YWCWheelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F610101D12FD2C00CC0975 /* YWCWheelViewController.xib */; };
 		54F610341D12FD2C00CC0975 /* YWCwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F610121D12FD2C00CC0975 /* YWCwipeViewController.m */; };
 		54F610351D12FD2C00CC0975 /* YWCwipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54F610131D12FD2C00CC0975 /* YWCwipeViewController.xib */; };
-		54F6103D1D12FDF200CC0975 /* YWCPthreadController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F6103C1D12FDF200CC0975 /* YWCPthreadController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -420,29 +411,6 @@
 		546CD1C51D0C3A6B001AB69E /* YWCRefreshViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCRefreshViewController.xib; sourceTree = "<group>"; };
 		546CD1C81D0C3AAA001AB69E /* YWCWineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWineCell.h; sourceTree = "<group>"; };
 		546CD1C91D0C3AAA001AB69E /* YWCWineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWineCell.m; sourceTree = "<group>"; };
-		546CD1CD1D0C3AFC001AB69E /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
-		546CD1CE1D0C3AFC001AB69E /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
-		546CD1CF1D0C3AFC001AB69E /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
-		546CD1D01D0C3AFC001AB69E /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
-		546CD1D11D0C3AFC001AB69E /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
-		546CD1D21D0C3AFC001AB69E /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
-		546CD1D31D0C3AFC001AB69E /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
-		546CD1D41D0C3AFC001AB69E /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
-		546CD1D51D0C3AFC001AB69E /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
-		546CD1D61D0C3AFC001AB69E /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
-		546CD1D71D0C3AFC001AB69E /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
-		546CD1D81D0C3AFC001AB69E /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
-		546CD1D91D0C3AFC001AB69E /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
-		546CD1DA1D0C3AFC001AB69E /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
-		546CD1DB1D0C3AFC001AB69E /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
-		546CD1DC1D0C3AFC001AB69E /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
-		546CD1DD1D0C3AFC001AB69E /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
-		546CD1DE1D0C3AFC001AB69E /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
-		546CD1DF1D0C3AFC001AB69E /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
-		546CD1E01D0C3AFC001AB69E /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
-		546CD1E11D0C3AFC001AB69E /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
-		546CD1E21D0C3AFC001AB69E /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
-		546CD1E31D0C3AFC001AB69E /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		546CD1F41D0C4277001AB69E /* YWCCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCCircleButton.h; sourceTree = "<group>"; };
 		546CD1F51D0C4277001AB69E /* YWCCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCCircleButton.m; sourceTree = "<group>"; };
 		546CD1FC1D0C4373001AB69E /* YWCShopWineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCShopWineController.h; sourceTree = "<group>"; };
@@ -559,6 +527,15 @@
 		54E0D9C11D0427D40085E19D /* UIColor+YWCHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YWCHex.m"; sourceTree = "<group>"; };
 		54E0D9C31D042DAA0085E19D /* UIImage+YWCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YWCImage.h"; sourceTree = "<group>"; };
 		54E0D9C41D042DAA0085E19D /* UIImage+YWCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YWCImage.m"; sourceTree = "<group>"; };
+		54E3B0A01D16D21B005E5479 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		54E3B0A11D16D21B005E5479 /* YWCApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCApp.h; sourceTree = "<group>"; };
+		54E3B0A21D16D21B005E5479 /* YWCApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCApp.m; sourceTree = "<group>"; };
+		54E3B0A81D16D2D8005E5479 /* YWCDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCDownController.h; sourceTree = "<group>"; };
+		54E3B0A91D16D2D8005E5479 /* YWCDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCDownController.m; sourceTree = "<group>"; };
+		54E3B0AB1D16D7EB005E5479 /* YWCVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCVideoController.h; sourceTree = "<group>"; };
+		54E3B0AC1D16D7EB005E5479 /* YWCVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCVideoController.m; sourceTree = "<group>"; };
+		54E3B0AE1D16D804005E5479 /* YWCVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCVideo.h; sourceTree = "<group>"; };
+		54E3B0AF1D16D804005E5479 /* YWCVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCVideo.m; sourceTree = "<group>"; };
 		54E433641D0448330023A2A9 /* YWCSaveTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCSaveTool.h; sourceTree = "<group>"; };
 		54E433651D0448330023A2A9 /* YWCSaveTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCSaveTool.m; sourceTree = "<group>"; };
 		54E433661D0448330023A2A9 /* YWCRootTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCRootTool.h; sourceTree = "<group>"; };
@@ -861,11 +838,6 @@
 		54EC58821D0C67FD005676F2 /* YWCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCWebViewController.h; sourceTree = "<group>"; };
 		54EC58831D0C67FD005676F2 /* YWCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCWebViewController.m; sourceTree = "<group>"; };
 		54EC58841D0C67FD005676F2 /* YWCWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCWebViewController.xib; sourceTree = "<group>"; };
-		54EE2FA41D0C5F2800E219C5 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
-		54EE2FA51D0C5F2800E219C5 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
-		54EE2FA61D0C5F2800E219C5 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
-		54EE2FA71D0C5F2800E219C5 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		54EE2FA81D0C5F2800E219C5 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		54F60FE01D12FD2C00CC0975 /* YWCClockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCClockViewController.h; sourceTree = "<group>"; };
 		54F60FE11D12FD2C00CC0975 /* YWCClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCClockViewController.m; sourceTree = "<group>"; };
 		54F60FE21D12FD2C00CC0975 /* YWCClockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCClockViewController.xib; sourceTree = "<group>"; };
@@ -918,8 +890,9 @@
 		54F610111D12FD2C00CC0975 /* YWCwipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCwipeViewController.h; sourceTree = "<group>"; };
 		54F610121D12FD2C00CC0975 /* YWCwipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCwipeViewController.m; sourceTree = "<group>"; };
 		54F610131D12FD2C00CC0975 /* YWCwipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YWCwipeViewController.xib; sourceTree = "<group>"; };
-		54F6103B1D12FDF200CC0975 /* YWCPthreadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCPthreadController.h; sourceTree = "<group>"; };
-		54F6103C1D12FDF200CC0975 /* YWCPthreadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCPthreadController.m; sourceTree = "<group>"; };
+		72210EFCF5CCA76B85B8D9CF /* Pods-WCIBKnowledge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCIBKnowledge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCIBKnowledge/Pods-WCIBKnowledge.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0772829F15806A5E5407E7 /* Pods-WCIBKnowledge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCIBKnowledge.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCIBKnowledge/Pods-WCIBKnowledge.release.xcconfig"; sourceTree = "<group>"; };
+		E47F06E772692FC785122E49 /* libPods-WCIBKnowledge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCIBKnowledge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -927,49 +900,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EFBDAD118B995508A0BEDC /* libPods-WCIBKnowledge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		546CD1CB1D0C3AEE001AB69E /* Framework */ = {
+		4E3F3087A74F602998F534F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54EE2FA31D0C5F2800E219C5 /* MBProgressHUD */,
-				546CD1CC1D0C3AFC001AB69E /* MJExtension */,
+				E47F06E772692FC785122E49 /* libPods-WCIBKnowledge.a */,
 			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
-		546CD1CC1D0C3AFC001AB69E /* MJExtension */ = {
-			isa = PBXGroup;
-			children = (
-				546CD1CD1D0C3AFC001AB69E /* MJDictionaryCache.h */,
-				546CD1CE1D0C3AFC001AB69E /* MJDictionaryCache.m */,
-				546CD1CF1D0C3AFC001AB69E /* MJExtension.h */,
-				546CD1D01D0C3AFC001AB69E /* MJExtensionConst.h */,
-				546CD1D11D0C3AFC001AB69E /* MJExtensionConst.m */,
-				546CD1D21D0C3AFC001AB69E /* MJFoundation.h */,
-				546CD1D31D0C3AFC001AB69E /* MJFoundation.m */,
-				546CD1D41D0C3AFC001AB69E /* MJProperty.h */,
-				546CD1D51D0C3AFC001AB69E /* MJProperty.m */,
-				546CD1D61D0C3AFC001AB69E /* MJPropertyKey.h */,
-				546CD1D71D0C3AFC001AB69E /* MJPropertyKey.m */,
-				546CD1D81D0C3AFC001AB69E /* MJPropertyType.h */,
-				546CD1D91D0C3AFC001AB69E /* MJPropertyType.m */,
-				546CD1DA1D0C3AFC001AB69E /* NSObject+MJClass.h */,
-				546CD1DB1D0C3AFC001AB69E /* NSObject+MJClass.m */,
-				546CD1DC1D0C3AFC001AB69E /* NSObject+MJCoding.h */,
-				546CD1DD1D0C3AFC001AB69E /* NSObject+MJCoding.m */,
-				546CD1DE1D0C3AFC001AB69E /* NSObject+MJKeyValue.h */,
-				546CD1DF1D0C3AFC001AB69E /* NSObject+MJKeyValue.m */,
-				546CD1E01D0C3AFC001AB69E /* NSObject+MJProperty.h */,
-				546CD1E11D0C3AFC001AB69E /* NSObject+MJProperty.m */,
-				546CD1E21D0C3AFC001AB69E /* NSString+MJExtension.h */,
-				546CD1E31D0C3AFC001AB69E /* NSString+MJExtension.m */,
-			);
-			path = MJExtension;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		546CD2231D0C51B4001AB69E /* guoqi */ = {
@@ -998,6 +941,8 @@
 			children = (
 				546F13C61D03F4DB004ABA1D /* WCIBKnowledge */,
 				546F13C51D03F4DB004ABA1D /* Products */,
+				BA5DBBC9C5D52B0DDDDD0BD7 /* Pods */,
+				4E3F3087A74F602998F534F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1102,7 +1047,6 @@
 		54E0D9631D0401A40085E19D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				546CD1CB1D0C3AEE001AB69E /* Framework */,
 				54E4335F1D0447B10023A2A9 /* NewFeature */,
 				54E0D97B1D0401A40085E19D /* UIBase */,
 				54E0D9681D0401A40085E19D /* Animation */,
@@ -1766,18 +1710,6 @@
 			path = AddressBook;
 			sourceTree = "<group>";
 		};
-		54EE2FA31D0C5F2800E219C5 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				54EE2FA41D0C5F2800E219C5 /* MBProgressHUD+XMG.h */,
-				54EE2FA51D0C5F2800E219C5 /* MBProgressHUD+XMG.m */,
-				54EE2FA61D0C5F2800E219C5 /* MBProgressHUD.bundle */,
-				54EE2FA71D0C5F2800E219C5 /* MBProgressHUD.h */,
-				54EE2FA81D0C5F2800E219C5 /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
 		54F5A7E91D0A5C2300479B47 /* AllChildViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1953,8 +1885,10 @@
 		54F610371D12FD9900CC0975 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				54F6103B1D12FDF200CC0975 /* YWCPthreadController.h */,
-				54F6103C1D12FDF200CC0975 /* YWCPthreadController.m */,
+				54E3B0A81D16D2D8005E5479 /* YWCDownController.h */,
+				54E3B0A91D16D2D8005E5479 /* YWCDownController.m */,
+				54E3B0AB1D16D7EB005E5479 /* YWCVideoController.h */,
+				54E3B0AC1D16D7EB005E5479 /* YWCVideoController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1962,6 +1896,11 @@
 		54F610381D12FD9900CC0975 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				54E3B0A01D16D21B005E5479 /* apps.plist */,
+				54E3B0A11D16D21B005E5479 /* YWCApp.h */,
+				54E3B0A21D16D21B005E5479 /* YWCApp.m */,
+				54E3B0AE1D16D804005E5479 /* YWCVideo.h */,
+				54E3B0AF1D16D804005E5479 /* YWCVideo.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1980,6 +1919,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		BA5DBBC9C5D52B0DDDDD0BD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72210EFCF5CCA76B85B8D9CF /* Pods-WCIBKnowledge.debug.xcconfig */,
+				9D0772829F15806A5E5407E7 /* Pods-WCIBKnowledge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1987,9 +1935,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546F13DB1D03F4DB004ABA1D /* Build configuration list for PBXNativeTarget "WCIBKnowledge" */;
 			buildPhases = (
+				5133F3AC7242747AF3811E20 /* 📦 Check Pods Manifest.lock */,
 				546F13C01D03F4DB004ABA1D /* Sources */,
 				546F13C11D03F4DB004ABA1D /* Frameworks */,
 				546F13C21D03F4DB004ABA1D /* Resources */,
+				061F65EC100ED3480EE152C2 /* 📦 Embed Pods Frameworks */,
+				5596B77F4FDDEE3B33AF8BC6 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2047,7 +1998,6 @@
 				54EBE2601D0A60A500A19887 /* xiaozhao3_26.png in Resources */,
 				54EBE1BA1D0A60A400A19887 /* dazhao_70.png in Resources */,
 				54EBE2121D0A60A500A19887 /* stand_6.png in Resources */,
-				54EE2FAA1D0C5F2800E219C5 /* MBProgressHUD.bundle in Resources */,
 				54EBE1F71D0A60A400A19887 /* install_b_26.png in Resources */,
 				54EBE2511D0A60A500A19887 /* xiaozhao3_12.png in Resources */,
 				54EBE1AD1D0A60A400A19887 /* dazhao_59.png in Resources */,
@@ -2088,6 +2038,7 @@
 				54EBE1AA1D0A60A400A19887 /* dazhao_56.png in Resources */,
 				54EBE25F1D0A60A500A19887 /* xiaozhao3_25.png in Resources */,
 				54EBE23D1D0A60A500A19887 /* xiaozhao2_26.png in Resources */,
+				54E3B0A31D16D21B005E5479 /* apps.plist in Resources */,
 				54EBE1AB1D0A60A400A19887 /* dazhao_57.png in Resources */,
 				546CD23F1D0C51B5001AB69E /* zhongguo.jpg in Resources */,
 				54EBE1DE1D0A60A400A19887 /* dead_3.png in Resources */,
@@ -2352,6 +2303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		061F65EC100ED3480EE152C2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCIBKnowledge/Pods-WCIBKnowledge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5133F3AC7242747AF3811E20 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5596B77F4FDDEE3B33AF8BC6 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WCIBKnowledge/Pods-WCIBKnowledge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		546F13C01D03F4DB004ABA1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2367,26 +2366,24 @@
 				546CD2131D0C503C001AB69E /* FlagField.m in Sources */,
 				546CD1CA1D0C3AAA001AB69E /* YWCWineCell.m in Sources */,
 				54E0D9C51D042DAA0085E19D /* UIImage+YWCImage.m in Sources */,
-				546CD1EC1D0C3AFC001AB69E /* NSObject+MJKeyValue.m in Sources */,
-				546CD1E71D0C3AFC001AB69E /* MJProperty.m in Sources */,
-				54EE2FA91D0C5F2800E219C5 /* MBProgressHUD+XMG.m in Sources */,
 				54EBE2EA1D0A9A3A00A19887 /* YWCCarViewController.m in Sources */,
 				546CD1C61D0C3A6B001AB69E /* YWCRefreshViewController.m in Sources */,
+				54E3B0AA1D16D2D8005E5479 /* YWCDownController.m in Sources */,
 				54F6101E1D12FD2C00CC0975 /* YWCDrawViewController.m in Sources */,
-				546CD1E81D0C3AFC001AB69E /* MJPropertyKey.m in Sources */,
 				546CD2201D0C5072001AB69E /* Province.m in Sources */,
 				54EBE2781D0A617B00A19887 /* YWCGameController.m in Sources */,
 				546F13CC1D03F4DB004ABA1D /* AppDelegate.m in Sources */,
 				54E0D99F1D040AF30085E19D /* UIBarButtonItem+YWCItem.m in Sources */,
 				54E0D9A71D040F7B0085E19D /* YWCUIBaseCell.m in Sources */,
 				5491A4161D12EDF60065236A /* WheelBtn.m in Sources */,
+				54E3B0B01D16D804005E5479 /* YWCVideo.m in Sources */,
 				546CD1F61D0C4277001AB69E /* YWCCircleButton.m in Sources */,
 				54F610141D12FD2C00CC0975 /* YWCClockViewController.m in Sources */,
 				5477B5D01D104D53004BFE73 /* PieView.m in Sources */,
 				54E0D9871D0403840085E19D /* YWCNetWorkController.m in Sources */,
+				54E3B0A41D16D21B005E5479 /* YWCApp.m in Sources */,
 				5477B5F91D105FC0004BFE73 /* ClockView.m in Sources */,
 				54E0D9901D0406640085E19D /* YWCTabBarController.m in Sources */,
-				54EE2FAB1D0C5F2800E219C5 /* MBProgressHUD.m in Sources */,
 				54E0D9811D0403340085E19D /* YWCActualController.m in Sources */,
 				54EBE2C81D0A769100A19887 /* YWCProduct.m in Sources */,
 				54F610281D12FD2C00CC0975 /* YWCProgressController.m in Sources */,
@@ -2397,9 +2394,9 @@
 				5477B5E01D10527E004BFE73 /* YWCSnow.m in Sources */,
 				54F610161D12FD2C00CC0975 /* YWCCookieController.m in Sources */,
 				546CD1FF1D0C4373001AB69E /* YWCShopWineController.m in Sources */,
+				54E3B0AD1D16D7EB005E5479 /* YWCVideoController.m in Sources */,
 				54E433681D0448330023A2A9 /* YWCSaveTool.m in Sources */,
 				54F6101A1D12FD2C00CC0975 /* YWCDragSubController.m in Sources */,
-				546CD1E61D0C3AFC001AB69E /* MJFoundation.m in Sources */,
 				54E4336C1D0448600023A2A9 /* YWCNewFCollectionViewController.m in Sources */,
 				54EBE27D1D0A761300A19887 /* YWCShopViewController.m in Sources */,
 				5477B6071D106442004BFE73 /* ImageHandleView.m in Sources */,
@@ -2417,8 +2414,6 @@
 				54F610341D12FD2C00CC0975 /* YWCwipeViewController.m in Sources */,
 				5491A4171D12EDF60065236A /* WheelView.m in Sources */,
 				54F6101B1D12FD2C00CC0975 /* YWCDragViewController.m in Sources */,
-				546CD1E91D0C3AFC001AB69E /* MJPropertyType.m in Sources */,
-				546CD1EB1D0C3AFC001AB69E /* NSObject+MJCoding.m in Sources */,
 				54EBE2E41D0A9A0000A19887 /* YWCCar.m in Sources */,
 				54F6102C1D12FD2C00CC0975 /* YWCShadowController.m in Sources */,
 				54F6101C1D12FD2C00CC0975 /* YWCDrawBoardController.m in Sources */,
@@ -2428,12 +2423,9 @@
 				546F13C91D03F4DB004ABA1D /* main.m in Sources */,
 				54E0D9B11D040FBF0085E19D /* YWCNetWorkCell.m in Sources */,
 				546CD2041D0C439D001AB69E /* YWCShopWineCell.m in Sources */,
-				546CD1EA1D0C3AFC001AB69E /* NSObject+MJClass.m in Sources */,
 				546CD2101D0C5027001AB69E /* CityField.m in Sources */,
 				54EBE2DC1D0A90E900A19887 /* YWCWineViewController.m in Sources */,
 				54F610181D12FD2C00CC0975 /* YWCCutScreenController.m in Sources */,
-				54F6103D1D12FDF200CC0975 /* YWCPthreadController.m in Sources */,
-				546CD1ED1D0C3AFC001AB69E /* NSObject+MJProperty.m in Sources */,
 				54EBE2DF1D0A910600A19887 /* YWCWine.m in Sources */,
 				546CD21D1D0C5062001AB69E /* Flag.m in Sources */,
 				54EC587D1D0C6590005676F2 /* AddViewController.m in Sources */,
@@ -2443,17 +2435,14 @@
 				54EBE2E51D0A9A0000A19887 /* YWCCarGroup.m in Sources */,
 				54F610261D12FD2C00CC0975 /* YWCPictureController.m in Sources */,
 				549604AC1D0F911600067469 /* ProgressView.m in Sources */,
-				546CD1EE1D0C3AFC001AB69E /* NSString+MJExtension.m in Sources */,
 				54EC587F1D0C6590005676F2 /* EditViewController.m in Sources */,
 				5477B5D81D104FBC004BFE73 /* YWCPictureView.m in Sources */,
 				5485AF5C1D0F8DFA00ACBC11 /* DrawView.m in Sources */,
 				546CD2091D0C4FE4001AB69E /* YWCRegisterController.m in Sources */,
 				54F6102E1D12FD2C00CC0975 /* YWCSnowViewController.m in Sources */,
-				546CD1E51D0C3AFC001AB69E /* MJExtensionConst.m in Sources */,
 				5477B6021D10642A004BFE73 /* YWCBoard.m in Sources */,
 				54E433721D04513C0023A2A9 /* YWCTitleLabel.m in Sources */,
 				546CD20F1D0C5027001AB69E /* BirthdayField.m in Sources */,
-				546CD1E41D0C3AFC001AB69E /* MJDictionaryCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2553,6 +2542,7 @@
 		};
 		546F13DC1D03F4DB004ABA1D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72210EFCF5CCA76B85B8D9CF /* Pods-WCIBKnowledge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -2569,6 +2559,7 @@
 		};
 		546F13DD1D03F4DB004ABA1D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D0772829F15806A5E5407E7 /* Pods-WCIBKnowledge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
