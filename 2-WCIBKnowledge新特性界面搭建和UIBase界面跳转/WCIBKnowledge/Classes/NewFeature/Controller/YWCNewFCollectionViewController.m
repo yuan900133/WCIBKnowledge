@@ -8,15 +8,17 @@
 //
 
 #import "YWCNewFCollectionViewController.h"
-#import "YWCNewFeatureCell.h"
+#import "YWCTabBarController.h"
+
 
 //总页数
 #define YWCPageCount 4
 @interface YWCNewFCollectionViewController ()
-/** 上次的偏移量 ScollView上一次的offsetX*/
-@property (nonatomic ,assign) CGFloat preOffsetX;
-/** guideImageV*/
-@property (nonatomic, weak)UIImageView *guide;
+
+/** 开始体验按钮*/
+@property (nonatomic, weak)UIButton *startBtn;
+/** 开始体验按钮*/
+@property (nonatomic, weak)UIButton *jumpBtn;
 /**pageControl*/
 @property(nonatomic ,weak)UIPageControl *pageControl;
 
@@ -25,6 +27,85 @@
 @implementation YWCNewFCollectionViewController
 
 static NSString * const reuseIdentifier = @"Cell";
+
+//pageControl的属性设置
+- (UIPageControl *)pageControl
+{
+    if (_pageControl == nil) {
+        UIPageControl * pageControl= [[UIPageControl alloc] init];
+        
+        pageControl.numberOfPages = YWCPageCount;
+        [pageControl setValue:[UIImage imageNamed:@"current_pageControl"] forKey:@"_currentPageImage"];
+        [pageControl setValue:[UIImage imageNamed:@"_pageControl"] forKey:@"_pageImage"];
+        
+        pageControl.bounds = CGRectMake(0, 0, 200, 200);
+        //调整位置
+        pageControl.center = CGPointMake(self.view.width * 0.5, self.view.height *0.95);
+        [self.view addSubview:pageControl];
+        _pageControl = pageControl;
+        
+    }
+    return _pageControl;
+}
+
+
+//设置立即体验按钮属性
+- (UIButton *)startBtn
+{
+    if (_startBtn == nil) {
+        //        添加按钮
+        UIButton *startBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        //设置按钮的尺寸
+        startBtn.bounds = CGRectMake(0, 0, 130, 40);
+        //调整按钮按钮
+        startBtn.center = CGPointMake(self.view.width * 0.5, self.view.height *0.795);
+        [startBtn setTitle:@"立即体验" forState:UIControlStateNormal];
+        [startBtn setTitleColor:YWCRandomColor forState:UIControlStateNormal];
+        [startBtn setBackgroundColor:YWCRandomColor];
+        
+        //监听按钮的点击
+        [startBtn addTarget:self action:@selector(startBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        [self.view addSubview:startBtn];
+        _startBtn = startBtn;
+    }
+    return _startBtn;
+}
+//设置开始按钮属性
+- (UIButton *)jumpBtn
+{
+    if (_jumpBtn == nil) {
+        //        添加按钮
+        UIButton *jumpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        [jumpBtn setTitle:@"跳过" forState: UIControlStateNormal];
+        [jumpBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        jumpBtn.titleLabel.font = [UIFont systemFontOfSize:12];
+        
+        //设置按钮的尺寸
+        jumpBtn.bounds = CGRectMake(0, 0, 40, 20);
+        //调整按钮按钮
+        jumpBtn.center = CGPointMake(self.view.width * 0.95, self.view.height *0.05);
+        
+        //监听按钮的点击
+        [jumpBtn addTarget:self action:@selector(startBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        //把按钮添加到item上.
+        [self.view addSubview:jumpBtn];
+        _jumpBtn = jumpBtn;
+        
+    }
+    return _jumpBtn;
+}
+
+//点击开始按钮进入程序的主框架
+- (void)startBtnClick{
+    
+    
+    YWCTabBarController *tabarVc = [[YWCTabBarController alloc] init];
+    [UIApplication sharedApplication].keyWindow.rootViewController = tabarVc;
+    
+}
 
 
 /**状态栏样式*/
@@ -39,7 +120,7 @@ static NSString * const reuseIdentifier = @"Cell";
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     //修改布局参数,来修改格子的样式.
     //设置每一个格子的尺寸大小.
-    flow.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+    flow.itemSize = CGSizeMake([UIScreen mainScreen].bounds.size.width*0.33,[UIScreen mainScreen].bounds.size.width*0.33);
     //设置每一行的最小间距
     flow.minimumLineSpacing = 0;
     //设置每个item之间的最小间距
@@ -64,24 +145,11 @@ static NSString * const reuseIdentifier = @"Cell";
     self.collectionView.bounces = NO;
     
     //UICollectionViewCell必须得要注册.
-    [self.collectionView registerClass:[YWCNewFeatureCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    //添加内部的子控件
-//    [self setUp];
+    self.jumpBtn.hidden = NO;
 }
-/**添加pageControl*/
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    YWCNewFeatureCell * pageControlCell = [[YWCNewFeatureCell alloc] init];
-    
-    self.pageControl = pageControlCell.pageControl;
-    self.pageControl.center=
-    CGPointMake(self.view.width * 0.5, self.view.height *0.95);
-    
-    [self.view addSubview:self.pageControl];
-    
-}
+
 
 
 //有多少组.
@@ -93,13 +161,13 @@ static NSString * const reuseIdentifier = @"Cell";
 
 //第一组当中有多少Items(格子)
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return 60  ;
 }
 //返回cell
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    YWCNewFeatureCell *cell =  [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    UICollectionViewCell *cell =  [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     //加载图片
     NSString *imageName = [NSString stringWithFormat:@"%d",arc4random_uniform(19) +1];
@@ -114,11 +182,10 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.layer.cornerRadius = cell.width * 0.5;
     cell.layer.masksToBounds = YES;
     //给Cell当中image进行赋值
-    cell.image = image;
     
+    cell.backgroundView = [[UIImageView alloc]initWithImage:image];
 
-    //添加立即体验按钮
-    [cell setStartBtn:indexPath count:YWCPageCount];
+   
     
     return cell;
     
@@ -133,10 +200,12 @@ static NSString * const reuseIdentifier = @"Cell";
     //最后一页
     if (page == YWCPageCount-1) {
         self.pageControl.hidden = YES;
+        self.startBtn.hidden = NO;
         
     }else{
         self.pageControl.hidden = NO;
         self.pageControl.currentPage = page;
+        self.startBtn.hidden = YES;
     }
         
 }

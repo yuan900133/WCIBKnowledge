@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-#import "MBProgressHUD+XMG.h"
+#import <SVProgressHUD.h>
 #import "ContactViewController.h"
 
 @interface LoginViewController ()<UITextFieldDelegate>
@@ -35,12 +35,12 @@
 - (IBAction)login:(id)sender {
     
     // 弹出蒙版
-    [MBProgressHUD showMessage:@"正在拼命登录ing..."];
+    [SVProgressHUD showWithStatus:@"正在拼命登录ing..."];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // 隐藏蒙版
-        [MBProgressHUD hideHUD];
+        [SVProgressHUD dismiss];
         
         // 判断下账号密码是否输入正确
         if ([_accountField.text isEqualToString:@"ywc"] && [_pwdField.text isEqualToString:@"123"]) { // 输入正确
@@ -65,7 +65,7 @@
         }else{
             // 输入错误
             // 弹出框
-            [MBProgressHUD showError:@"账号或者密码输入错误"];
+            [SVProgressHUD showErrorWithStatus:@"账号或者密码输入错误"];
         }
     });
     

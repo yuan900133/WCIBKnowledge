@@ -8,6 +8,12 @@
 
 #import "YWCPracticalController.h"
 #import "YWCPracticalCell.h"
+
+#import "YWCSkinViewController.h"
+#import "YWCBoxViewController.h"
+#import "YWCAVViewController.h"
+#import "YWCNewsViewController.h"
+#import "YWCPhotoViewController.h"
 @interface YWCPracticalController ()
 @property(nonatomic,strong)NSArray *titleArr;
 @end
@@ -18,7 +24,7 @@ static NSString * const PracticalCellId = @"practical";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"QQ空间",@"美团",@"打开系统的应用程序",@"分享",@"第三方登录",@"通讯录",@"静态库",@"换肤",@"支付宝集成",@"APP测试发布",@"内购/广告",@"苹果支付",@"推送通知",@"传感器",@"UIDynamic",@"内存析",@"硬件信息获取",@"录音",@"音效播放",@"音乐播放",@"视频播放",@"CoreLocation定位",@"指南针",@"代理到Block转换",@"MapKit框架",@"系统导航",@"集成百度地图"];
+        _titleArr = @[@"换肤",@"UIDynamic",@"视频播放",@"新闻",@"相册"];
     }
     return _titleArr;
 }
@@ -87,5 +93,40 @@ static NSString * const PracticalCellId = @"practical";
     cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        YWCSkinViewController *skin = [[YWCSkinViewController alloc]init];
+        
+        skin.title = @"换肤";
+        [self.navigationController pushViewController:skin animated:YES];
+    }else if (indexPath.row == 1){
+        YWCBoxViewController *box = [[YWCBoxViewController alloc]init];
+        
+        box.title = @"UIDynamic";
+        [self.navigationController pushViewController:box animated:YES];
+        
+    }
+    else if (indexPath.row == 2){
+        YWCAVViewController *av = [[YWCAVViewController alloc]init];
+        
+        av.title = @"视频播放";
+        [self.navigationController pushViewController:av animated:YES];
+        
+    }else if (indexPath.row == 3){
+        YWCNewsViewController *news = [[YWCNewsViewController alloc]init];
+        
+        news.title = @"新闻";
+        [self.navigationController pushViewController:news animated:YES];
+        
+    }else if (indexPath.row == 4){
+        YWCPhotoViewController *photo = [[YWCPhotoViewController alloc]init];
+        
+        photo.title = @"相册";
+        [self.navigationController pushViewController:photo animated:YES];
+        
+    }
 }
 @end

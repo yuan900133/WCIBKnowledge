@@ -26,7 +26,7 @@ static NSString * const NetWorkCellId = @"netWork";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"Pthread",@"NSThread线程通信",@"GCD线程间通信",@"单例模式通用",@"NSOperation线程间通信",@"多图下载",@"多图下载SD",@"GCD中的定时器",@"NSURLConnection发送GET请求",@"NSURLConnection发送POST请求",@"登录页面",@"JSON的解析",@"解析XML",@"文件下载",@"断点下载",@"输出流",@"文件上传",@"获得MIMEType",@"文件压缩和解压缩",@"NSURLSession的发送请求",@"NSURLSession下载文件",@"AFN",@"网络状态监测",@"MD5",@"https请求",@"UIWebView",@"OC和JS代码的交互"];
+        _titleArr = @[@"定时器",@"分享和三方登录",@"地图",@"支付宝",@"苹果支付",@"环信",@"AFN",@"数据解析"];
     }
     return _titleArr;
 }

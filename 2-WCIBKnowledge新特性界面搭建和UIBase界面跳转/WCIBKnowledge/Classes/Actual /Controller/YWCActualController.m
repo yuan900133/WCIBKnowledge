@@ -21,7 +21,7 @@ static NSString * const ActualCellId = @"actual";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"Runtime",@"Const",@"父子控制器",@"网易新闻",@"通知补充多线程",@"block深入研究",@"UICollectionView布局",@""];
+        _titleArr = @[@"单利",@"plist",@"存储解压",@"切图",@"相机相册",@"二维码",@"语音",@"视频"];
     }
     return _titleArr;
 }

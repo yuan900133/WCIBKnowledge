@@ -57,7 +57,7 @@
     
     //UI基础
     YWCUIBaseController *uiBase = [[YWCUIBaseController alloc] init];
-    [self setUpOneChildViewController:uiBase image:[UIImage imageNamed:@"tabbar_home"] selectImage:[UIImage imageNamed:@"tabbar_home_highlighted"] title:@"UI基础"];
+    [self setUpOneChildViewController:uiBase image:[UIImage imageNamed:@"tabbar_home"] selectImage:[UIImage imageNamed:@"tabbar_home_highlighted"] title:@"UI"];
     
     //动画
     YWCAnimationController *animation = [[YWCAnimationController alloc] init];
@@ -66,15 +66,15 @@
 
     //网络多线程
     YWCNetWorkController *netWork = [[YWCNetWorkController alloc] init];
-    [self setUpOneChildViewController:netWork image:[UIImage imageNamed:@"tabbar_message_center"] selectImage:[UIImage imageNamed:@"tabbar_message_center_highlighted"] title:@"网络多线程"];
+    [self setUpOneChildViewController:netWork image:[UIImage imageNamed:@"tabbar_message_center"] selectImage:[UIImage imageNamed:@"tabbar_message_center_highlighted"] title:@"网络"];
     
     
     //实战技术
     YWCPracticalController *practical = [[YWCPracticalController alloc] init];
-    [self setUpOneChildViewController:practical image:[UIImage imageNamed:@"tabbar_me"] selectImage:[UIImage imageNamed:@"tabbar_me_highlighted"] title:@"实战技术"];
+    [self setUpOneChildViewController:practical image:[UIImage imageNamed:@"tabbar_me"] selectImage:[UIImage imageNamed:@"tabbar_me_highlighted"] title:@"实战"];
     //实用技术
     YWCActualController *actual = [[YWCActualController alloc] init];
-    [self setUpOneChildViewController:actual image:[UIImage imageNamed:@"tabbar_active"] selectImage:[UIImage imageNamed:@"tabbar_active_highlighted"] title:@"实用技术"];
+    [self setUpOneChildViewController:actual image:[UIImage imageNamed:@"tabbar_active"] selectImage:[UIImage imageNamed:@"tabbar_active_highlighted"] title:@"工具"];
     
 }
 
