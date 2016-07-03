@@ -7,8 +7,8 @@
 //
 
 #import "YWCNetWorkController.h"
-
-
+#import "YWCDownController.h"
+#import "YWCVideoController.h"
 
 
 
@@ -26,7 +26,11 @@ static NSString * const NetWorkCellId = @"netWork";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
+<<<<<<< HEAD
         _titleArr = @[@"定时器",@"分享和三方登录",@"地图",@"支付宝",@"苹果支付",@"环信",@"AFN",@"数据解析"];
+=======
+        _titleArr = @[@"多图下载,多图下载SD",@"文件下载"];
+>>>>>>> origin/master
     }
     return _titleArr;
 }
@@ -98,5 +102,16 @@ static NSString * const NetWorkCellId = @"netWork";
     cell.title_Label = self.titleArr[indexPath.row];
     
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        YWCDownController *down = [[YWCDownController alloc]init];
+        [self.navigationController pushViewController:down animated:YES];
+    }else if(indexPath.row == 1) {
+        YWCVideoController *video = [[YWCVideoController alloc]init];
+        [self.navigationController pushViewController:video animated:YES];
+    }
 }
 @end
