@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Tj3-cE-vxS" customClass="PhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="149"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="149"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lkF-Lg-SMs">
+                        <rect key="frame" x="10" y="10" width="151" height="129"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="lkF-Lg-SMs" firstAttribute="top" secondItem="Tj3-cE-vxS" secondAttribute="top" constant="10" id="95N-gj-Mko"/>
+                <constraint firstItem="lkF-Lg-SMs" firstAttribute="leading" secondItem="Tj3-cE-vxS" secondAttribute="leading" constant="10" id="jml-u0-oeW"/>
+                <constraint firstAttribute="bottom" secondItem="lkF-Lg-SMs" secondAttribute="bottom" constant="10" id="kgA-Hs-wca"/>
+                <constraint firstAttribute="trailing" secondItem="lkF-Lg-SMs" secondAttribute="trailing" constant="10" id="v9l-RG-YN9"/>
+            </constraints>
+            <size key="customSize" width="171" height="149"/>
+            <connections>
+                <outlet property="imageView" destination="lkF-Lg-SMs" id="Dol-hR-kOY"/>
+            </connections>
+            <point key="canvasLocation" x="365.5" y="336.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

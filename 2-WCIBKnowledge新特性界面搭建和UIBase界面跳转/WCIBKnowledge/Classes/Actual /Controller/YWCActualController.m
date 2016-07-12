@@ -93,4 +93,5 @@ static NSString * const ActualCellId = @"actual";
     cell.title_Label = self.titleArr[indexPath.row];
     return cell;
 }
+    
 @end

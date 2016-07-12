@@ -9,6 +9,8 @@
 #import "YWCNewsViewController.h"
 
 
+
+
 static CGFloat const titleScrollViewH = 44;
 static CGFloat const btnW = 100;
 static CGFloat const titleScale = 1.3;
@@ -48,6 +50,7 @@ static CGFloat const titleScale = 1.3;
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
+
     [self setupAllChildViewController];
     
     // 1.添加标题滚动视图
@@ -75,37 +78,46 @@ static CGFloat const titleScale = 1.3;
     // 热点
     UIViewController *hotVc = [[UIViewController alloc] init];
     hotVc.title = @"热点";
-    hotVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:hotVc];
     
     // 头条
     UIViewController *topLineVc = [[UIViewController alloc] init];
     topLineVc.title = @"头条";
+
     topLineVc.view.backgroundColor = YWCRandomColor;
+
     [self addChildViewController:topLineVc];
     
     // 视频
     UIViewController *videoVc = [[UIViewController alloc] init];
     videoVc.title = @"视频";
+
     videoVc.view.backgroundColor = YWCRandomColor;
+
     [self addChildViewController:videoVc];
     
     // 社会
     UIViewController *societyVc = [[UIViewController alloc] init];
     societyVc.title = @"社会";
+
     societyVc.view.backgroundColor = YWCRandomColor;
+
     [self addChildViewController:societyVc];
     
     // 订阅
     UIViewController *readerVc = [[UIViewController alloc] init];
     readerVc.title = @"订阅";
+
     readerVc.view.backgroundColor = YWCRandomColor;
+
     [self addChildViewController:readerVc];
     
     // 科技
     UIViewController *scienceVc = [[UIViewController alloc] init];
     scienceVc.title = @"科技";
+
     scienceVc.view.backgroundColor = YWCRandomColor;
+
     [self addChildViewController:scienceVc];
 }
 
