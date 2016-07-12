@@ -107,6 +107,10 @@ static NSString *shopWineId = @"shopWine";
     
     YWCShopWineCell *cell = [tableView dequeueReusableCellWithIdentifier:shopWineId];
     cell.wine = self.wineArray[indexPath.row];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    
     return cell;
 }
 

@@ -25,6 +25,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9C-VA-9Ch">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                     <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lol" translatesAutoresizingMaskIntoConstraints="NO" id="oAa-Sl-Ylu">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                        </imageView>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timo" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-59-wYA">
                             <rect key="frame" x="260" y="51" width="80" height="80"/>
                             <constraints>
@@ -34,11 +37,7 @@
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="viH-Op-cUd"/>
                             </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lol" translatesAutoresizingMaskIntoConstraints="NO" id="oAa-Sl-Ylu">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
-                        </imageView>
                     </subviews>
-                    <color key="backgroundColor" red="0.060773469699999999" green="1" blue="0.27442576089999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="37y-K0-SrC"/>
                         <constraint firstItem="JCm-59-wYA" firstAttribute="centerX" secondItem="oAa-Sl-Ylu" secondAttribute="centerX" id="Atw-HF-yir"/>
@@ -51,7 +50,6 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-gl-OZu">
                     <rect key="frame" x="0.0" y="200" width="600" height="44"/>
-                    <color key="backgroundColor" red="1" green="0.95931562179999996" blue="0.18424284860000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="23N-JO-4U2"/>
                     </constraints>

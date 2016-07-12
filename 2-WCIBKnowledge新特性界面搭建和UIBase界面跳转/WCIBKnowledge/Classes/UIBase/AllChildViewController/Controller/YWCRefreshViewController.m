@@ -33,7 +33,7 @@
 - (NSMutableArray *)wineArray
 {
     if (_wineArray == nil) {
-        _wineArray = [YWCWine objectArrayWithFilename:@"wine.plist"];
+        _wineArray = [YWCWine mj_objectArrayWithFilename:@"wine.plist"];
     }
     return _wineArray;
 }
@@ -103,7 +103,17 @@
     if (cell == nil) {
         cell =[[YWCWineCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.wine = self.wineArray[indexPath.row];
+    
+    [cell.layer removeAnimationForKey:@"rotation"];
+    CAKeyframeAnimation *animatioan = [[CAKeyframeAnimation alloc]init];
+    animatioan.keyPath = @"transform.rotation.z";
+    animatioan.values = @[@(-1),@(0),@(1),@(0)];
+    animatioan.duration = 0.5;
+    [cell.layer addAnimation:animatioan forKey:@"rotation"];
+    
+    
     return cell;
 }
 #pragma mark - UITableViewDelegate

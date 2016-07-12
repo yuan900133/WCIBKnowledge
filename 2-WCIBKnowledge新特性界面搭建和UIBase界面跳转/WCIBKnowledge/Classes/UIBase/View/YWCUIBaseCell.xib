@@ -13,17 +13,18 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="7uw-MB-j5Q" customClass="YWCItemImage">
-                        <rect key="frame" x="5" y="5" width="140" height="140"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="7uw-MB-j5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拳皇" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQi-vz-ONC" customClass="YWCTitleLabel">
-                        <rect key="frame" x="35" y="66" width="80" height="18"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="frame" x="35" y="35" width="80" height="80"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="Ft0-Jz-gwK"/>
+                            <constraint firstAttribute="height" constant="80" id="pGb-He-x9Q"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -31,11 +32,11 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="7uw-MB-j5Q" secondAttribute="bottom" id="05A-PY-oR1"/>
+                <constraint firstItem="7uw-MB-j5Q" firstAttribute="leading" secondItem="ue0-uP-0Is" secondAttribute="leading" id="28o-48-r3D"/>
                 <constraint firstItem="QQi-vz-ONC" firstAttribute="centerX" secondItem="ue0-uP-0Is" secondAttribute="centerX" id="9sC-UA-mk9"/>
-                <constraint firstAttribute="bottom" secondItem="7uw-MB-j5Q" secondAttribute="bottom" constant="5" id="JCV-E6-iGg"/>
-                <constraint firstAttribute="trailing" secondItem="7uw-MB-j5Q" secondAttribute="trailing" constant="5" id="Kcw-OH-yge"/>
-                <constraint firstItem="7uw-MB-j5Q" firstAttribute="leading" secondItem="ue0-uP-0Is" secondAttribute="leading" constant="5" id="b65-eO-2D4"/>
-                <constraint firstItem="7uw-MB-j5Q" firstAttribute="top" secondItem="ue0-uP-0Is" secondAttribute="top" constant="5" id="hhh-l9-onb"/>
+                <constraint firstItem="7uw-MB-j5Q" firstAttribute="top" secondItem="ue0-uP-0Is" secondAttribute="top" id="Uwt-r2-LIc"/>
+                <constraint firstAttribute="trailing" secondItem="7uw-MB-j5Q" secondAttribute="trailing" id="VGM-md-3Mr"/>
                 <constraint firstItem="QQi-vz-ONC" firstAttribute="centerY" secondItem="ue0-uP-0Is" secondAttribute="centerY" id="pNo-jN-HJr"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>

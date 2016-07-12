@@ -95,7 +95,7 @@
     //2.2 设置文字
     cell.textLabel.text = app.name;
     cell.detailTextLabel.text = app.download;
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //2.3 设置图片
     [cell.imageView sd_setImageWithURL:[NSURL URLWithString:app.icon] placeholderImage:[UIImage imageNamed:@"1"]];
     

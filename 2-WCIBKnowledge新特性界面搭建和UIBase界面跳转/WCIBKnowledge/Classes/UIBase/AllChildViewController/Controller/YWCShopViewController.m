@@ -28,7 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.productsView.backgroundColor = YWCRandomColor;
+    self.productsView.backgroundColor = [UIColor clearColor];
 }
 - (IBAction)addProduct {
     // 1.1.定义一些常亮
@@ -46,7 +46,7 @@
     /*********************** 2.添加商品的View ***********************/
     // 2.1.创建普通UIView
     YWCProductView *productView = [YWCProductView productView];
-    productView.backgroundColor = YWCRandomColor;
+    productView.backgroundColor = [UIColor clearColor];
     productView.frame = CGRectMake(x,y, width, height);
     [self.productsView addSubview:productView];
     // 2.3.添加UIImageView,用于显示商品的图标
@@ -81,7 +81,7 @@
 - (void)showHubView:(NSString *)message
 {
     self.hubView.text = message;
-    self.hubView.textColor = YWCRandomColor;
+    self.hubView.textColor = [UIColor grayColor];
     [UIView animateWithDuration:0.25 animations:^{
         self.hubView.alpha = 1.0;
     } completion:^(BOOL finished) {

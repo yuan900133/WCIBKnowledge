@@ -28,7 +28,7 @@
     //    [navBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     //    [navBar setShadowImage:[[UIImage alloc] init]];
     
-    UIImage *image = [UIImage imageWithColor:YWCRandomColor];
+    UIImage *image = [UIImage imageWithColor:[UIColor grayColor]];
     
     
     [navBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];

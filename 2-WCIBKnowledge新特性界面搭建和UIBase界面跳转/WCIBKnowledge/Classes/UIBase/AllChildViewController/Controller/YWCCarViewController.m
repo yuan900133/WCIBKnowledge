@@ -60,9 +60,17 @@
     }
     YWCCarGroup *group = self.carGroups[indexPath.section];
     YWCCar *car = group.cars[indexPath.row];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = car.name;
     cell.imageView.image = [UIImage imageNamed:car.icon];
+    // 如果想要做一些牛逼的动画, 可以在这个位置来做
+    [cell.layer removeAnimationForKey:@"rotation"];
+    CAKeyframeAnimation *animatioan = [[CAKeyframeAnimation alloc]init];
+    animatioan.keyPath = @"transform.rotation.x";
+    animatioan.values = @[@(-1),@(0),@(1),@(0)];
+    animatioan.duration = 0.5;
+    [cell.layer addAnimation:animatioan forKey:@"rotation"];
+    
     return cell;
     
 }

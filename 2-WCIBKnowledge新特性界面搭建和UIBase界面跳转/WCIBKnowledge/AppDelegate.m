@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "YWCTabBarController.h"
-#import "YWCNewFCollectionViewController.h"
-#import "YWCRootTool.h"
+//#import "YWCNewFCollectionViewController.h"
+//#import "YWCRootTool.h"
 @interface AppDelegate ()
 
 @end
@@ -21,10 +21,8 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
 //    self.window.rootViewController = [YWCRootTool choosRootViewController];
-//    self.window.rootViewController = [[YWCNewFCollectionViewController alloc]init];
-     self.window.rootViewController = [[YWCTabBarController alloc]init];
     
-    
+    self.window.rootViewController= [[YWCTabBarController alloc]init];
     [self.window makeKeyAndVisible];
     
     

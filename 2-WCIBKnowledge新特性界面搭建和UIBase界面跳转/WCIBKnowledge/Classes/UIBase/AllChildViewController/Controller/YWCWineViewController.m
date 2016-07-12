@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 120;
-    self.tableView.sectionHeaderHeight = 80;
+    self.tableView.sectionHeaderHeight = 30;
     //    self.tableView.sectionFooterHeight = 80;
     self.tableView.separatorColor = [UIColor redColor];
     // 设置分割线的样式
@@ -52,10 +52,23 @@
     //    cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
     YWCWine *wine = self.WineArray[indexPath.row];
     cell.textLabel.text = wine.name;
-    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"0%@",wine.image]];
+     cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"0%@",wine.image]];
+   
+   
+    
+    
+   
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"¥ %@",wine.money];
     cell.detailTextLabel.textColor = [UIColor orangeColor];
+    
+    // 如果想要做一些牛逼的动画, 可以在这个位置来做
+    [cell.layer removeAnimationForKey:@"rotation"];
+    CAKeyframeAnimation *animatioan = [[CAKeyframeAnimation alloc]init];
+    animatioan.keyPath = @"transform.rotation.y";
+    animatioan.values = @[@(-1),@(0),@(1),@(0)];
+    animatioan.duration = 0.5;
+    [cell.layer addAnimation:animatioan forKey:@"rotation"];
     
     //    cell.backgroundColor = [UIColor grayColor];
     return cell;
@@ -80,7 +93,7 @@
  */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%zd",indexPath.row);
+//    NSLog(@"%zd",indexPath.row);
 }
 /**
  *  当用户取消选中(点击)了cell就会调用

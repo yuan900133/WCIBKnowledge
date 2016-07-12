@@ -53,8 +53,9 @@
     
     NSMutableDictionary *dict = [NSMutableDictionary  dictionary];
     dict[NSFontAttributeName] = [UIFont systemFontOfSize:50];
+    dict[NSForegroundColorAttributeName] = [UIColor whiteColor];
     
-    [str drawAtPoint:CGPointMake(50, 0) withAttributes:dict];
+    [str drawAtPoint:CGPointMake(image.size.width *0.5, image.size.height*0.5) withAttributes:dict];
     //6.从上下文当中生成一张新的图片.
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     //7.要手动关闭位图上下文.

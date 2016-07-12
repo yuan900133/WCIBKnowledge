@@ -2,18 +2,21 @@
 //  YWCNewsViewController.m
 //  WCIBKnowledge
 //
-//  Created by 袁武昌 on 16/7/3.
+//  Created by 袁武昌 on 16/7/11.
 //  Copyright © 2016年 yuan.com. All rights reserved.
 //
 
 #import "YWCNewsViewController.h"
-static CGFloat const navBarH = 64;
+
+
 static CGFloat const titleScrollViewH = 44;
 static CGFloat const btnW = 100;
 static CGFloat const titleScale = 1.3;
+#define YWCScreenW [UIScreen mainScreen].bounds.size.width
+#define YWCScreenH [UIScreen mainScreen].bounds.size.height
 
-@interface YWCNewsViewController ()
-<UIScrollViewDelegate>
+
+@interface YWCNewsViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, weak) UIScrollView *titleScrollView;
 @property (nonatomic, weak) UIScrollView *contentScrollView;
@@ -25,10 +28,10 @@ static CGFloat const titleScale = 1.3;
 
 /** 判断下是否初始化过标题*/
 @property (nonatomic ,assign) BOOL isInitial;
+
 @end
 
 @implementation YWCNewsViewController
-
 // 先搭建界面 -> 处理这个界面一些业务逻辑(事件处理,点击事件,滚动事件等等)
 #pragma mark - 懒加载
 - (NSMutableArray<UIButton *> *)titleBtns
@@ -43,8 +46,8 @@ static CGFloat const titleScale = 1.3;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
-    // 3.添加所有的子控制器:有多少个子控制器就有多少个标题
     [self setupAllChildViewController];
     
     // 1.添加标题滚动视图
@@ -59,12 +62,9 @@ static CGFloat const titleScale = 1.3;
     // 3.让内容滚动view滚到对应位置
     
     // 取消自动添加额外滚动区域
-    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     
     // 6.滚动完成的时候做事情
-    
-    
-    
     
 }
 
@@ -81,33 +81,34 @@ static CGFloat const titleScale = 1.3;
     // 头条
     UIViewController *topLineVc = [[UIViewController alloc] init];
     topLineVc.title = @"头条";
-     topLineVc.view.backgroundColor = YWCRandomColor;
+    topLineVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:topLineVc];
     
     // 视频
     UIViewController *videoVc = [[UIViewController alloc] init];
     videoVc.title = @"视频";
-     videoVc.view.backgroundColor = YWCRandomColor;
+    videoVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:videoVc];
     
     // 社会
     UIViewController *societyVc = [[UIViewController alloc] init];
     societyVc.title = @"社会";
-     societyVc.view.backgroundColor = YWCRandomColor;
+    societyVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:societyVc];
     
     // 订阅
     UIViewController *readerVc = [[UIViewController alloc] init];
     readerVc.title = @"订阅";
-     readerVc.view.backgroundColor = YWCRandomColor;
+    readerVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:readerVc];
     
     // 科技
     UIViewController *scienceVc = [[UIViewController alloc] init];
     scienceVc.title = @"科技";
-     scienceVc.view.backgroundColor = YWCRandomColor;
+    scienceVc.view.backgroundColor = YWCRandomColor;
     [self addChildViewController:scienceVc];
 }
+
 
 
 
@@ -128,14 +129,12 @@ static CGFloat const titleScale = 1.3;
 {
     // 1.创建标题滚动视图
     UIScrollView *titleScrollView = [[UIScrollView alloc] init];
-    titleScrollView.backgroundColor = YWCRandomColor;
     CGFloat titleScrollViewX = 0;
 //    CGFloat titleScrollViewY = self.navigationController?navBarH:0;
     CGFloat titleScrollViewY = 0;
     CGFloat titleScrollViewW = YWCScreenW;
     // 1.1 设置frame
     titleScrollView.frame = CGRectMake(titleScrollViewX, titleScrollViewY, titleScrollViewW, titleScrollViewH);
-    
     // 1.2 添加到view上
     [self.view addSubview:titleScrollView];
     

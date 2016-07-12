@@ -87,7 +87,7 @@
     static NSString *ID = @"video";
     //1.创建cell
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     //2.设置cell的数据
     //拿到该行cell对应的数据
     YWCVideo *video = self.videos[indexPath.row];

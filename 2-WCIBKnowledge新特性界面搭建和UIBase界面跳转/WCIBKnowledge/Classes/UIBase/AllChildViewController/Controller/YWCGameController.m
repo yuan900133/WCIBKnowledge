@@ -23,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = YWCRandomColor;
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"15"]];
+//    self.view.backgroundColor = YWCRandomColor;
     
     //   站立
     self.standImages = [self loadImagesWithPrefix:@"stand" count:10];
@@ -31,9 +32,9 @@
     self.bigZhaoImages =  [self loadImagesWithPrefix:@"dazhao" count:87];
     
     
-    NSURL *url = [[NSBundle mainBundle]URLForResource:@"dazhao.mp3" withExtension:nil];
-    AVPlayerItem *item = [[AVPlayerItem alloc]initWithURL:url];
-    self.player = [[AVPlayer alloc] initWithPlayerItem:item];
+//    NSURL *url = [[NSBundle mainBundle]URLForResource:@"dazhao.mp3" withExtension:nil];
+//    AVPlayerItem *item = [[AVPlayerItem alloc]initWithURL:url];
+//    self.player = [[AVPlayer alloc] initWithPlayerItem:item];
     
     
 }
@@ -65,12 +66,12 @@
 }
 - (IBAction)smallZhaoBtnClick:(id)sender {
     
-    [self playAnimationWithImages:self.smallZhaoIamges withSoundName:@"xiaozhao1"];
+    [self playAnimationWithImages:self.smallZhaoIamges withSoundName:nil];
     
     
 }
 - (IBAction)bigZhaoBtnClick:(id)sender {
-    [self playAnimationWithImages:self.bigZhaoImages withSoundName:@"dazhao"];
+    [self playAnimationWithImages:self.bigZhaoImages withSoundName:nil];
 }
 
 - (void)playAnimationWithImages:(NSArray *)images withSoundName:(NSString *)soundName
@@ -81,17 +82,17 @@
     [self.imageView startAnimating];
     
     
-    NSTimeInterval zhaoTime = 1/30.0 *images.count;
+//    NSTimeInterval zhaoTime = 1/30.0 *images.count;
+//    
+//    [self performSelector:@selector(standBtnClick:) withObject:nil afterDelay:zhaoTime];
     
-    [self performSelector:@selector(standBtnClick:) withObject:nil afterDelay:zhaoTime];
-    
-    NSURL *url = [[NSBundle mainBundle]URLForResource:soundName withExtension:@"mp3"];
-    
-    AVPlayerItem *replaceItem = [[AVPlayerItem alloc]initWithURL:url];
-    
-    [self.player replaceCurrentItemWithPlayerItem:replaceItem];
-    [self.player play];
-    self.player.rate = 1.5;
+//    NSURL *url = [[NSBundle mainBundle]URLForResource:soundName withExtension:@"mp3"];
+//    
+//    AVPlayerItem *replaceItem = [[AVPlayerItem alloc]initWithURL:url];
+//    
+//    [self.player replaceCurrentItemWithPlayerItem:replaceItem];
+//    [self.player play];
+//    self.player.rate = 1.5;
     
     
 }
@@ -105,6 +106,8 @@
     self.standImages = nil;
     self.smallZhaoIamges = nil;
     self.bigZhaoImages = nil;
+    
+    
     
     self.imageView.animationImages = nil;
 }

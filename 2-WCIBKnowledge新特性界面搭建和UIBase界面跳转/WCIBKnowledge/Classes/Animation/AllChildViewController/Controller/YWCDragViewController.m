@@ -119,17 +119,17 @@
     
     //创建左边的View
     UIView *leftV = [[UIView alloc] initWithFrame:self.view.bounds];
-    leftV.backgroundColor = [UIColor blueColor];
+    leftV.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"15"]];
     self.leftV = leftV;
     [self.view addSubview:leftV];
     //创建右边的View
     UIView *rightV = [[UIView alloc] initWithFrame:self.view.bounds];
-    rightV.backgroundColor = [UIColor greenColor];
+    rightV.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"5"]];
     self.rightV = rightV;
     [self.view addSubview:rightV];
     //MainV
     UIView *mainV = [[UIView alloc] initWithFrame:self.view.bounds];
-    mainV.backgroundColor = [UIColor redColor];
+    mainV.backgroundColor = [UIColor grayColor];
     self.mainV = mainV;
     [self.view addSubview:mainV];
     

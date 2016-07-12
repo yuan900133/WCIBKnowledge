@@ -115,7 +115,7 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    cell.backgroundColor = [UIColor redColor];
+  
     cell.textLabel.text = [NSString stringWithFormat:@"%ld",indexPath.row];
     
     return cell;

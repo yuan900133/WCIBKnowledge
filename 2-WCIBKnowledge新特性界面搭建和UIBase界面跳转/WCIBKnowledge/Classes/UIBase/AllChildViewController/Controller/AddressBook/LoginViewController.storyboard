@@ -178,6 +178,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="添加" id="TNl-PK-tGl">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="Glj-De-wYg" kind="push" id="Y1B-yz-jqj"/>
                             </connections>
@@ -249,7 +250,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="编辑联系人列表" id="qLO-wD-MKg">
-                        <barButtonItem key="rightBarButtonItem" title="编辑" id="wRA-mk-RtS">
+                        <barButtonItem key="rightBarButtonItem" title="编辑" style="plain" id="wRA-mk-RtS">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="edit:" destination="iSS-RL-KSe" id="nwU-Oo-rRy"/>
                             </connections>

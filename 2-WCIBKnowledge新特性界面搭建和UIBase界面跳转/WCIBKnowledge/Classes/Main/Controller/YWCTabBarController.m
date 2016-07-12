@@ -39,7 +39,7 @@
     // 2.1 描述字符串的属性
     NSMutableDictionary *attrSel = [NSMutableDictionary dictionary];
     // 2.2 设置字体颜色
-    attrSel[NSForegroundColorAttributeName] = YWCRandomColor;
+    attrSel[NSForegroundColorAttributeName] = [UIColor orangeColor];
     // 设置选中状态下的标题颜色
     [item setTitleTextAttributes:attrSel forState:UIControlStateSelected];
     
@@ -47,7 +47,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = YWCRandomColor;
+   
     //添加所有的子控制器
     [self setUpAllChildViewController];
     
@@ -86,6 +86,9 @@
     vc.tabBarItem.selectedImage = selectImage;
     
     YWCNavigationController  *nav = [[YWCNavigationController alloc]initWithRootViewController:vc];
+    nav.navigationBar.tintColor = [UIColor whiteColor];
+    nav.navigationBar.backgroundColor = [UIColor grayColor];
+    
     //    设置导航条文字属性
     [nav.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
     

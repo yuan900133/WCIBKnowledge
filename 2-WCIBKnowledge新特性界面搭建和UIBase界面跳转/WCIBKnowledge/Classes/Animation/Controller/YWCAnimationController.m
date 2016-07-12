@@ -30,6 +30,10 @@
 
 @interface YWCAnimationController ()
 @property(nonatomic,strong)NSArray *titleArr;
+
+/***定时器*/
+@property(nonatomic,strong)NSTimer *timer;
+
 @end
 
 @implementation YWCAnimationController
@@ -56,12 +60,12 @@ static NSString * const AnimationCellId = @"animation";
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     //修改布局参数,来修改格子的样式.
     //设置每一个格子的尺寸大小.
-    flow.itemSize = CGSizeMake(170 , 150);
+    flow.itemSize = CGSizeMake(YWCScreenW , YWCScreenW);
     //设置每一行的最小间距
-    flow.minimumLineSpacing = 5;
+    flow.minimumLineSpacing = 0;
     //设置每个item之间的最小间距
-    flow.minimumInteritemSpacing = 5;
-    flow.sectionInset = UIEdgeInsetsMake(0,10 , 0, 10);
+    flow.minimumInteritemSpacing = 0;
+    flow.sectionInset = UIEdgeInsetsMake(0,0 , 0, 0);
     //设置滚动的方向
     flow.scrollDirection = UICollectionViewScrollDirectionVertical;
     
@@ -78,8 +82,69 @@ static NSString * const AnimationCellId = @"animation";
     //添加内部的子控件
         [self setUp];
 }
+
+//view将要显示
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self addTimer];
+}
+//View将要消失
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [self removeTimer];
+    
+}
+#pragma mark **********************添加定时器*****************************
+/**启动时钟*/
+-(void) addTimer{
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(nextpage) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    self.timer = timer ;
+    
+}
+/**删除定时器*/
+-(void) removeTimer{
+    [self.timer invalidate];
+    self.timer = nil;
+}
+#pragma mark - *******************UIScrollView代理*************************
+/**将要开始拖拽*/
+-(void) scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self removeTimer];
+}
+/**当用户停止拖拽的时候调用*/
+
+-(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    [self addTimer];
+    
+}
+/**设置页码*/
+-(void) scrollViewDidScroll:(UIScrollView *)scrollView{
+//    int page = (int)(scrollView.contentOffset.x/scrollView.frame.size.width+0.5)%self.pageImageArr.count;
+//    self.pageControl.currentPage =page;
+}
+
+/**滚到下一页*/
+static NSInteger nextItem = 0;
+-(void) nextpage{
+    nextItem++;
+    if (nextItem == self.titleArr.count) {
+        nextItem=0;
+        
+    }
+    NSIndexPath *nextIndexPath = [NSIndexPath indexPathForItem:nextItem inSection:0];
+    
+    [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
+}
+
+
+
+
+
 - (void)setUp{
-    self.collectionView.backgroundColor = YWCRandomColor;
+    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
@@ -114,6 +179,23 @@ static NSString * const AnimationCellId = @"animation";
     cell.backgroundColor = [UIColor clearColor];
     cell.image = [UIImage imageNamed:imageName];
     cell.title_Label = self.titleArr[indexPath.row];
+    // 设置圆角半径
+    cell.layer.cornerRadius = cell
+    .bounds.size.width * 0.5;
+    cell.layer.masksToBounds = YES;
+    
+    // 如果想要做一些牛逼的动画, 可以在这个位置来做
+    
+    
+    CABasicAnimation *animation = [[CABasicAnimation alloc]init];
+    animation.fromValue = @(0);
+    animation.toValue = @(M_PI *2);
+    animation.keyPath = @"transform.rotation.z";
+    animation.duration = 30;
+    animation.repeatCount = NSIntegerMax;
+    animation.removedOnCompletion = NO;
+    [cell.layer addAnimation:animation forKey:@"rotation"];
+    
     
     return cell;
 }

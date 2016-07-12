@@ -20,7 +20,7 @@
     
     UITableViewController *tableV2 =   [[UITableViewController alloc] init];
     tableV2.view.frame = self.leftV.bounds;
-    tableV2.view.backgroundColor = [UIColor redColor];
+    tableV2.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"18"]];
     [self.leftV addSubview:tableV2.view];
     [self addChildViewController:tableV2];
 }

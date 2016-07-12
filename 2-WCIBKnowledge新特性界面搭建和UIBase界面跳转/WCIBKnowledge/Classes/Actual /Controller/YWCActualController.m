@@ -21,7 +21,7 @@ static NSString * const ActualCellId = @"actual";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"单利",@"plist",@"存储解压",@"切图",@"相机相册",@"二维码",@"语音",@"视频"];
+        _titleArr = @[@"plist",@"图片水印",@"打开相机相册",@"二维码",@"做图片",@"动画"];
     }
     return _titleArr;
 }
@@ -55,7 +55,7 @@ static NSString * const ActualCellId = @"actual";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.collectionView.backgroundColor = YWCRandomColor;
+     self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
 
     self.collectionView.showsHorizontalScrollIndicator = NO;
     

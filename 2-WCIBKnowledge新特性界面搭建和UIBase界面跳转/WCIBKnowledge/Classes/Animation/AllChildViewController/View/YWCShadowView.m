@@ -25,7 +25,7 @@
 -(void)awakeFromNib{
     
     CAReplicatorLayer *repL = (CAReplicatorLayer *)self.layer;
-    repL.instanceCount = 30;
+    repL.instanceCount = 60;
     repL.instanceDelay = 0.25;
     
     //添加手势

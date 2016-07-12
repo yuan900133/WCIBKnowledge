@@ -17,17 +17,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="心" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-sU-ruh">
-                    <rect key="frame" x="88" y="234" width="200" height="200"/>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="心" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-V4-atd">
                     <rect key="frame" x="88" y="407" width="200" height="200"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="心" translatesAutoresizingMaskIntoConstraints="NO" id="rwr-sU-ruh">
+                    <rect key="frame" x="88" y="134" width="200" height="200"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="eKr-V4-atd" firstAttribute="centerX" secondItem="rwr-sU-ruh" secondAttribute="centerX" id="9Mc-KG-MrX"/>
-                <constraint firstItem="rwr-sU-ruh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9ro-Q8-aW5"/>
+                <constraint firstItem="rwr-sU-ruh" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="9ro-Q8-aW5"/>
                 <constraint firstAttribute="bottom" secondItem="eKr-V4-atd" secondAttribute="bottom" constant="60" id="m0n-Lp-b7Z"/>
                 <constraint firstItem="rwr-sU-ruh" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pxo-UJ-9nA"/>
             </constraints>

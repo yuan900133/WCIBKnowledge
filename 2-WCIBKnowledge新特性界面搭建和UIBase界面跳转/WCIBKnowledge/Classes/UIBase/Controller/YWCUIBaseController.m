@@ -47,16 +47,16 @@ static NSString * const UIBaseCellId = @"uiBase";
     UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
     //修改布局参数,来修改格子的样式.
     //设置每一个格子的尺寸大小.
-    flow.itemSize = CGSizeMake(160,180);
+    flow.itemSize = CGSizeMake(YWCScreenW,YWCScreenW);
     //设置每一行的最小间距
-    flow.minimumLineSpacing = 5;
+    flow.minimumLineSpacing = 0;
     //设置每个item之间的最小间距
-    flow.minimumInteritemSpacing = 5;
-    flow.sectionInset = UIEdgeInsetsMake(0,10 , 0, 10);
+    flow.minimumInteritemSpacing = 0;
+//    flow.sectionInset = UIEdgeInsetsMake(0,0 , 0, 0);
     
 
     //设置滚动的方向
-    flow.scrollDirection = UICollectionViewScrollDirectionVertical;
+    flow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     return [super initWithCollectionViewLayout:flow];
 }
@@ -66,6 +66,7 @@ static NSString * const UIBaseCellId = @"uiBase";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+   
     
     //    初始化collectionView
     [self setUp];
@@ -77,7 +78,7 @@ static NSString * const UIBaseCellId = @"uiBase";
 
 - (void)setUp
 {
-    self.collectionView.backgroundColor = YWCRandomColor;
+    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.
@@ -109,7 +110,26 @@ static NSString * const UIBaseCellId = @"uiBase";
     NSString *imageName = [NSString stringWithFormat:@"%ld",count +1];
     cell.backgroundColor = [UIColor clearColor];
     cell.title_Label = self.titleArr[indexPath.row];
+    // 设置圆角半径
+    cell.layer.cornerRadius = cell
+    .bounds.size.width * 0.5;
+    cell.layer.masksToBounds = YES;
 
+    // 如果想要做一些牛逼的动画, 可以在这个位置来做
+    
+    
+    CABasicAnimation *animation = [[CABasicAnimation alloc]init];
+    animation.fromValue = @(0);
+    animation.toValue = @(M_PI *2);
+    animation.keyPath = @"transform.rotation.z";
+    animation.duration = 30;
+    animation.repeatCount = NSIntegerMax;
+    animation.removedOnCompletion = NO;
+    [cell.layer addAnimation:animation forKey:@"rotation"];
+    
+    
+    
+    
     
     cell.image = [UIImage imageNamed:imageName];
     

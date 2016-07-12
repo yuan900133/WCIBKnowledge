@@ -1,21 +1,26 @@
+
 //
 //  YWCPhotoViewController.m
 //  WCIBKnowledge
 //
-//  Created by 袁武昌 on 16/7/3.
+//  Created by 袁武昌 on 16/7/11.
 //  Copyright © 2016年 yuan.com. All rights reserved.
 //
 
 #import "YWCPhotoViewController.h"
-#import "YWCPracticalCell.h"
-#import "YWCFlowLayout.h"
+
+#import "PhotoCell.h"
+
+#import "FlowLayout.h"
+
 @interface YWCPhotoViewController ()<UICollectionViewDataSource>
 
 @end
 
 @implementation YWCPhotoViewController
 
-static NSString * const PracticalCellId = @"practical";
+static NSString * const ID = @"cell";
+
 /*
  UICollectionView使用步骤
  1.创建UICollectionView必须要初始化布局参数
@@ -36,8 +41,8 @@ static NSString * const PracticalCellId = @"practical";
  
  */
 
-#define XMGScreenW [UIScreen mainScreen].bounds.size.width
-#define XMGScreenH [UIScreen mainScreen].bounds.size.height
+#define YWCScreenW [UIScreen mainScreen].bounds.size.width
+#define YWCScreenH [UIScreen mainScreen].bounds.size.height
 
 /*
  高聚合(代码),低耦合(类与类之间关系)
@@ -61,10 +66,13 @@ static NSString * const PracticalCellId = @"practical";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    self.view.backgroundColor = [UIColor colorWithWhite:0.9 alpha:1.0];
+    
     // 创建UICollectionView流水布局
     UICollectionViewFlowLayout *layout = ({
         // GCC
-        UICollectionViewFlowLayout *layout = [[YWCFlowLayout alloc] init];
+        UICollectionViewFlowLayout *layout = [[FlowLayout alloc] init];
         
         
         layout.itemSize = CGSizeMake(160, 160);
@@ -75,7 +83,7 @@ static NSString * const PracticalCellId = @"practical";
         layout.minimumInteritemSpacing = 50;
         
         // 设置组间距
-        layout.sectionInset = UIEdgeInsetsMake(0,(XMGScreenW - 160) * 0.5 , 0, (XMGScreenW - 160) * 0.5);
+        layout.sectionInset = UIEdgeInsetsMake(0,(YWCScreenW - 160) * 0.5 , 0, (YWCScreenW - 160) * 0.5);
         
         layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
@@ -99,7 +107,7 @@ static NSString * const PracticalCellId = @"practical";
     });
     
     // 注册PhotoCell
-    [collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([YWCPracticalCell class]) bundle:nil] forCellWithReuseIdentifier:PracticalCellId];
+    [collectionView registerNib:[UINib nibWithNibName:@"PhotoCell" bundle:nil] forCellWithReuseIdentifier:ID];
     
     
 }
@@ -117,7 +125,7 @@ static NSString * const PracticalCellId = @"practical";
 {
     
     // forIndexPath:必须注册
-    YWCPracticalCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:PracticalCellId forIndexPath:indexPath];
+    PhotoCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     
     NSString *imageName = [NSString stringWithFormat:@"%ld",indexPath.row + 1];
     

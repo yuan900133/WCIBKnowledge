@@ -14,16 +14,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="cv8-gD-gpd" customClass="YWCItemImage">
-                        <rect key="frame" x="10" y="10" width="130" height="130"/>
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画板" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMT-6f-Og7" customClass="YWCTitleLabel">
-                        <rect key="frame" x="25" y="66" width="100" height="18"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <rect key="frame" x="25" y="25" width="100" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="height" constant="100" id="1EK-vi-0Up"/>
                             <constraint firstAttribute="width" constant="100" id="9gy-Vg-5mE"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -32,11 +33,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="NMT-6f-Og7" firstAttribute="centerY" secondItem="PFy-ix-Bb2" secondAttribute="centerY" id="BGH-Ob-0mS"/>
-                <constraint firstAttribute="trailing" secondItem="cv8-gD-gpd" secondAttribute="trailing" constant="10" id="Dmp-Eb-3z4"/>
-                <constraint firstItem="cv8-gD-gpd" firstAttribute="top" secondItem="PFy-ix-Bb2" secondAttribute="top" constant="10" id="SGL-5b-UPQ"/>
-                <constraint firstAttribute="bottom" secondItem="cv8-gD-gpd" secondAttribute="bottom" constant="10" id="mFU-dr-aOO"/>
+                <constraint firstAttribute="bottom" secondItem="cv8-gD-gpd" secondAttribute="bottom" id="CFJ-7Q-JrE"/>
+                <constraint firstItem="cv8-gD-gpd" firstAttribute="top" secondItem="PFy-ix-Bb2" secondAttribute="top" id="Ja5-js-kGg"/>
+                <constraint firstAttribute="trailing" secondItem="cv8-gD-gpd" secondAttribute="trailing" id="QgS-e9-cd2"/>
+                <constraint firstItem="cv8-gD-gpd" firstAttribute="leading" secondItem="PFy-ix-Bb2" secondAttribute="leading" id="Yn6-Qf-VCJ"/>
                 <constraint firstItem="NMT-6f-Og7" firstAttribute="centerX" secondItem="PFy-ix-Bb2" secondAttribute="centerX" id="q15-en-VdJ"/>
-                <constraint firstItem="cv8-gD-gpd" firstAttribute="leading" secondItem="PFy-ix-Bb2" secondAttribute="leading" constant="10" id="rW2-Is-Bc6"/>
             </constraints>
             <size key="customSize" width="171" height="149"/>
             <connections>
