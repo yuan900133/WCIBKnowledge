@@ -9,11 +9,7 @@
 #import "YWCPracticalController.h"
 #import "YWCPracticalCell.h"
 
-#import "YWCSkinViewController.h"
-#import "YWCBoxViewController.h"
-#import "YWCAVViewController.h"
 #import "YWCNewsViewController.h"
-#import "YWCPhotoViewController.h"
 @interface YWCPracticalController ()
 @property(nonatomic,strong)NSArray *titleArr;
 @end
@@ -24,7 +20,7 @@ static NSString * const PracticalCellId = @"practical";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-        _titleArr = @[@"换肤",@"UIDynamic",@"视频播放",@"新闻",@"相册"];
+        _titleArr = @[@"网易",@"photo"];
     }
     return _titleArr;
 }
@@ -98,34 +94,10 @@ static NSString * const PracticalCellId = @"practical";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        YWCSkinViewController *skin = [[YWCSkinViewController alloc]init];
-        
-        skin.title = @"换肤";
-        [self.navigationController pushViewController:skin animated:YES];
-    }else if (indexPath.row == 1){
-        YWCBoxViewController *box = [[YWCBoxViewController alloc]init];
-        
-        box.title = @"UIDynamic";
-        [self.navigationController pushViewController:box animated:YES];
-        
-    }
-    else if (indexPath.row == 2){
-        YWCAVViewController *av = [[YWCAVViewController alloc]init];
-        
-        av.title = @"视频播放";
-        [self.navigationController pushViewController:av animated:YES];
-        
-    }else if (indexPath.row == 3){
         YWCNewsViewController *news = [[YWCNewsViewController alloc]init];
         
-        news.title = @"新闻";
+        news.title = @"网易";
         [self.navigationController pushViewController:news animated:YES];
-        
-    }else if (indexPath.row == 4){
-        YWCPhotoViewController *photo = [[YWCPhotoViewController alloc]init];
-        
-        photo.title = @"相册";
-        [self.navigationController pushViewController:photo animated:YES];
         
     }
 }

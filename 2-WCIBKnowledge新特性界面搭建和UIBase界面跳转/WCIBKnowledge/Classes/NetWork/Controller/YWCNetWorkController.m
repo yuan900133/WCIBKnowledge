@@ -26,11 +26,7 @@ static NSString * const NetWorkCellId = @"netWork";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
-<<<<<<< HEAD
-        _titleArr = @[@"定时器",@"分享和三方登录",@"地图",@"支付宝",@"苹果支付",@"环信",@"AFN",@"数据解析"];
-=======
         _titleArr = @[@"多图下载,多图下载SD",@"文件下载"];
->>>>>>> origin/master
     }
     return _titleArr;
 }
