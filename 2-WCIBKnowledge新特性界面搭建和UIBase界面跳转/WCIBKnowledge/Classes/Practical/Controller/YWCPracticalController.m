@@ -10,6 +10,7 @@
 #import "YWCPracticalCell.h"
 
 #import "YWCNewsViewController.h"
+#import "YWCPhotoViewController.h"
 @interface YWCPracticalController ()
 @property(nonatomic,strong)NSArray *titleArr;
 @end
@@ -99,6 +100,12 @@ static NSString * const PracticalCellId = @"practical";
         news.title = @"网易";
         [self.navigationController pushViewController:news animated:YES];
         
+    }else if (indexPath.row == 1){
+     
+        YWCPhotoViewController *photo = [[YWCPhotoViewController alloc]init];
+        
+        photo.title = @"Photo";
+        [self.navigationController pushViewController:photo animated:YES];
     }
 }
 @end
