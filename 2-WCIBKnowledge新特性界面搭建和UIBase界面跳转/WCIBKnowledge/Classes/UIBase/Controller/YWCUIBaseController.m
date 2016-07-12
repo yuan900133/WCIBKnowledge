@@ -65,7 +65,7 @@ static NSString * const UIBaseCellId = @"uiBase";
 /**注册CollectionViewCell*/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"19"]];
    
     
     //    初始化collectionView
@@ -78,7 +78,7 @@ static NSString * const UIBaseCellId = @"uiBase";
 
 - (void)setUp
 {
-    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+//    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.

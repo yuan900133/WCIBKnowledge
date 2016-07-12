@@ -9,8 +9,6 @@
 #import "YWCNewsViewController.h"
 
 
-
-
 static CGFloat const titleScrollViewH = 44;
 static CGFloat const btnW = 100;
 static CGFloat const titleScale = 1.3;
@@ -84,7 +82,9 @@ static CGFloat const titleScale = 1.3;
     UIViewController *topLineVc = [[UIViewController alloc] init];
     topLineVc.title = @"头条";
 
+
     topLineVc.view.backgroundColor = YWCRandomColor;
+
 
     [self addChildViewController:topLineVc];
     
@@ -92,7 +92,9 @@ static CGFloat const titleScale = 1.3;
     UIViewController *videoVc = [[UIViewController alloc] init];
     videoVc.title = @"视频";
 
+
     videoVc.view.backgroundColor = YWCRandomColor;
+
 
     [self addChildViewController:videoVc];
     
@@ -100,7 +102,9 @@ static CGFloat const titleScale = 1.3;
     UIViewController *societyVc = [[UIViewController alloc] init];
     societyVc.title = @"社会";
 
+
     societyVc.view.backgroundColor = YWCRandomColor;
+
 
     [self addChildViewController:societyVc];
     
@@ -108,7 +112,9 @@ static CGFloat const titleScale = 1.3;
     UIViewController *readerVc = [[UIViewController alloc] init];
     readerVc.title = @"订阅";
 
+
     readerVc.view.backgroundColor = YWCRandomColor;
+
 
     [self addChildViewController:readerVc];
     
@@ -116,7 +122,9 @@ static CGFloat const titleScale = 1.3;
     UIViewController *scienceVc = [[UIViewController alloc] init];
     scienceVc.title = @"科技";
 
+
     scienceVc.view.backgroundColor = YWCRandomColor;
+
 
     [self addChildViewController:scienceVc];
 }

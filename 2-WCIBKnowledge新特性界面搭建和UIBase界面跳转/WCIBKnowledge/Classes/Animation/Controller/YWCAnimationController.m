@@ -76,7 +76,7 @@ static NSString * const AnimationCellId = @"animation";
 /**注册CollectionViewCell*/
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.collectionView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"5"]];
     
     
     //添加内部的子控件
@@ -144,7 +144,7 @@ static NSInteger nextItem = 0;
 
 
 - (void)setUp{
-    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
+//    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
     
     self.collectionView.showsHorizontalScrollIndicator = NO;
     

@@ -21,7 +21,9 @@ static NSString * const ActualCellId = @"actual";
 - (NSArray *)titleArr
 {
     if (_titleArr == nil) {
+
         _titleArr = @[@"plist",@"图片水印",@"打开相机相册",@"二维码",@"做图片",@"动画"];
+
     }
     return _titleArr;
 }

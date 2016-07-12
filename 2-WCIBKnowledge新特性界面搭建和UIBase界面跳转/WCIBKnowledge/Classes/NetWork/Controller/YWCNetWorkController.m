@@ -43,15 +43,15 @@ static NSString * const NetWorkCellId = @"netWork";
     //修改布局参数,来修改格子的样式.
     //修改布局参数,来修改格子的样式.
     //设置每一个格子的尺寸大小.
-    flow.itemSize = CGSizeMake(155 , 155);
+    flow.itemSize = CGSizeMake(YWCScreenW , YWCScreenW);
     //设置每一行的最小间距
     flow.minimumLineSpacing = 10;
     //设置每个item之间的最小间距
     flow.minimumInteritemSpacing = 10;
-    flow.sectionInset = UIEdgeInsetsMake(0,20 , 0, 20);
+//    flow.sectionInset = UIEdgeInsetsMake(0,20 , 0, 20);
     
     //设置滚动的方向
-    flow.scrollDirection = UICollectionViewScrollDirectionVertical;
+    flow.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     return [super initWithCollectionViewLayout:flow];
 }
@@ -61,8 +61,9 @@ static NSString * const NetWorkCellId = @"netWork";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"5"]];
    self.collectionView.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1.0];
-    
+   self.collectionView.frame = CGRectMake(0, 0, YWCScreenW, YWCScreenW);
     self.collectionView.showsHorizontalScrollIndicator = NO;
     
     //UICollectionViewCell必须得要注册.
